@@ -494,3 +494,25 @@ a:link {
   .img_container_three:hover .image_rate_8 {
 	opacity: 0.7;
   } */
+
+  .portfolio_image_center {
+	opacity: 1;
+	display: block;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	width:30%;
+	margin: 0 auto;
+  }
+
+  @media (max-width: 1000px) {
+	.portfolio_image_center {
+		opacity: 1;
+		display: block;
+		height: auto;
+		transition: .5s ease;
+		backface-visibility: hidden;
+		width:60%;
+		margin: 0 auto;
+	  }
+	}
