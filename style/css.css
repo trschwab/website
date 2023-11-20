@@ -21,6 +21,11 @@ li {
 	margin: auto;
 }
 
+.nav_nums {
+	text-align: center;
+	margin: auto;
+}
+
 .wrapper ul {
 	list-style-type: none;
 	display: inline-block;
@@ -244,6 +249,12 @@ a:link {
 
 	li {
 		font-size:50px;
+	}
+
+	.nav_nums {
+		text-align: center;
+		margin: auto;
+		font-size: 40px;
 	}
 
 	.wrapper {
