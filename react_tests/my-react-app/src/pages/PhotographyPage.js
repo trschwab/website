@@ -130,13 +130,23 @@ const photos = [
 
 const Gallery = () => {
   const galleryStyle = {
-    maxWidth: '1000px', // Set the maximum width as per your requirement
+    maxWidth: '80%', // Set the maximum width as per your requirement
     margin: '50px auto',  // Center the component by setting left and right margins to auto, and add top margin
+
+    // // Media query for screens larger than 1100 pixels
+    // '@media (min-width: 800px)': {
+    //   maxWidth: '799px', // Set the maximum width to 1000 pixels for screens wider than 1100 pixels
+    // },
   };
 
   return (
     <div style={galleryStyle}>  
-      <PhotoAlbum layout="masonry" photos={photos} />
+      <PhotoAlbum layout="masonry" photos={photos}
+      columns={(containerWidth) => {
+        if (containerWidth < 500) return 2;
+        if (containerWidth < 800) return 3;
+        return 4;
+  }}/>
     </div>
   );
 };
