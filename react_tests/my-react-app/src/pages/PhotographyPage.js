@@ -67,17 +67,35 @@ import PhotoAlbum from "react-photo-album";
   ];
 
 const photos = [
-    { src: "/photography/000079440022.jpg", width: 1000, height: 650 },
+    { src: "/photography/33320036 copy.JPG", width: 650, height: 1000 },
+    { src: "/photography/33320013.JPG", width: 1000, height: 650 },
+    { src: "/photography/33320033 copy.JPG", width: 650, height: 1000 },
+    { src: "/photography/33330033 copy.JPG", width: 650, height: 1000 },
+    // { src: "/photography/33330020 copy.JPG", width: 650, height: 1000 },
+    
+    { src: "/photography/33330021 copy.JPG", width: 650, height: 1000 },
     { src: "/photography/62880026.JPG", width: 1000, height: 650 },
-    { src: "/photography/81840010.JPG", width: 1000, height: 650 },
+    { src: "/photography/33330022 copy.JPG", width: 650, height: 1000 },
     { src: "/photography/000079440021.jpg", width: 1000, height: 650 },
+    { src: "/photography/33330026 copy.JPG", width: 650, height: 1000 },
+    { src: "/photography/33320015.JPG", width: 1000, height: 650 },
+
+    { src: "/photography/33330008 copy.JPG", width: 650, height: 1000 },
+    { src: "/photography/33330004 copy.JPG", width: 650, height: 1000 },
+
+
+
+    { src: "/photography/000079440022.jpg", width: 1000, height: 650 },
+
+    { src: "/photography/81840010.JPG", width: 1000, height: 650 },
+
     { src: "/photography/62880024.JPG", width: 1000, height: 650 },
     { src: "/photography/000079440020.jpg", width: 1000, height: 650 },
     { src: "/photography/81840017.JPG", width: 1000, height: 650 },
     { src: "/photography/94550013 copy.JPG", width: 650, height: 1000 },
     { src: "/photography/62880020.JPG", width: 1000, height: 650 },
     { src: "/photography/94550017.JPG", width: 1000, height: 650 },
-    { src: "/photography/94530005 copy.JPG", width: 650, height: 1000 },
+    // { src: "/photography/94530005 copy.JPG", width: 650, height: 1000 },
     { src: "/photography/11930022 copy.JPG", width: 650, height: 1000 },
     { src: "/photography/000079440025.jpg", width: 1000, height: 650 },
     { src: "/photography/81840014.JPG", width: 1000, height: 650 },
@@ -98,9 +116,10 @@ const photos = [
     { src: "/photography/10270012.JPG", width: 1000, height: 650 },
     { src: "/photography/000005530024.jpg", width: 1000, height: 650 },
     { src: "/photography/94540006 copy.JPG", width: 650, height: 1000 },
-    { src: "/photography/94530006 copy.JPG", width: 650, height: 1000 },
-    { src: "/photography/94530007 copy.JPG", width: 650, height: 1000 },
+    // { src: "/photography/94530006 copy.JPG", width: 650, height: 1000 },
+
     { src: "/photography/94530028.JPG", width: 1000, height: 650 },
+    { src: "/photography/94530007 copy.JPG", width: 650, height: 1000 },
     { src: "/photography/10270013.JPG", width: 1000, height: 650 },
     { src: "/photography/94560025.JPG", width: 1000, height: 650 },
     { src: "/photography/62870034.JPG", width: 1000, height: 650 },

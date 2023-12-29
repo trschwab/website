@@ -13,6 +13,9 @@ import LetterboxdPage from './pages/blog/letterboxd_blog';
 import ShellPage from './pages/blog/shell_blog';
 import './styles.css';
 
+import { NavLink } from 'react-router-dom'
+// import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
+
 const lineBreak = {
   width: '50%',
   marginLeft: 'auto',
@@ -35,6 +38,7 @@ const Banner = () => {
         <hr style={lineBreak}></hr>
       </nav>
     </div>
+
   );
 };
 
