@@ -67,6 +67,22 @@ import PhotoAlbum from "react-photo-album";
   ];
 
 const photos = [
+  { src: "/photography/39230015.JPG", width: 1000, height: 650 },
+  { src: "/photography/39220013 copy.JPG", width: 650, height: 1000 },
+  // { src: "/photography/39220026.JPG", width: 1000, height: 650 },
+  { src: "/photography/39230014.JPG", width: 1000, height: 650 },
+  { src: "/photography/39230007.JPG", width: 1000, height: 650 },
+  { src: "/photography/39220035.JPG", width: 1000, height: 650 },
+  
+  { src: "/photography/39220032.JPG", width: 1000, height: 650 },
+  { src: "/photography/39220024.JPG", width: 1000, height: 650 },
+  { src: "/photography/39220023.JPG", width: 1000, height: 650 },
+  { src: "/photography/39220011.JPG", width: 1000, height: 650 },
+  { src: "/photography/39210026.JPG", width: 1000, height: 650 },
+  { src: "/photography/39210014.JPG", width: 1000, height: 650 },
+
+
+
     { src: "/photography/33320036 copy.JPG", width: 650, height: 1000 },
     { src: "/photography/33320013.JPG", width: 1000, height: 650 },
     { src: "/photography/33320033 copy.JPG", width: 650, height: 1000 },
@@ -111,7 +127,7 @@ const photos = [
     { src: "/photography/62870001.JPG", width: 1000, height: 650 },
     { src: "/photography/10270035.JPG", width: 1000, height: 650 },
     { src: "/photography/94560017.JPG", width: 1000, height: 650 },
-    { src: "/photography/62870022.JPG", width: 1000, height: 650 },
+    // { src: "/photography/62870022.JPG", width: 1000, height: 650 },
     { src: "/photography/62870009.JPG", width: 1000, height: 650 },
     { src: "/photography/10270012.JPG", width: 1000, height: 650 },
     { src: "/photography/000005530024.jpg", width: 1000, height: 650 },
@@ -123,7 +139,7 @@ const photos = [
     { src: "/photography/10270013.JPG", width: 1000, height: 650 },
     { src: "/photography/94560025.JPG", width: 1000, height: 650 },
     { src: "/photography/62870034.JPG", width: 1000, height: 650 },
-    { src: "/photography/62870018.JPG", width: 1000, height: 650 },
+    // { src: "/photography/62870018.JPG", width: 1000, height: 650 },
     { src: "/photography/000019160016.jpg", width: 1000, height: 650 },
     { src: "/photography/000019160001.jpg", width: 1000, height: 650 },
     { src: "/photography/94560036.JPG", width: 1000, height: 650 },
