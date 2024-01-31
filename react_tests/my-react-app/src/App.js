@@ -23,24 +23,24 @@ const lineBreak = {
 };
 
 const Banner = () => {
-  return (
-    <div className="wrapper">
-      <nav>
-        <ul>
-          {/* <li><a href="/">Home</a></li> */}
-          <li><a href="/code">Code</a></li>
-          <li><a href="/music">Music</a></li>
-          <li><a href="/photography">Photography</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
+//   return (
+//     <div className="wrapper">
+//       <nav>
+//         <ul>
+//           {/* <li><a href="/">Home</a></li> */}
+//           <li><a href="/code">Code</a></li>
+//           <li><a href="/music">Music</a></li>
+//           <li><a href="/photography">Photography</a></li>
+//           <li><a href="/blog">Blog</a></li>
+//           <li><a href="/about">About</a></li>
+//         </ul>
 
-        <hr style={lineBreak}></hr>
-      </nav>
-    </div>
+//         <hr style={lineBreak}></hr>
+//       </nav>
+//     </div>
 
-  );
-};
+//   );
+// };
 
 const App = () => {
   return (
