@@ -71,6 +71,8 @@ const photos = [
   { src: "/photography/70050021 edit.JPG", width: 1000, height: 650 },
   { src: "/photography/70050028 copy edit.JPG", width: 650, height: 1000 },
   { src: "/photography/70050022 copy edit.JPG", width: 650, height: 1000 },
+  { src: "/photography/70050032 copy Edit.JPG", width: 650, height: 1000 },
+
 
   { src: "/photography/07280033 copy.JPG", width: 650, height: 1000 },
 
