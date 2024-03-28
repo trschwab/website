@@ -67,6 +67,15 @@ import PhotoAlbum from "react-photo-album";
   ];
 
 const photos = [
+  { src: "/photography/20330011.JPG", width: 1000, height: 650 },
+  { src: "/photography/20330033 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/20330002.JPG", width: 1000, height: 650 },
+  { src: "/photography/20330022 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/20330023.JPG", width: 1000, height: 650 },
+  { src: "/photography/20330014 copy.JPG", width: 650, height: 1000 },
+
+
+
   { src: "/photography/70050017 copy edit.JPG", width: 650, height: 1000 },
   { src: "/photography/70050021 edit.JPG", width: 1000, height: 650 },
   { src: "/photography/70050028 copy edit.JPG", width: 650, height: 1000 },
@@ -205,9 +214,9 @@ const Gallery = () => {
     <div style={galleryStyle}>  
       <PhotoAlbum layout="masonry" photos={photos}
       columns={(containerWidth) => {
-        if (containerWidth < 500) return 2;
-        if (containerWidth < 800) return 3;
-        return 4;
+        if (containerWidth < 500) return 1;
+        if (containerWidth < 800) return 2;
+        return 3;
   }}/>
     </div>
   );

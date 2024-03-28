@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Add this CSS to your stylesheet */
+
+/* Style for the container of the list */
+.icon-list-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px; /* Adjust as needed */
+}
+
+/* Style for the list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each list item */
+.li_spacing {
+  display: inline-block;
+  margin-right: 30px; /* Adjust as needed */
+}
+
+/* Style for the icon images */
+.icon {
+  width: 40px; /* Adjust the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+}

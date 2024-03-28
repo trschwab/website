@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CodePage from './pages/CodePage';
 import MusicPage from './pages/MusicPage';
+import VinylPage from './pages/VinylPage';
 import PhotographyPage from './pages/PhotographyPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
@@ -51,6 +52,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/code" element={<CodePage />} />
           <Route path="/music" element={<MusicPage />} />
+          <Route path="/vinyl" element={<VinylPage />} />
           <Route path="/photography" element={<PhotographyPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
