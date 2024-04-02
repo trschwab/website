@@ -67,6 +67,23 @@ import PhotoAlbum from "react-photo-album";
   ];
 
 const photos = [
+
+  { src: "/photography/65340030 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/65340024.JPG", width: 1000, height: 650 },
+  { src: "/photography/65330031 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/65330029 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/65340022.JPG", width: 1000, height: 650 },
+  { src: "/photography/65340015.JPG", width: 1000, height: 650 },
+  { src: "/photography/65340013.JPG", width: 1000, height: 650 },
+  { src: "/photography/65340008.JPG", width: 1000, height: 650 },
+  { src: "/photography/65340007.JPG", width: 1000, height: 650 },
+  { src: "/photography/65340005 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/65330034.JPG", width: 1000, height: 650 },
+  { src: "/photography/65330033.JPG", width: 1000, height: 650 },
+  { src: "/photography/65330032.JPG", width: 1000, height: 650 },
+  { src: "/photography/65330016.JPG", width: 1000, height: 650 },
+
+
   { src: "/photography/20330011.JPG", width: 1000, height: 650 },
   { src: "/photography/20330033 copy.JPG", width: 650, height: 1000 },
   { src: "/photography/20330002.JPG", width: 1000, height: 650 },
