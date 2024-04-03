@@ -13,6 +13,7 @@ import CocktailBlogPage from './pages/blog/cocktail_blog';
 import LetterboxdPage from './pages/blog/letterboxd_blog';
 import ShellPage from './pages/blog/shell_blog';
 import './styles.css';
+import { useLocation } from 'react-router-dom';
 
 import { NavLink } from 'react-router-dom'
 // import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
@@ -43,11 +44,35 @@ const Banner = () => {
   );
 };
 
+
+const BlogBanner = () => {
+  return (
+    <div className="wrapper">
+      <nav>
+        <ul>
+          <li><a href="/blog">Back to Blog</a></li>
+        </ul>
+        <hr style={lineBreak}></hr>
+      </nav>
+    </div>
+  );
+};
+
+const IsBlog = () => {
+  const location = useLocation();
+
+  if (location.pathname.includes('/blog/')) {
+    return (<BlogBanner />)} else {
+      return (<Banner />)
+    }
+
+}
+
 const App = () => {
   return (
     <Router>
       <div>
-        <Banner />
+        <IsBlog />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/code" element={<CodePage />} />
