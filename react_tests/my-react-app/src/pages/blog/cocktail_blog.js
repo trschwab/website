@@ -7,11 +7,8 @@ const CocktailBlogPage = () => {
       <div class="limit_width">
         <div style={{ whiteSpace: 'pre-line' }}>
       <p>
-      {'\n'}{'\n'}
-      <h1>Cocktails</h1>
-		{'\n'}{'\n'}
-		Posted on February 23, 2022.
-		{'\n'}{'\n'}
+      <h1>On Cocktails</h1>
+		{'\n'}
 This blog post will be a discussion of cocktails as well as a place where I update what I have been enjoying lately. A cocktail is a mixed drink with two or more ingredients in which at least one is alcoholic. They seem to be a near universal endeavor, which is a factor of cultures fermenting many thousands of years ago, whether by accident or intentionally. The first cocktail is often said to be the Sazerac, cognac and sugar over ice with some Peychaud’s Bitters and typically an absinthe rinse made by Aaron Bird in the late 1800s in New Orleans. The earliest alcoholic beverage may differ by sources but I found a record of a fermented rice, honey, and grape (or hawthorn fruit) beverage dated around 7000-6600 BCE.
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/008.jpeg" alt="photo of a sazerac cocktail" style={{ display: 'block', width: '100%' }} />
