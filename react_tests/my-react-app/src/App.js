@@ -11,6 +11,9 @@ import AboutPage from './pages/AboutPage';
 import RYMCollectionPage from './pages/blog/rym_blog';
 import CocktailBlogPage from './pages/blog/cocktail_blog';
 import LetterboxdPage from './pages/blog/letterboxd_blog';
+import OnceAndForeverPage from './pages/blog/once_and_forever_blog';
+import Cocktail2BlogPage from './pages/blog/cocktail_2_blog';
+import ChessBlogPage from './pages/blog/chess_blog';
 import ShellPage from './pages/blog/shell_blog';
 import './styles.css';
 import { useLocation } from 'react-router-dom';
@@ -83,7 +86,10 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog/rym_blog" element={<RYMCollectionPage />} />
           <Route path="/blog/cocktail_blog" element={<CocktailBlogPage />} />
+          <Route path="/blog/cocktail_2_blog" element={<Cocktail2BlogPage />} />
+          <Route path="/blog/once_and_forever_blog" element={<OnceAndForeverPage />} />
           <Route path="/blog/letterboxd_blog" element={<LetterboxdPage />} />
+          <Route path="/blog/chess_blog" element={<ChessBlogPage />} />
           <Route path="/blog/shell_blog" element={<ShellPage />} />
         </Routes>
       </div>
