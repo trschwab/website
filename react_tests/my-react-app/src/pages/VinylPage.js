@@ -13,6 +13,8 @@ const VinylPage = () => {
           />
         {'\n'}{'\n'}
         <p>
+        <a href="https://www.youtube.com/watch?v=S5HE4Imuh2E" target="_blank" rel="noopener noreferrer">Vinyl Set @ The 360 Record Shop - April 6 2024</a>
+        {'\n'}{'\n'}
         <a href="https://www.youtube.com/watch?v=nVZ0hUmrGwE" target="_blank" rel="noopener noreferrer">March 6 - House</a>
         {'\n'}{'\n'}
         <a href="https://www.youtube.com/watch?v=sY8RW2ZaZEY" target="_blank" rel="noopener noreferrer">Feb 13 - House</a>
