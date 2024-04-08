@@ -29,7 +29,10 @@ This is a cocktail I had had at famed NYC bar Attaboy, from Milk and Honey’s S
 Ice stir, garnish with orange or grapefruit peel
 {'\n'}{'\n'}
 
+
 The Thumbs Up!
+{'\n'}{'\n'}
+    <img src="/blog_media/cocktail_2_blog_media/thumbs-up.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 {'\n'}{'\n'}&emsp;
 1 oz Gin{'\n'}&emsp;
 1/2 oz Green Chartreuse{'\n'}&emsp;
@@ -71,11 +74,15 @@ Naked and Famous
 
 	{'\n'}{'\n'}
 Campari over Rocks
+{'\n'}{'\n'}
+    <img src="/blog_media/cocktail_2_blog_media/campari-rocks.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 {'\n'}{'\n'}&emsp;
 	2oz Campari, poured over ice
 	{'\n'}{'\n'}
 
 Grappino
+{'\n'}{'\n'}
+    <img src="/blog_media/cocktail_2_blog_media/grappino.webp" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 {'\n'}{'\n'}&emsp;
 2/3 ounce grappa{'\n'}&emsp;
 1/2 ounce amaretto{'\n'}&emsp;
@@ -88,8 +95,10 @@ Top with soya cream OR whipped cream
 Grated nutmeg over top
 {'\n'}
 
-
+{'\n'}{'\n'}
 Rosina Ferrario No 203
+{'\n'}{'\n'}
+    <img src="/blog_media/cocktail_2_blog_media/rosina-ferrario.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 {'\n'}{'\n'}&emsp;
 1 + 1/2 ounce Nonnino Vigneti Moscato (white grappa){'\n'}&emsp;
 1/2 ounce maraschino{'\n'}&emsp;
@@ -100,6 +109,8 @@ Garnish with edible rose / violet{'\n'}&emsp;
 Shake all over ice
 {'\n'}{'\n'}
 Brauliocano
+{'\n'}{'\n'}
+    <img src="/blog_media/cocktail_2_blog_media/brauliocano.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 {'\n'}{'\n'}&emsp;
 1 + 1/2 ounce Braulio{'\n'}&emsp;
 1 + 1/2 ounce Cocchio Americano{'\n'}&emsp;
@@ -125,6 +136,8 @@ Black Pavan
 Stir softly over ice
 {'\n'}{'\n'}
 Black Rock Chiller
+{'\n'}{'\n'}
+    <img src="/blog_media/cocktail_2_blog_media/balck-rock-chiller.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 {'\n'}{'\n'}&emsp;
 3/4 ounce Branca Mente{'\n'}&emsp;
 3/4 ounce Suze{'\n'}&emsp;
@@ -157,6 +170,8 @@ Champs Elysees - not a hit
 Shake over ice
 {'\n'}{'\n'}
 Calvados 75
+{'\n'}{'\n'}
+    <img src="/blog_media/cocktail_2_blog_media/calvados.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 {'\n'}{'\n'}&emsp;
 1 ounce Calvados{'\n'}&emsp;
 1/2 ounce Lemon Juice{'\n'}&emsp;
