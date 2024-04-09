@@ -6,6 +6,7 @@ import CodePage from './pages/CodePage';
 import MusicPage from './pages/MusicPage';
 import VinylPage from './pages/VinylPage';
 import PhotographyPage from './pages/PhotographyPage';
+import TestPhotographyPage from './pages/PhotographyTestPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import RYMCollectionPage from './pages/blog/rym_blog';
@@ -82,6 +83,7 @@ const App = () => {
           <Route path="/music" element={<MusicPage />} />
           <Route path="/vinyl" element={<VinylPage />} />
           <Route path="/photography" element={<PhotographyPage />} />
+          <Route path="/testphotography" element={<TestPhotographyPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog/rym_blog" element={<RYMCollectionPage />} />

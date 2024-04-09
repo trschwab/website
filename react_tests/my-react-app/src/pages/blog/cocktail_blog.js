@@ -9,43 +9,103 @@ const CocktailBlogPage = () => {
       <p>
       <h1>On Cocktails</h1>
 		{'\n'}
-This blog post will be a discussion of cocktails as well as a place where I update what I have been enjoying lately. A cocktail is a mixed drink with two or more ingredients in which at least one is alcoholic. They seem to be a near universal endeavor, which is a factor of cultures fermenting many thousands of years ago, whether by accident or intentionally. The first cocktail is often said to be the Sazerac, cognac and sugar over ice with some Peychaud’s Bitters and typically an absinthe rinse made by Aaron Bird in the late 1800s in New Orleans. The earliest alcoholic beverage may differ by sources but I found a record of a fermented rice, honey, and grape (or hawthorn fruit) beverage dated around 7000-6600 BCE.
+		This blog post will be a discussion of cocktails as well as a place where I update what I have been enjoying lately. 
+		A cocktail is a mixed drink with two or more ingredients in which at least one is alcoholic. They seem to be a near 
+		universal endeavor, which is a factor of cultures fermenting many thousands of years ago, whether by accident or 
+		intentionally. The first cocktail is often said to be the Sazerac, cognac and sugar over ice with some Peychaud’s 
+		Bitters and typically an absinthe rinse made by Aaron Bird in the late 1800s in New Orleans. The earliest alcoholic 
+		beverage may differ by sources but I found a record of a fermented rice, honey, and grape (or hawthorn fruit) 
+		beverage dated around 7000-6600 BCE.
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/008.jpeg" alt="photo of a sazerac cocktail" style={{ display: 'block', width: '100%' }} />
 		{'\n'}{'\n'}
-		There is obviously a rich history of alcoholic beverages, both stand alone and mixed, that I will try to elude to. Hopefully you, the reader, can use this as a jumping off point. Below is a link to my personal menu that I will version over time, and I will try to discuss all the cocktails mentioned to a reasonable extent. I also will likely update restaurant's and bar's cocktail menus on this page which I think are fun to collect and interesting to look through.
+		There is obviously a rich history of alcoholic beverages, both stand alone and mixed, that I will try to elude to. 
+		Hopefully you, the reader, can use this as a jumping off point. Below is a link to my personal menu that I will 
+		version over time, and I will try to discuss all the cocktails mentioned to a reasonable extent. I also will likely 
+		update restaurant's and bar's cocktail menus on this page which I think are fun to collect and interesting to look 
+		through.
 		{'\n'}{'\n'}
 		<a href="./cocktails_links.html">Relevant Links</a>
 		{'\n'}{'\n'}
-		Note that while specific measurements, ingredients, glassware, and even brands will be named below, cocktails should be enjoyed in whatever way you enjoy them with a respect for their history. There are many different measurements, ingredients, glassware, and brands that differ and are equally valid.
+		Note that while specific measurements, ingredients, glassware, and even brands will be named below, cocktails 
+		should be enjoyed in whatever way you enjoy them with a respect for their history. There are many different 
+		measurements, ingredients, glassware, and brands that differ and are equally valid.
 		{'\n'}{'\n'}
 		Some terminology and techniques to begin.
 		{'\n'}{'\n'}
-		Two seriously important items when making cocktails are always measure your ingredients, and always use fresh lemon and fresh lime juice. I like to buy quite a few lemons and limes, and upon juicing them all, store any extra in glass bottles in the freezer. Frozen lemon and lime juice will last around three months. Despite the massive color difference between lemons and limes, their flavor profiles are actually quite similar. In a pinch, most recipes can switch between lemon and lime juice.
+		Two seriously important items when making cocktails are always measure your ingredients, and always use fresh 
+		lemon and fresh lime juice. I like to buy quite a few lemons and limes, and upon juicing them all, store any 
+		extra in glass bottles in the freezer. Frozen lemon and lime juice will last around three months. Despite the 
+		massive color difference between lemons and limes, their flavor profiles are actually quite similar. In a pinch, 
+		most recipes can switch between lemon and lime juice.
 		{'\n'}{'\n'}
-		Shaking a cocktail is when ingredients are added to a shaker tin with ice, and.. well.. shaken. Large ice will dilute less than small ice. The ice going through the ingredients will also disrupt the liquid. For example large ice is typically used with frothed egg white because small ice will cut down on the froth more.
+		Shaking a cocktail is when ingredients are added to a shaker tin with ice, and.. well.. shaken. Large ice will 
+		dilute less than small ice. The ice going through the ingredients will also disrupt the liquid. For example 
+		large ice is typically used with frothed egg white because small ice will cut down on the froth more.
 		{'\n'}{'\n'}
-		Stirring a cocktail is when you use a bar spoon to stir ingredients in a mixing glass with ice. This will dilute differently and create a different texture than shaking. I typically have seen cocktails without citrus stirred, and with shaken. This is because ice shaken through the cocktail will tame the tang from the citrus. Whether this is proven or not I do not know.
+		Stirring a cocktail is when you use a bar spoon to stir ingredients in a mixing glass with ice. This will dilute 
+		differently and create a different texture than shaking. I typically have seen cocktails without citrus stirred, 
+		and with shaken. This is because ice shaken through the cocktail will tame the tang from the citrus. Whether this 
+		is proven or not I do not know.
 		{'\n'}{'\n'}
-		Dry shaking is the act of shaking without ice. I have frequently seen it used when egg white is involved in a cocktail. This froths the egg white. It is typically preceded or followed by a shake with ice.
+		Dry shaking is the act of shaking without ice. I have frequently seen it used when egg white is involved in a 
+		cocktail. This froths the egg white. It is typically preceded or followed by a shake with ice.
 		{'\n'}{'\n'}
-		Most people will advise measuring out cheaper ingredients first, so that if a mistake is made and the cocktail can't be salvaged, one need not pour out a nice spirit. In that same sphere, it is advised when using egg, to crack the egg white first and in a separate container, so that if the yolk is broken and spilled in on accident it does not ruin ingredients already poured. For vegans, some recommend using Aquafaba (chickpea juice) as a substitute for the egg white, although I have never tried this. Some instances of simple syrup can be varied in measurements depending on preference, and the breadth of variance is up to personal taste. For example, an Amaretto Sour calling for a teaspoon of simple syrup maybe can be ignored, whereas in a Fernet Sour I would not recommend reducing the amount of syrup. This is something that you can determine after spending time with these cocktails.
+		Most people will advise measuring out cheaper ingredients first, so that if a mistake is made and the cocktail 
+		can't be salvaged, one need not pour out a nice spirit. In that same sphere, it is advised when using egg, to 
+		crack the egg white first and in a separate container, so that if the yolk is broken and spilled in on accident 
+		it does not ruin ingredients already poured. For vegans, some recommend using Aquafaba (chickpea juice) as a 
+		substitute for the egg white, although I have never tried this. Some instances of simple syrup can be varied 
+		in measurements depending on preference, and the breadth of variance is up to personal taste. For example, 
+		an Amaretto Sour calling for a teaspoon of simple syrup maybe can be ignored, whereas in a Fernet Sour I would 
+		not recommend reducing the amount of syrup. This is something that you can determine after spending time with 
+		these cocktails.
 		{'\n'}{'\n'}
-		Most of the time simple syrup refers to a mixture of sugar and water in equal parts, heated and stirred until all the sugar is dissolved, the mixture is clear, and has not boiled (boiling will begin to caramalize the sugar). There are some instances where a rich syrup may be called for, which is two parts sugar to one part water. I have not had any trouble always using a simple syrup. I would encourage everyone to make their own syrup as it is significantly cheaper and I have seen odd ingredients included in store bought syrups (i.e. chemicals to help preserve it). Homemade simple syrup will last for one month in the fridge.
+		Most of the time simple syrup refers to a mixture of sugar and water in equal parts, heated and stirred until 
+		all the sugar is dissolved, the mixture is clear, and has not boiled (boiling will begin to caramalize the 
+		sugar). There are some instances where a rich syrup may be called for, which is two parts sugar to one part 
+		water. I have not had any trouble always using a simple syrup. I would encourage everyone to make their own 
+		syrup as it is significantly cheaper and I have seen odd ingredients included in store bought syrups (i.e. 
+		chemicals to help preserve it). Homemade simple syrup will last for one month in the fridge.
 		{'\n'}{'\n'}
-		I think that people in their mid twenties should know at least enough to make two classic cocktails and maybe one fun cocktail. One should buy shaking tins, a Hawthorne and fine mesh strainer, maybe a muddler, and a jigger (that can measure 1, 2, and also 1/2, 3/4, and 1 and 1/2 ounces). Basic bottles to get started would be a Bourbon Whiskey (Bulleit), a Gin (Beefeater), a Vodka (Wodka), and then I would recommend bottles of Aperol and Campari. Branching out one should get bottles that interest them. Kahlua for the popular Espresso Martini, Chartreuse and Maraschino Liqueur (Luxardo) for the Last Word and variants, Amaro Nonino for the Paper Plane, etc. Expensive bottles of spirit typically are not mixed with and are drunk straight, but again, this is personal preference.
+		I think that people in their mid twenties should know at least enough to make two classic cocktails and maybe 
+		one fun cocktail. One should buy shaking tins, a Hawthorne and fine mesh strainer, maybe a muddler, and a
+		jigger (that can measure 1, 2, and also 1/2, 3/4, and 1 and 1/2 ounces). Basic bottles to get started would be a 
+		Bourbon Whiskey (Bulleit), a Gin (Beefeater), a Vodka (Wodka), and then I would recommend bottles of Aperol and 
+		Campari. Branching out one should get bottles that interest them. Kahlua for the popular Espresso Martini, 
+		Chartreuse and Maraschino Liqueur (Luxardo) for the Last Word and variants, Amaro Nonino for the Paper Plane, 
+		etc. Expensive bottles of spirit typically are not mixed with and are drunk straight, but again, this is personal 
+		preference.
 		{'\n'}{'\n'}
-		As far as glassware goes, I would encourage beginning with four tall glasses (Martini, Nick &amp; Nora, or Coupe) and four short glasses (Double Rocks Glass). This for the most part will cover all cocktail needs. <a href="https://www.cocktailkingdom.com/all-glassware/glassware" target="_blank" rel="noopener noreferrer">Cocktail Kingdom</a> seems to have nice affordable glassware, and seems to have a consistent stock (you will inevitably break a few glasses and it is nice to be able to get the same style). From here, one can begin to get more tall glasses, aperitif glasses, or whatever they feel they need. Another good addition is a Collins glass which you would typically see from a Gin and Tonic. It is also notable that thrift stores and pawn shops can have nice glasses for significantly reduced prices.
+		As far as glassware goes, I would encourage beginning with four tall glasses (Martini, Nick &amp; Nora, or 
+		Coupe) and four short glasses (Double Rocks Glass). This for the most part will cover all cocktail needs. 
+		<a href="https://www.cocktailkingdom.com/all-glassware/glassware" target="_blank" rel="noopener noreferrer">Cocktail Kingdom</a> 
+		seems to have nice affordable glassware, and seems to have a consistent stock (you will inevitably break a 
+		few glasses and it is nice to be able to get the same style). From here, one can begin to get more tall 
+		lasses, aperitif glasses, or whatever they feel they need. Another good addition is a Collins glass which 
+		you would typically see from a Gin and Tonic. It is also notable that thrift stores and pawn shops can have 
+		nice glasses for significantly reduced prices.
 		{'\n'}{'\n'}
-		In the same fashion that sauces often derive from the five French mother sauces, cocktails also have basic formulas with variable ingredients and general measurements. Some common ones are Sours, Spritzes, Spirit Forward, and Highball though there are more. I will not delve too deeply into the families of cocktails but I will try to mention them when I remember or find it relevant.
+		In the same fashion that sauces often derive from the five French mother sauces, cocktails also have basic 
+		formulas with variable ingredients and general measurements. Some common ones are Sours, Spritzes, Spirit 
+		Forward, and Highball though there are more. I will not delve too deeply into the families of cocktails but 
+		I will try to mention them when I remember or find it relevant.
 		{'\n'}{'\n'}
 		Let's get to the recipes.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Pisco Sour</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Pisco Sour</h1>
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/009.jpeg" alt="photo of a pisco sour" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
-		The Pisco Sour is a type of Sour; an interesting cocktail that CM had recommended I get while I lived in DC. I got it from a restaurant called Chicken and Whiskey that has an excellent speakeasy whiskey bar hidden in the back. It is a Peruvian cocktail that is named for its base liquor, Pisco. Historians estimate the cocktail to have been made in the 1920s in Lima, the capital of Peru, by Victor Vaughen Morris, and later was modified to include Angostura Bitters and egg white by Mario Bruiget. Chile and Peru both claim the drink as their national drink and assert their invention of Pisco. Pisco itself is a brandy, made by Spanish settlers in the 16th century as an alternative to orujo, a pomace brandy from Spain. The name Pisco could derive from the Peruvian town of Pisco, located in the valley of Pisco, on the Pisco river. Pisco is used as shorthand for "Aguardiente de Pisco”, literally “firewater from Pisco”. Pisco’s ABV is typically around 40%.
+		The Pisco Sour is a type of Sour; an interesting cocktail that CM had recommended I get while I lived in DC. I got 
+		it from a restaurant called Chicken and Whiskey that has an excellent speakeasy whiskey bar hidden in the back. It 
+		is a Peruvian cocktail that is named for its base liquor, Pisco. Historians estimate the cocktail to have been 
+		made in the 1920s in Lima, the capital of Peru, by Victor Vaughen Morris, and later was modified to include 
+		Angostura Bitters and egg white by Mario Bruiget. Chile and Peru both claim the drink as their national drink 
+		and assert their invention of Pisco. Pisco itself is a brandy, made by Spanish settlers in the 16th century as 
+		an alternative to orujo, a pomace brandy from Spain. The name Pisco could derive from the Peruvian town of Pisco, 
+		located in the valley of Pisco, on the Pisco river. Pisco is used as shorthand for "Aguardiente de Pisco”, 
+		literally “firewater from Pisco”. Pisco’s ABV is typically around 40%.
 		{'\n'}{'\n'}&emsp;
 		2 ounces Pisco{'\n'}&emsp;
 		1 ounce lime juice{'\n'}&emsp;
@@ -53,17 +113,28 @@ This blog post will be a discussion of cocktails as well as a place where I upda
 		1 egg white{'\n'}&emsp;
 		Garnish with Angostura bitters
 		{'\n'}{'\n'}
-		All ingredients ingredients are to be dry shaken without ice, then shaken with ice, strained into a Nick &amp; Nora glass, and garnished with a few drops of the bitters.
+		All ingredients ingredients are to be dry shaken without ice, then shaken with ice, strained into a 
+		Nick &amp; Nora glass, and garnished with a few drops of the bitters.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Last Word</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Last Word</h1>
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/010_alt.jpeg" alt="photo of a last word" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
-		The Last Word is a cocktail that DJ Suan had introduced me to. DJ Suan was the bartender at The Patterson Mansion in DC, a private bar that I had the pleasure of frequenting in 2020. He explained much of the history of the cocktail as well as the history of its main liqueur, Green Chartreuse, which I will attempt to re-explain here.
+		The Last Word is a cocktail that DJ Suan had introduced me to. DJ Suan was the bartender at The 
+		Patterson Mansion in DC, a private bar that I had the pleasure of frequenting in 2020. He explained 
+		much of the history of the cocktail as well as the history of its main liqueur, Green Chartreuse, which 
+		I will attempt to re-explain here.
 		{'\n'}{'\n'}
-		The Last Word was a cocktail served in the 1920s in Detroit and later New York, but was likely served earlier. The first appearance of it in a book was Ted Saucier’s 1951 Bottom’s Up!. The name may be in reference to Frank Fogarty, who introduced it to New York. Fogarty was a sort of stand-up comedian, and some think that was the source of the cocktail’s name. As Chartreuse and Maraschino Liqueur became difficult to find, the cocktail fell out of popularity sometime after World War II. It was reintroduced in Seattle’s Zig Zag Cafe in 2004 by Murray Stenson who found it in Saucier’s book, and has since regained significant popularity and spawned many variations.
+		The Last Word was a cocktail served in the 1920s in Detroit and later New York, but was likely served 
+		earlier. The first appearance of it in a book was Ted Saucier’s 1951 Bottom’s Up!. The name may be in 
+		reference to Frank Fogarty, who introduced it to New York. Fogarty was a sort of stand-up comedian, and 
+		some think that was the source of the cocktail’s name. As Chartreuse and Maraschino Liqueur became 
+		difficult to find, the cocktail fell out of popularity sometime after World War II. It was reintroduced 
+		in Seattle’s Zig Zag Cafe in 2004 by Murray Stenson who found it in Saucier’s book, and has since regained 
+		significant popularity and spawned many variations.
 		{'\n'}{'\n'}
-		The cocktail is notable for its ingredients being strong and in equal parts, which manage to balance well when together. The most notable ingredient is Green Chartreuse, for which the color is named after. This spirit is an herbal liqueur, made initially as an elixir of long life. It was developed from a 17th century recipe and perfected in the 18th century by the Carthusian Monks in the Chartreuse Mountains. It contains 130 herbs and botanicals whose names, quantity, and distillation process is a closely guarded secret known only to a few monks. It has a sister liqueur called Yellow Chartreuse, both of whom have an ABV around 50%.
+		The cocktail is notable for its ingredients being strong and in equal parts, which manage to balance 
+		well when together. The most notable ingredient is Green Chartreuse, for which the color is named after. This spirit is an herbal liqueur, made initially as an elixir of long life. It was developed from a 17th century recipe and perfected in the 18th century by the Carthusian Monks in the Chartreuse Mountains. It contains 130 herbs and botanicals whose names, quantity, and distillation process is a closely guarded secret known only to a few monks. It has a sister liqueur called Yellow Chartreuse, both of whom have an ABV around 50%.
 		{'\n'}{'\n'}
 		This cocktail has become a favorite of mine. I love the story, ingredients, flavor, and the many variants spawned from it.
 		{'\n'}{'\n'}
@@ -77,7 +148,7 @@ This blog post will be a discussion of cocktails as well as a place where I upda
 		{'\n'}{'\n'}
 		I prefer Luxardo Maraschino Liqueur and Fabbri Amarena Cherries (as recommended by DJ Suan).
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The (Dirty) Martini</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The (Dirty) Martini</h1>
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/011.jpeg" alt="photo of a dirty martini" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -95,7 +166,7 @@ This blog post will be a discussion of cocktails as well as a place where I upda
 		{'\n'}{'\n'}
 		I prefer Wodka Vodka (as recommended by DJ Suan).
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Paper Plane</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Paper Plane</h1>
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/012.jpeg" alt="photo of a paper plane" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -111,7 +182,7 @@ This blog post will be a discussion of cocktails as well as a place where I upda
 {'\n'}{'\n'}
 All ingredients are to be shaken over ice, and strained into a coupe glass, with optional garnishes of lemon peel or a small paper plane.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Fernet (Industry) Sour</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Fernet (Industry) Sour</h1>
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/013.jpeg" alt="photo of a fernet sour" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -128,7 +199,7 @@ All ingredients are to be shaken over ice, and strained into a coupe glass, with
 		{'\n'}{'\n'}
 		All ingredients are to be shaken over ice, and strained into a coupe glass. I have sometimes seen this garnished with a wheel of lime.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Caipirinha</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Caipirinha</h1>
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/014.jpeg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -143,13 +214,13 @@ All ingredients are to be shaken over ice, and strained into a coupe glass, with
 		{'\n'}{'\n'}
 		The wedges and sugar are to be added to a shaking tin and muddled. The Cachaça is added, and then shaken. Serve without straining into a double rocks glass, with optional further lime garnish.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Division Bell</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Division Bell</h1>
 		{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_blog_media/015.jpeg" alt="photo of a division bell" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
+   		<img src="/blog_media/cocktail_blog_media/015.jpeg" alt="photo of a division bell" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
-The Division Bell is a cocktail made by Phil Ward in New York for the opening of Mayaheul, a Mezcal focused cocktail bar in 2009. Ward has made a name for himself with the creation of several modern classic cocktails and his work at influential cocktail bars (Like Audrey Saunders's Pegu Club, or the famous Death &amp; Company).
+		The Division Bell is a cocktail made by Phil Ward in New York for the opening of Mayaheul, a Mezcal focused cocktail bar in 2009. Ward has made a name for himself with the creation of several modern classic cocktails and his work at influential cocktail bars (Like Audrey Saunders's Pegu Club, or the famous Death &amp; Company).
 		{'\n'}{'\n'}
-Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mexcalli meaning “over-cooked agave”. Agave itself was a sacred plant in pre-Spanish Mexico, involved in rituals, mythology, and the economy. The myth behind the fermentation of agave is that a lightning bolt struck an agave plant, cooking and opening it, releasing the juice. The liquid is sometimes called “elixir of the gods”. These liquors were called aquardiente or “firewater”. The Spanish in their colonization had brought their own spirits, but upon running out turned to the agave plant. Mezcal can be dated by this to the 16th century.
+		Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mexcalli meaning “over-cooked agave”. Agave itself was a sacred plant in pre-Spanish Mexico, involved in rituals, mythology, and the economy. The myth behind the fermentation of agave is that a lightning bolt struck an agave plant, cooking and opening it, releasing the juice. The liquid is sometimes called “elixir of the gods”. These liquors were called aquardiente or “firewater”. The Spanish in their colonization had brought their own spirits, but upon running out turned to the agave plant. Mezcal can be dated by this to the 16th century.
 		{'\n'}{'\n'}
 		I cannot confirm with online sources, but it is said that Ward made this drink inspired by and as a variation of The Last Word. I also cannot confirm any particular source of the name. The measurements in my sources also vary, but the base is Mezcal with Aperol as an altering flavor and sweetener as well as Maraschino Liqueur as a sweetener. Lime juice is also added as a citrus component. I personally think it would be appropriate to call this cocktail a variation on The Last Word, but again, would not take a heavy stance to oppose someone who disagrees.
 		{'\n'}{'\n'}
@@ -161,9 +232,9 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 		All ingredients are to be shaken over ice, and strained into a coupe glass. You can take a peel from a grapefruit and express those oils over the top of the cocktail.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Amaretto Sour</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Amaretto Sour</h1>
 		{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_blog_media/016.jpeg" alt="photo of an amaretto sour" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
+    	<img src="/blog_media/cocktail_blog_media/016.jpeg" alt="photo of an amaretto sour" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
 		The Amaretto Sour is from America in the 1970s. Nobody is certain who created it. It takes a form of a typical Sour style drink, showcasing Amaretto. Amaretto is a sweet Italian Liqueur, usually with an ABV around 25%. From Saronno, in the Lombardy region of Italy, it uses apricot kernels, almonds, or peach stones as flavoring. In some cases you’ll even see Amaretto added to coffee or used in cooking. Amaretto derives from Italian “Amaro” meaning bitter, though the heavily sweetened liqueur is not included in the Amaro family.
 		{'\n'}{'\n'}
@@ -180,9 +251,9 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 		All ingredients are to be “dry” shaken without ice, then shaken with ice, strained into a double rocks glass over ice, and garnished with a lemon twist and cherries.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Kentucky Mule</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Kentucky Mule</h1>
 		{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_blog_media/017.jpeg" alt="photo of a kentucky mule" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
+    	<img src="/blog_media/cocktail_blog_media/017.jpeg" alt="photo of a kentucky mule" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
 		The Kentuck Mule is a variation on the Moscow Mule, and my preferred version. The Moscow Mule employs Vodka, Ginger Beer, and Lime Juice, and can be considered a style of Buck. One version of the origin of the Moscow Mule cites it was invented in 1941 in Manhattan at the Chatham Hotel in “Little Moscow”. The owner of Cock ’n’ Bull, a producer of Ginger Beer, was with John G Martin (President of Heublein Spirits) and Rudolph Kunett (President of Hublein’s Vodka division). They were eating and drinking and decided to mix Vodka with Ginger Beer and a splash of Lemon Juice. Hence the Moscow Mule was born.
 		{'\n'}{'\n'}
@@ -195,9 +266,9 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 		All ingredients are to be added to a metal or glass mug, or a Collins glass, over ice. One should give a light stir to incorporate the ingredients. Garnish with a lime wedge and a few drops of Angostura Bitters. I have also seen a mint sprig used as garnish.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Deal Closer</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Deal Closer</h1>
 		{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_blog_media/018.jpeg" alt="photo of Apotheke's Deal Closer" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
+    	<img src="/blog_media/cocktail_blog_media/018.jpeg" alt="photo of Apotheke's Deal Closer" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
 		The Deal Closer is a modern cocktail from the speakeasy cocktail bar Apotheke in New York, with a location in LA opened later in 2018. It is inspired by apothecaries and the idea of the medicinal cocktail. The Deal Closer itself is one of their simpler cocktails, though I will simplify further by omitting their use of “a dash of” vanilla infused Cognac, 1 cc of in house Libido Bitters, and recipe for sour mix which is a fancy phrase for citrus and simple syrup.
 		{'\n'}{'\n'}
@@ -211,9 +282,9 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 		The Mint Sprig and Cucumber Slices are to be added to the tin and muddled. Putting the Mint in first, underneath the Cucumber, to avoid bruising the Mint (which releases a bitter vegetable flavor). The rest of the ingredients are to be added and shaken over ice, strained into a coupe glass. Garnish with a Cucumber Slice, and optionally a single small Mint Leaf.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Aviation</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Aviation</h1>
 		{'\n'}{'\n'}
-	{/* <img src="/blog_media/cocktail_blog_media/019.jpeg" alt="photo of the aviation" style="display: block; width: 50%;margin-left: auto; margin-right: auto;"> */}
+    	<img src="/blog_media/cocktail_blog_media/019.jpeg" alt="photo of an Aviation" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
 		The Aviation is a classic cocktail created by Hugo Ensslin at New York’s Hotel Wallick in the early 20th century. One can consider it a Sour, using Maraschino Liqueur as a sweetener. The name derives from the cocktail’s use of Crème de Violette Liqueur, which gives the cocktail a pale sky-blue color and references the newfound air travel industry which at the time was a luxury of the rich.
 		{'\n'}{'\n'}
@@ -227,7 +298,7 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 		All ingredients are to be shaken over ice, and strained into a coupe glass. Garnish with a cherry. I have also seen garnishes with a lemon peel.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Final Ward</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Final Ward</h1>
 		{'\n'}{'\n'}
     <img src="/blog_media/cocktail_blog_media/020.jpeg" alt="photo of the final ward" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		The Final Ward is a riff on The Last Word, invented by Phil Ward (mentioned above with The Division Bell), at some point in the 21st century. The name acknowledges The Last Word but also serves well to include Ward’s name. I have seen or been told that sometimes Yellow Chartreuse is used here as opposed to Green, but I can find no reference online that supports this claim. I have also, in a pinch, used Bourbon as opposed to Rye to some success.
@@ -239,7 +310,7 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 		All ingredients are to be shaken over ice, and strained into a coupe glass.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Gin Basil Smash</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Gin Basil Smash</h1>
 		{'\n'}{'\n'}
 <img src="/blog_media/cocktail_blog_media/021.jpeg" alt="photo of the gin basil smash" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -253,7 +324,7 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 		Muddle the basil lightly in a tin, then add all ingredients and shake with ice. Strain into a Collins glass and add crushed ice, garnishing with a sprig of basil.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Toronto</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Toronto</h1>
 		{'\n'}{'\n'}
 <img src="/blog_media/cocktail_blog_media/022.jpeg" alt="photo of the gin basil smash" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -270,7 +341,7 @@ Mezcal is a spirit made with the agave plant, its name from Nahuatl’s word Mex
 		{'\n'}{'\n'}
 All ingredients are to be stirred over ice, and strained into a double rocks glass over ice or served up (without ice) in a coupe glass . Optional garnishes can include an orange peel or a cherry.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Espresso Martini</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Espresso Martini</h1>
 		{'\n'}{'\n'}
 <img src="/blog_media/cocktail_blog_media/023.jpeg" alt="photo of the gin basil smash" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -288,7 +359,7 @@ All ingredients are to be stirred over ice, and strained into a double rocks gla
 		{'\n'}{'\n'}
 		All ingredients are to be shaken over ice, and strained into a martini glass. Garnish with three espresso beans.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Clover Club</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Clover Club</h1>
 		{'\n'}{'\n'}
 <img src="/blog_media/cocktail_blog_media/024.jpeg" alt="photo of the clover club" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -303,7 +374,7 @@ All ingredients are to be stirred over ice, and strained into a double rocks gla
 		{'\n'}{'\n'}
 		All ingredients are to be “dry” shaken without ice, then shaken with ice, strained into a coupe glass, and garnished raspberries.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Aperol Sour</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Aperol Sour</h1>
 		{'\n'}{'\n'}
 <img src="/blog_media/cocktail_blog_media/025.jpeg" alt="photo of the aperol sour" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}
@@ -320,7 +391,7 @@ The Aperol Sour is a Sour cocktail. I cannot seem to find any information about 
 		{'\n'}{'\n'}
 		All ingredients are to be “dry” shaken without ice, then shaken with ice, strained into a coupe glass, and garnished with a lemon peel.
 		{'\n'}{'\n'}
-		{/* <h1 style="text-align:center;">The Fall Enzoni</h1> */}
+		<h1 style={{ textAlign: 'center' }}>The Fall Enzoni</h1>
 		{'\n'}{'\n'}
 <img src="/blog_media/cocktail_blog_media/026.jpeg" alt="photo of the fall enzoni" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
 		{'\n'}{'\n'}

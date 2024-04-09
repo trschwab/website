@@ -67,6 +67,34 @@ import PhotoAlbum from "react-photo-album";
   ];
 
 const photos = [
+  { src: "/photography/74200025 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220034.JPG", width: 1000, height: 650 },
+  { src: "/photography/74200030 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200031 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200034 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220028.JPG", width: 1000, height: 650 },
+  { src: "/photography/74220003 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220008 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200035.JPG", width: 1000, height: 650 },
+  { src: "/photography/74220009 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74210003.JPG", width: 1000, height: 650 },
+  { src: "/photography/74220022 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220031 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220038.JPG", width: 1000, height: 650 },
+  { src: "/photography/74220029.JPG", width: 1000, height: 650 },
+  // { src: "/photography/74200013.JPG", width: 1000, height: 650 },
+  // { src: "/photography/74200012.JPG", width: 1000, height: 650 },
+  { src: "/photography/74200001.JPG", width: 1000, height: 650 },
+  { src: "/photography/74210001.JPG", width: 1000, height: 650 },
+  { src: "/photography/74210013 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74210031.JPG", width: 1000, height: 650 },
+  { src: "/photography/74210015 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200009 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200014 copy.JPG", width: 650, height: 1000 },
+  
+  
+
+
   { src: "/photography/70310036 copy.JPG", width: 650, height: 1000 },
   { src: "/photography/70310011.JPG", width: 1000, height: 650 },
   { src: "/photography/70310019 copy.JPG", width: 650, height: 1000 },
