@@ -51,7 +51,17 @@ const OnceAndForeverPage = () => {
       around him in Iwate. Some of his stories even are adapted to the big screen which I had unknowingly seen over the 
       years, both Night on the Galactic Railroad and Gauche the Cellist.
       {'\n'}{'\n'}
-      <img src="/blog_media/once_and_forever/Gauche_AMJuJu.jpg" style={{ display: 'block', width: '30%', marginLeft: 'auto', marginRight: 'auto' }} />
+      <div className="image123" style={{ display: 'flex' }}>
+      <div style={{ flex: '1', margin: '0 2%' }} className="imgContainer">
+        <img src="/blog_media/once_and_forever/Gauche_AMJuJu.jpg" style={{ width: '100%', height: 'auto' }} alt="Image 1" />
+      </div>
+      <div style={{ flex: '1', margin: '0 2%' }} className="imgContainer">
+        <img className="middle-img" src="/blog_media/once_and_forever/wind.jpg" style={{ width: '100%', height: 'auto' }} alt="Image 2" />
+      </div>
+      <div style={{ flex: '1', margin: '0 2%' }} className="imgContainer">
+        <img src="/blog_media/once_and_forever/Night_on_the_Galactic_Railroad.jpg" style={{ width: '100%', height: 'auto' }} alt="Image 3" />
+      </div>
+    </div>
       {'\n'}{'\n'}
       OAF all over is a well rounding and good read. I think that my favorite stories were
       General Son Ba-yu, The First Deer Dance, The Bears of Nametoko, The Wildcat and The Acorns, Gorsch the Cellist, 
