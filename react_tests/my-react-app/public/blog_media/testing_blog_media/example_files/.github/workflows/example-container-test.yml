@@ -1,0 +1,28 @@
+name: test container
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "path/to/code/**"
+
+jobs:
+  build-register:
+    name: Project Template
+    uses: ./.github/workflows/project-build-template.yml
+    premissions:
+      id-token: write
+      packages: write
+      contents: read
+      security-events: write
+      actions: read
+    with:
+      PROJECT_PATH: "./path/to/code"
+      PROJECT_NAME: production-container-test
+      IMAGE_TAG: latest
+      LAUNCH_TYPE: FARGATE
+      QEMU_PLATFORM_TYPE: 'amd64'
+    secrets:
+      CALLER_GITHUB_TOKEN: ${{ secrets.CR_PAT }}
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}

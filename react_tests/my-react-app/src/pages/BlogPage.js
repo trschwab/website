@@ -2,6 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const blogPosts = [
+  // {
+  //   id: 9,
+  //   title: 'On Physical Media',
+  //   page: 'physical_media_blog',
+  //   snippet: 'Vinyl, Film, Books... Physical media has taken hold of the younger generation as we can see with new \
+  //   demand for vinyl for music or film for photography. Even used book stores find themselves being revitalized. \
+  //   Previously, this discussion would find itself involved heavily in the discussion of analog versus digital media \
+  //   but with DVD and Blu-ray, CDs, MP3s with Ipod Usage, or digital cameras, something outside of the analog debate \
+  //   is going on. I, myself, am a proponent for physical media but the question remains - why?',
+  //   photoUrl: '/blog_media/testing_blog_media/test.jpg'
+  // },
   {
     id: 9,
     title: 'Integration Testing via Airflow',
@@ -24,18 +35,18 @@ const blogPosts = [
   //   chess and what I would recommend for people looking to usher their rating from 1200s to the 1600s.',
   //   photoUrl: '/blog_media/chess_blog_media/chess-4.jpg'
   // },
-  // {
-  //   id: 2,
-  //   title: 'Letterboxd Wrapped',
-  //   page: 'letterboxd_blog',
-  //   snippet: "For a few years now I've enjoyed using the app Letterboxd to track my movie watching and keep up to date \
-  //   with what my friends have been watching. It's a great platform and I can't recommend it highly enough, but the end of \
-  //   year wrapped provided is not an ideal set of statistics for a user. There are great insights provided for premium users but \
-  //   I decided to turn this into a bit of a larger project by trying to create a more dynamic generation of statistics for users \
-  //   as well as a collage image generator for their highest rated movies. This project serves as my first major foray into Django \
-  //   development.",
-  //   photoUrl: '/blog_media/letterboxd_blog_media/Letterboxd.webp'
-  // },
+  {
+    id: 2,
+    title: 'Letterboxd Wrapped',
+    page: 'letterboxd_blog',
+    snippet: "For a few years now I've enjoyed using the app Letterboxd to track my movie watching and keep up to date \
+    with what my friends have been watching. It's a great platform and I can't recommend it highly enough, but the end of \
+    year wrapped provided is not an ideal set of statistics for a user. There are great insights provided for premium users but \
+    I decided to turn this into a bit of a larger project by trying to create a more dynamic generation of statistics for users \
+    as well as a collage image generator for their highest rated movies. This project serves as my first major foray into Django \
+    development.",
+    photoUrl: '/blog_media/letterboxd_blog_media/Letterboxd.webp'
+  },
   // {
   //   id: 7,
   //   title: 'On Lit',
@@ -108,8 +119,8 @@ const BlogPage = () => {
               <img src={post.photoUrl} alt={post.title} className="blog-photo" />
               </div>
               <div className="blog-content">
-                <h3>{post.title}</h3>
-                <p>{post.snippet} – <Link to={`/blog/${post.page}`}>Read more...</Link></p>
+                <h4>{post.title}</h4>
+                <p>{post.snippet} - <Link to={`/blog/${post.page}`}>Read more...</Link></p>
               </div>
             </div>
           ))}
