@@ -2,17 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const blogPosts = [
-  // {
-  //   id: 9,
-  //   title: 'Integration Testing via Airflow',
-  //   page: 'testing_blog',
-  //   snippet: 'Testing code is an essential part of any engineering job. It\'s a fairly easy thing to do too -- \
-  //   but trying to find the best way to test code in an efficient and integrated manner can be very difficult, especially \
-  //   when dealing with dynamic tech stacks or technologies not explicitl built out with testing in mind. Dealing with \
-  //   Apache Airflow, Docker Images, and Poetry Environments, this blog post explains a testing framework I helped to \
-  //   create as a Data Engineer at Pulse Analytics.',
-  //   photoUrl: '/blog_media/testing_blog_media/airflow_cover_long.webp'
-  // },
+  {
+    id: 9,
+    title: 'Integration Testing via Airflow',
+    page: 'testing_blog',
+    snippet: 'Testing code is an essential part of any engineering job. It\'s a fairly easy thing to do too -- \
+    but trying to find the best way to test code in an efficient and integrated manner can be very difficult, especially \
+    when dealing with dynamic tech stacks or technologies not explicitly built out with testing in mind. Dealing with \
+    Apache Airflow, Docker Images, and Poetry Environments, this blog post explains a testing framework I helped to \
+    create as a Data Engineer at Pulse Analytics.',
+    photoUrl: '/blog_media/testing_blog_media/airflow_cover_long.webp'
+  },
   // {
   //   id: 9,
   //   title: 'The Chess Blog',
@@ -62,7 +62,7 @@ const blogPosts = [
     page: 'once_and_forever_blog',
     snippet: 'This is my first book review blog post, mirroring the post on Goodreads. Kenji Miyazawa offers a collection of \
     children\'s stories that are highly regarded and enjoyed throughout Japan. These stories have been the subject of many \
-    adaptions, even anime movies. Miyazawa himself stands as an interesting figure; a man who enjoyed a relatively quiet life \
+    adaptions, even movies. Miyazawa himself stands as an interesting figure; a man who enjoyed a relatively quiet life \
     in Hanamaki, Iwate Japan, born in 1896 and passing in 1933. He was an agricultural science teacher, cellist, writer, and \
     activist. His works, while unrecognized throughout his life, have gained significant popularity.',
     photoUrl: '/blog_media/once_and_forever/Miyazawa_Kenji.jpg'

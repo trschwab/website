@@ -13,6 +13,7 @@ import RYMCollectionPage from './pages/blog/rym_blog';
 import CocktailBlogPage from './pages/blog/cocktail_blog';
 import LetterboxdPage from './pages/blog/letterboxd_blog';
 import OnceAndForeverPage from './pages/blog/once_and_forever_blog';
+import TestingBlog from './pages/blog/testing_blog';
 import Cocktail2BlogPage from './pages/blog/cocktail_2_blog';
 import ChessBlogPage from './pages/blog/chess_blog';
 import ShellPage from './pages/blog/shell_blog';
@@ -90,6 +91,7 @@ const App = () => {
           <Route path="/blog/cocktail_blog" element={<CocktailBlogPage />} />
           <Route path="/blog/cocktail_2_blog" element={<Cocktail2BlogPage />} />
           <Route path="/blog/once_and_forever_blog" element={<OnceAndForeverPage />} />
+          <Route path="/blog/testing_blog" element={<TestingBlog />} />
           <Route path="/blog/letterboxd_blog" element={<LetterboxdPage />} />
           <Route path="/blog/chess_blog" element={<ChessBlogPage />} />
           <Route path="/blog/shell_blog" element={<ShellPage />} />

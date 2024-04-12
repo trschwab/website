@@ -76,7 +76,7 @@ const OnceAndForeverPage = () => {
       {'\n'}{'\n'}
       <img src="/blog_media/once_and_forever/cello.jpg" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
       {'\n'}{'\n'}
-      Looking at images of Hanamaki, I can better understand the beautiful images Miyazawa draws from.
+      Looking at photos of Hanamaki, I can better understand the beautiful images Miyazawa draws from.
       {'\n'}{'\n'}
       {'\n'}{'\n'}
       <img src="/blog_media/once_and_forever/hanamaki.jpg" style={{ display: 'block', width: '90%', marginLeft: 'auto', marginRight: 'auto' }} />

@@ -49,12 +49,12 @@ const MusicPage = () => {
       <div class="limit_width">
         <div style={{ whiteSpace: 'pre-line' }}>
       <p>
-        <h4>Café Kitsuné Digital DJ Set</h4>
+        {/* <h4>Café Kitsuné Digital DJ Set</h4>
         March 2024 Digital DJ Set, <a href="https://www.youtube.com/watch?v=ersBSiIy5ZE" target="_blank" rel="noopener noreferrer">accessible here</a>
         {'\n'}{'\n'}
         <h4>Vinyl DJ Demos</h4>
         2023 & 2024 Vinyl DJ Set Demos, <Link to={`/vinyl`}>accessible here</Link>
-        {'\n'}{'\n'}
+        {'\n'}{'\n'} */}
         <h4>Live Guitar</h4>
         2023 performance at The Tank for one-act plays written by Nicole Frances Goth and Pat D Robinson
         {'\n'}{'\n'}
