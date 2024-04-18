@@ -40,6 +40,15 @@ const BlogOnePage = () => {
         whenever a file path was altered by a PR, that PR code would build into the test container, but only upon merging 
         the code would the production container be built.
         {'\n'}{'\n'}
+        <div className="image123" style={{ display: 'flex' }}>
+      <div style={{ flex: '1', margin: '0 2%' }} className="imgContainer">
+        <img src="/blog_media/testing_blog_media/test-yml.png" style={{ width: '100%', height: 'auto' }} alt="Image 1" />
+      </div>
+      <div style={{ flex: '1', margin: '0 2%' }} className="imgContainer">
+        <img src="/blog_media/testing_blog_media/prod-yml.png" style={{ width: '90%', height: 'auto' }} alt="Image 2" />
+      </div>
+    </div>
+        {'\n'}{'\n'}
         The final piece of the pipeline wasn’t the most straightforward. We had to alter our Airflow DAGs so we 
         could easily switch between the test and production tasks. While we didn’t manage to find a way to isolate a 
         prod/test combo to a single .yml file in the actions, we didn’t much care about that; the files were short 
@@ -48,6 +57,8 @@ const BlogOnePage = () => {
         when approaching our DAGs. We did not want to bloat our Airflow console and trying to manage many different 
         DAGs per project would be unnecessary. We had to create environment variables in Airflow to be injected into 
         our docker containers and also allow for ease of switching between test and production images that were being called. 
+        {'\n'}{'\n'}
+        <img src="/blog_media/testing_blog_media/directory-structure.png" style={{ display: 'block', width: '20%', marginLeft: 'auto', marginRight: 'auto' }} />
         {'\n'}{'\n'}
         We first took a look at the configuration for Airflow which took in runtime variables from the console. 
         This was easy enough but the transfer of those variables was difficult; the documentation did not define 

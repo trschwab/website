@@ -13,7 +13,7 @@ const photos = [
   { src: "/media/guitar_photo_recolored.jpeg", width: 1500, height: 1000 },
   { src: "/media/D8683A6D-8878-4AC5-A3C3-793E863E5FC4.JPG", width: 2048, height: 1360 },
 
-  { src: "/media/371DEE08-7EE6-40AA-B12A-72FA8D88D54F.JPG", width: 2048, height: 1360 },
+  // { src: "/media/371DEE08-7EE6-40AA-B12A-72FA8D88D54F.JPG", width: 2048, height: 1360 },
 
   { src: "/media/Earthquake.jpg", width: 1000, height: 1000 },
   { src: "/media/6B353884-02D7-4C1B-BCE8-13DAA880C0FB.JPG", width: 2048, height: 1360 },
