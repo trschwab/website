@@ -5,15 +5,20 @@ import { Link } from 'react-router-dom';
 
 const photos = [
 
-
-  { src: "/media/IMG_9431.PNG", width: 1500, height: 2000 },
-  
-  { src: "/media/6A4BFD19-2296-4B1F-90CC-616D37E71093.JPG", width: 2048, height: 1360 },
-  { src: "/media/Burnt-cover-front.jpeg", width: 3200, height: 3200 },
-  { src: "/media/studio.png", width: 1000, height: 1000 },
-
+  // { src: "/media/Burnt-cover-front.jpeg", width: 3200, height: 3200 },
+  { src: "/media/Burnt-cover-back.jpeg", width: 3200, height: 3200 },
 
   { src: "/media/000307350028.jpg", width: 1800, height: 1200 },
+
+
+  { src: "/media/studio.png", width: 1000, height: 1000 },
+  { src: "/media/IMG_9431.PNG", width: 1500, height: 2000 },
+  
+
+  { src: "/media/6A4BFD19-2296-4B1F-90CC-616D37E71093.JPG", width: 2048, height: 1360 },
+  
+
+
   { src: "/media/000307350033.jpg", width: 1200, height: 1800 },
   { src: "/media/000307360023.jpg", width: 1800, height: 1200 },
   { src: "/media/Earthquake.jpg", width: 1000, height: 1000 },
@@ -39,7 +44,7 @@ const photos = [
   { src: "/media/dj_pic.png", width: 1900, height: 1000 },
   { src: "/media/meajbiokjnbnpjik.png", width: 1500, height: 2300 },
   { src: "/media/finest_hour.png", width: 1000, height: 1000 },
-  { src: "/media/visual_disturbances_1.png", width: 1500, height: 1000 },
+  // { src: "/media/visual_disturbances_1.png", width: 1500, height: 1000 },
   
 
 ];
