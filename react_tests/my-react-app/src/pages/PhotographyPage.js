@@ -67,6 +67,12 @@ import PhotoAlbum from "react-photo-album";
   ];
 
 const photos = [
+  { src: "/photography/03550019.JPG", width: 1000, height: 650 },
+  { src: "/photography/03540019 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/03550012 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/03550016 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/03550004 edit2.JPG", width: 1000, height: 650 },
+
   { src: "/photography/10950009.JPG", width: 1000, height: 650 },
   { src: "/photography/09640026 copy.JPG", width: 650, height: 1000 },
   { src: "/photography/09630026 copy.JPG", width: 650, height: 1000 },

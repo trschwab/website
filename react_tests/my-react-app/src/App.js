@@ -17,6 +17,7 @@ import TestingBlog from './pages/blog/testing_blog';
 import Cocktail2BlogPage from './pages/blog/cocktail_2_blog';
 import ChessBlogPage from './pages/blog/chess_blog';
 import ShellPage from './pages/blog/shell_blog';
+import WebDeployPage from './pages/blog/website_deployment_blog';
 import './styles.css';
 import { useLocation } from 'react-router-dom';
 
@@ -95,6 +96,7 @@ const App = () => {
           <Route path="/blog/letterboxd_blog" element={<LetterboxdPage />} />
           <Route path="/blog/chess_blog" element={<ChessBlogPage />} />
           <Route path="/blog/shell_blog" element={<ShellPage />} />
+          <Route path="/blog/website_deployment_blog" element={<WebDeployPage />} />
         </Routes>
       </div>
     </Router>

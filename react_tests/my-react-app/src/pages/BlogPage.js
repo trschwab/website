@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 
 const blogPosts = [
   // {
+  //   id: 10,
+  //   title: 'Web Dev Deployment',
+  //   page: 'website_deployment_blog',
+  //   snippet: 'A small post documenting my experience deploying this website! In the past I\'d had trouble with \
+  //   deployments; a combination of factors, between lack of practice and less-than-ideal technologies used. This deployment \
+  //   has been the most straightforward and successful.',
+  //   photoUrl: '/blog_media/website_deployment_blog/react.png'
+  // },
+  // {
   //   id: 9,
   //   title: 'On Physical Media',
   //   page: 'physical_media_blog',
