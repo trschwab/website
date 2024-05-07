@@ -35,7 +35,7 @@ const Banner = () => {
       <nav>
         <ul>
           {/* <li><a href="/">Home</a></li> */}
-          <li><a href="/code">Code</a></li>
+          <li><a href="/code">Code </a></li>
           <li><a href="/music">Music</a></li>
           <li><a href="/photography">Photography</a></li>
           <li><a href="/blog">Blog</a></li>

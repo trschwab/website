@@ -116,11 +116,11 @@ const BlogPage = () => {
           {blogPosts.map((post) => (
             <div key={post.id} className="blog-post">
               <div className="blog-photo-holder">
-              <img src={post.photoUrl} alt={post.title} className="blog-photo" />
+              <img src={post.photoUrl} alt={post.title} className="blog-photo"/>
               </div>
               <div className="blog-content">
                 <h4>{post.title}</h4>
-                <p>{post.snippet} - <Link to={`/blog/${post.page}`}>Read more...</Link></p>
+                <p className="blog-snippet">{post.snippet} - <Link to={`/blog/${post.page}`}>Read more...</Link></p>
               </div>
             </div>
           ))}

@@ -313,7 +313,7 @@ const Gallery = () => {
     <div style={galleryStyle}>  
       <PhotoAlbum layout="masonry" photos={photos}
       columns={(containerWidth) => {
-        if (containerWidth < 500) return 1;
+        // if (containerWidth < 500) return 1;
         if (containerWidth < 800) return 2;
         return 3;
   }}/>
