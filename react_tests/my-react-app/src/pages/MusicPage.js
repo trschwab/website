@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 const photos = [
 
   // { src: "/media/Burnt-cover-front.jpeg", width: 3200, height: 3200 },
+  { src: "/media/music_page_media/dj_roof_3.png", width: 1500, height: 2700 },
   { src: "/media/Burnt-cover-back.jpeg", width: 3200, height: 3200 },
-
+  { src: "/media/music_page_media/dj_roof_2.png", width: 1500, height: 2700 },
   { src: "/media/000307350028.jpg", width: 1800, height: 1200 },
 
 
@@ -23,7 +24,7 @@ const photos = [
   { src: "/media/000307360023.jpg", width: 1800, height: 1200 },
   { src: "/media/Earthquake.jpg", width: 1000, height: 1000 },
   { src: "/media/guitar_photo_recolored.jpeg", width: 1500, height: 1000 },
-  { src: "/media/gray3.png", width: 2048, height: 1360 },
+  // { src: "/media/gray3.png", width: 2048, height: 1360 },
 
   // { src: "/media/371DEE08-7EE6-40AA-B12A-72FA8D88D54F.JPG", width: 2048, height: 1360 },
   { src: "/media/EP - Disco Didn't Die.jpeg", width: 1000, height: 1000 },
