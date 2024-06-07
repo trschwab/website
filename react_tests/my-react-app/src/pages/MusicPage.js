@@ -8,7 +8,7 @@ const photos = [
   // { src: "/media/Burnt-cover-front.jpeg", width: 3200, height: 3200 },
   { src: "/media/music_page_media/dj_roof_3.png", width: 1500, height: 2700 },
   { src: "/media/Burnt-cover-back.jpeg", width: 3200, height: 3200 },
-  { src: "/media/music_page_media/dj_roof_5.JPG", width: 2700, height: 1500 },
+  { src: "/media/music_page_media/dj_roof_5.png", width: 2700, height: 1500 },
   { src: "/media/000307350028.jpg", width: 1800, height: 1200 },
 
 
