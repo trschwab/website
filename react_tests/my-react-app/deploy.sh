@@ -5,7 +5,7 @@ echo "Building app..."
 npm run build
 
 # Define the password
-password="INSERT PASS HERE"
+password=""
 
 echo "Create new build location"
 echo "$password" | ssh -tt troy@207.246.124.25 "sudo -S mkdir /var/www/new_build"

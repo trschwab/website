@@ -12,7 +12,7 @@ const photos = [
   { src: "/photography/89920007.JPG", width: 1000, height: 650 },
   { src: "/photography/89940008 copy.JPG", width: 650, height: 1000 },
   { src: "/photography/89900002.JPG", width: 1000, height: 650 },
-  { src: "/photography/89950011.JPG", width: 1000, height: 650 },
+  { src: "/photography/89950011.JPG", width: 1000, height: 650 }, 
   { src: "/photography/89950033.JPG", width: 1000, height: 650 },
 
   { src: "/photography/89930009.JPG", width: 650, height: 1000 },
