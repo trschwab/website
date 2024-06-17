@@ -3,48 +3,35 @@ import React from 'react';
 import PhotoAlbum from 'react-photo-album';
 import BlurUpImage from '../components/BlurUpImage';
 
+
 const photos = [
+  { src: "/photography/89900034.JPG", width: 650, height: 1000 },
+  { src: "/photography/89940014.JPG", width: 1000, height: 650 },
+  { src: "/photography/89920010 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/89920026.JPG", width: 1000, height: 650 },
+  { src: "/photography/89920028.JPG", width: 1000, height: 650 },
+  { src: "/photography/89920007.JPG", width: 1000, height: 650 },
+  { src: "/photography/89940008 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/89900002.JPG", width: 1000, height: 650 },
+  { src: "/photography/89950011.JPG", width: 1000, height: 650 }, 
+  { src: "/photography/89950033.JPG", width: 1000, height: 650 },
 
-  // { src: "/photography/16690018 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16660031 copy.JPG", width: 650, height: 1000 },
-  // { src: "/photography/16660030.JPG", width: 1000, height: 650 },
-  { src: "/photography/16690008.JPG", width: 1000, height: 650 },
-  { src: "/photography/16660022 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16710018 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16680010.JPG", width: 1000, height: 650 },
-  { src: "/photography/16680016 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16690009.JPG", width: 1000, height: 650 },
-  { src: "/photography/16680018.JPG", width: 1000, height: 650 },
+  { src: "/photography/89930009.JPG", width: 650, height: 1000 },
+  { src: "/photography/89930016.JPG", width: 1000, height: 650 },
 
-  { src: "/photography/16710020 copy.JPG", width: 650, height: 1000 },
-  // { src: "/photography/16710003 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16700024.JPG", width: 1000, height: 650 },
-  { src: "/photography/16690026.JPG", width: 1000, height: 650 },
-  { src: "/photography/16700032.JPG", width: 1000, height: 650 },
-  { src: "/photography/16670028.JPG", width: 1000, height: 650 },
-  { src: "/photography/16690003 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16670007.JPG", width: 1000, height: 650 },
-  { src: "/photography/16660016.JPG", width: 1000, height: 650 },
-  { src: "/photography/16670006.JPG", width: 1000, height: 650 },
-  { src: "/photography/16690014 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16670011.JPG", width: 1000, height: 650 },
-  { src: "/photography/16660019.JPG", width: 1000, height: 650 },
-  { src: "/photography/16660024.JPG", width: 1000, height: 650 },
-  { src: "/photography/16690010 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16680032 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16670026 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16710006.JPG", width: 1000, height: 650 },
-  { src: "/photography/16690016 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16690017 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/16690001.JPG", width: 1000, height: 650 },
-  { src: "/photography/16690006.JPG", width: 1000, height: 650 },
+  { src: "/photography/89890012.JPG", width: 1000, height: 650 },
+  { src: "/photography/89890020.JPG", width: 650, height: 1000 },
+  { src: "/photography/89890001.JPG", width: 1000, height: 650 },
+  { src: "/photography/89890028.JPG", width: 1000, height: 650 },
+  { src: "/photography/89890010.JPG", width: 1000, height: 650 },
+  { src: "/photography/89910021.JPG", width: 1000, height: 650 },
+  { src: "/photography/89910028 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/89910026.JPG", width: 1000, height: 650 },
+  { src: "/photography/89890007 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/89890017.JPG", width: 650, height: 1000 },
+  { src: "/photography/89890022.JPG", width: 650, height: 1000 },
+  { src: "/photography/89890023.JPG", width: 650, height: 1000 },
 
-
-  { src: "/photography/03550019.JPG", width: 1000, height: 650 },
-
-  { src: "/photography/03550012 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/03550016 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/03550004 edit2.JPG", width: 1000, height: 650 },
 
   
 ];

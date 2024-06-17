@@ -76,8 +76,18 @@ const blogPosts = [
   //   more recipes that can help solidify a cocktail enthusiast\'s repetoire.',
   //   photoUrl: '/blog_media/cocktail_2_blog_media/temp_cover.jpeg'
   // },
+  // {
+  //   id: 4,
+  //   title: 'The Chess Blog',
+  //   page: 'chess_blog',
+  //   snippet: "I've been playing chess for the past few years, and as I've gotten better and gained a more thorough \
+  //   understanding of the game, I've learned to enjoy it more and more. I'm proud of my online peak rating of 1794, just short \
+  //   of the top 0.5% of players, but I feel I still fall short of serious over-the-board players. This blog post is a general \
+  //   discussion of my chess journey.",
+  //   photoUrl: '/blog_media/chess_blog_media/chess-4.jpg'
+  // },
   {
-    id: 5,
+    id: 3,
     title: 'Once and Forever',
     page: 'once_and_forever_blog',
     snippet: 'This is my first book review blog post, mirroring the post on Goodreads. Kenji Miyazawa offers a collection of \
@@ -88,7 +98,7 @@ const blogPosts = [
     photoUrl: '/blog_media/once_and_forever/Miyazawa_Kenji.jpg'
   },
   {
-    id: 4,
+    id: 2,
     title: 'Rate Your Music',
     page: 'rym_blog',
     snippet: 'I track most of my music listening using the website Rate Your Music. While I\'m not always fully \
@@ -98,7 +108,7 @@ const blogPosts = [
     photoUrl: '/blog_media/rym_blog_media/EmzSIr3VgAIjF9h.png'
   },
   {
-    id: 3,
+    id: 1,
     title: 'On Cocktails',
     page: 'cocktail_blog',
     snippet: 'Throughout 2021 and 2022 I found myself engaging more and more with cocktails. It became a fun hobby \

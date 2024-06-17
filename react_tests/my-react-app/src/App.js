@@ -5,13 +5,12 @@ import HomePage from './pages/HomePage';
 import CodePage from './pages/CodePage';
 import MusicPage from './pages/MusicPage';
 import VinylPage from './pages/VinylPage';
-import PhotographyPage from './pages/PhotographyPage';
-import TestPhotographyPage from './pages/PhotographyTestPage';
 import OnePhotographyPage from './pages/PhotographyOnePage';
 import TwoPhotographyPage from './pages/PhotographyTwoPage';
 import ThreePhotographyPage from './pages/PhotographyThreePage';
 import FourPhotographyPage from './pages/PhotographyFourPage';
 import FivePhotographyPage from './pages/PhotographyFivePage';
+import SixPhotographyPage from './pages/PhotographySixPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import RYMCollectionPage from './pages/blog/rym_blog';
@@ -89,8 +88,8 @@ const PhotoNav = () => {
           <li><a href="/photography/3">3</a></li>
           <li><a href="/photography/4">4</a></li>
           <li><a href="/photography/5">5</a></li>
+          <li><a href="/photography/6">6</a></li>
         </ul>
-        {/* <hr style={lineBreak}></hr> */}
         <br></br>
       </nav>
     </div>
@@ -115,13 +114,12 @@ const App = () => {
           <Route path="/code" element={<CodePage />} />
           <Route path="/music" element={<MusicPage />} />
           <Route path="/vinyl" element={<VinylPage />} />
-          {/* <Route path="/photography" element={<PhotographyPage />} />
-          <Route path="/testphotography" element={<TestPhotographyPage />} /> */}
           <Route path="/photography/1" element={<OnePhotographyPage />} />
           <Route path="/photography/2" element={<TwoPhotographyPage />} />
           <Route path="/photography/3" element={<ThreePhotographyPage />} />
           <Route path="/photography/4" element={<FourPhotographyPage />} />
           <Route path="/photography/5" element={<FivePhotographyPage />} />
+          <Route path="/photography/6" element={<SixPhotographyPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog/rym_blog" element={<RYMCollectionPage />} />
