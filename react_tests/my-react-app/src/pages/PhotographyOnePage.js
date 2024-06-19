@@ -60,8 +60,9 @@ const photos = [
   { src: "/photography/14130037.JPG", width: 650, height: 1000 },
   { src: "/photography/14120032.JPG", width: 650, height: 1000 },
   { src: "/photography/14100031.JPG", width: 650, height: 1000 },
-  { src: "/photography/14100025.JPG", width: 1000, height: 650 },
+
   { src: "/photography/14080023.JPG", width: 1000, height: 650 },
+  { src: "/photography/14100025.JPG", width: 650, height: 1000 },
   { src: "/photography/14040005.JPG", width: 650, height: 1000 },
   // { src: "/photography/14040010.JPG", width: 650, height: 1000 },
   { src: "/photography/14050001.JPG", width: 650, height: 1000 },
