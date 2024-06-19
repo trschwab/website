@@ -4,8 +4,8 @@ git checkout main
 echo "Building app..."
 npm run build
 
-# Define the password
-password="9f6aPaZ!"
+# Read the password from the hidden file
+password=$(<.deploy_secret)
 
 echo "Create new build location"
 echo "$password" | ssh -tt troy@207.246.124.25 "sudo -S mkdir /var/www/new_build"
