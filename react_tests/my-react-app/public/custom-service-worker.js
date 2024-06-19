@@ -4,6 +4,7 @@ self.addEventListener('install', (event) => {
         return cache.addAll([
           '/photography/',
           '/media/',
+          '/blog_media/',
           // Add other assets you want to cache
         ]);
       })
