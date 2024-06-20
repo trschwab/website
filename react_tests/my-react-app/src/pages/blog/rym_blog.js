@@ -4,6 +4,8 @@ import React from 'react';
 const BlogOnePage = () => {
   // List of photo names
   const photoNames = [
+    'dj-metatron-loops-of-infinity-a-rave-loveletter-Cover-Art.webp',
+    'dj-healer-nothing-2-loose-Cover-Art.webp',
     'the-ironsides-changing-light-Cover-Art.webp',
     'todd-terje-its-album-time-Cover-Art.webp',
     'ian-pooley-since-then-Cover-Art.webp',
