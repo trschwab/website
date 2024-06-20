@@ -48,7 +48,7 @@ const photos = [
   { src: "/photography/14120022.JPG", width: 650, height: 1000 },
   { src: "/photography/14070013.JPG", width: 650, height: 1000 },
   { src: "/photography/14060028.JPG", width: 1000, height: 650 },
-  { src: "/photography/14120034.JPG", width: 1000, height: 650 },
+  { src: "/photography/14120034.JPG", width: 650, height: 1000 },
   { src: "/photography/14120035.JPG", width: 650, height: 1000 },
   { src: "/photography/14130018.JPG", width: 1000, height: 650 },
   { src: "/photography/14060005.JPG", width: 650, height: 1000 },
