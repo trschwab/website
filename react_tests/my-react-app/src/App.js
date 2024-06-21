@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
@@ -22,16 +21,14 @@ import Cocktail2BlogPage from './pages/blog/cocktail_2_blog';
 import ChessBlogPage from './pages/blog/chess_blog';
 import ShellPage from './pages/blog/shell_blog';
 import WebDeployPage from './pages/blog/website_deployment_blog';
-import './styles.css';
+import './styles.css'; // Add cache buster here
 import { useLocation } from 'react-router-dom';
-
-import { NavLink } from 'react-router-dom'
-// import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
+import MetaTags from './components/MetaTags';
 
 const lineBreak = {
   width: '50%',
   marginLeft: 'auto',
-  marginRight: 'auto'
+  marginRight: 'auto',
 };
 
 const Banner = () => {
@@ -50,10 +47,8 @@ const Banner = () => {
         <hr style={lineBreak}></hr>
       </nav>
     </div>
-
   );
 };
-
 
 const BlogBanner = () => {
   return (
@@ -72,11 +67,11 @@ const IsBlog = () => {
   const location = useLocation();
 
   if (location.pathname.includes('/blog/')) {
-    return (<BlogBanner />)} else {
-      return (<Banner />)
-    }
-
-}
+    return <BlogBanner />;
+  } else {
+    return <Banner />;
+  }
+};
 
 const PhotoNav = () => {
   return (
@@ -100,13 +95,15 @@ const IsPhotoPage = () => {
   const location = useLocation();
 
   if (location.pathname.includes('/photography/')) {
-    return (<PhotoNav />)}
-    }
+    return <PhotoNav />;
+  }
+};
 
 const App = () => {
   return (
     <Router>
       <div>
+        <MetaTags />
         <IsBlog />
         <IsPhotoPage />
         <Routes>
