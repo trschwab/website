@@ -4,81 +4,81 @@ import PhotoAlbum from 'react-photo-album';
 import BlurUpImage from '../components/BlurUpImage';
 
 const photos = [
-
-  { src: "/photography/70310036 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/70310011.JPG", width: 1000, height: 650 },
-  { src: "/photography/70310019 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/70310015 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/70310031.JPG", width: 1000, height: 650 },
-  { src: "/photography/70310006.JPG", width: 1000, height: 650 },
-  { src: "/photography/70310003.JPG", width: 1000, height: 650 },
-
-  { src: "/photography/65340030 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/65330016.JPG", width: 1000, height: 650 },
-  { src: "/photography/65330031 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/65330029 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/65340022.JPG", width: 1000, height: 650 },
-  { src: "/photography/65340008.JPG", width: 1000, height: 650 },
-  { src: "/photography/65340013.JPG", width: 1000, height: 650 },
-  { src: "/photography/65340015.JPG", width: 1000, height: 650 },
-  { src: "/photography/65340007.JPG", width: 1000, height: 650 },
-  { src: "/photography/65340005 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/65330034.JPG", width: 1000, height: 650 },
-  { src: "/photography/65330033.JPG", width: 1000, height: 650 },
-  { src: "/photography/65330032.JPG", width: 1000, height: 650 },
-  { src: "/photography/65340024.JPG", width: 1000, height: 650 },
-
-
-
-  { src: "/photography/20330011.JPG", width: 1000, height: 650 },
-  { src: "/photography/20330033 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/20330002.JPG", width: 1000, height: 650 },
-  { src: "/photography/20330022 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/20330023.JPG", width: 1000, height: 650 },
-  { src: "/photography/20330014 copy.JPG", width: 650, height: 1000 },
-
-
-
-  { src: "/photography/70050017 copy edit.JPG", width: 650, height: 1000 },
-  { src: "/photography/70050021 edit.JPG", width: 1000, height: 650 },
-  { src: "/photography/70050028 copy edit.JPG", width: 650, height: 1000 },
-  { src: "/photography/70050022 copy edit.JPG", width: 650, height: 1000 },
-  { src: "/photography/70050032 copy Edit.JPG", width: 650, height: 1000 },
-
-
-  { src: "/photography/07280033 copy.JPG", width: 650, height: 1000 },
-
-  { src: "/photography/07270014.JPG", width: 1000, height: 650 },
-  { src: "/photography/07280011 copy.JPG", width: 650, height: 1000 },
-
-  { src: "/photography/07270020.JPG", width: 1000, height: 650 },
-  { src: "/photography/07280001 copy.JPG", width: 650, height: 1000 },
-
-  { src: "/photography/07280013.JPG", width: 1000, height: 650 },
-
-
-  { src: "/photography/11930032_1 2.JPG", width: 1000, height: 650 },
-
-  { src: "/photography/07280014 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/000017370015.jpg", width: 1000, height: 650 },
-  { src: "/photography/000017370020.jpg", width: 1000, height: 650 },
-  { src: "/photography/000017370025.jpg", width: 1000, height: 650 },
-
-  { src: "/photography/000017370030.jpg", width: 1000, height: 650 },
-
-  { src: "/photography/39230015.JPG", width: 1000, height: 650 },
-  { src: "/photography/39220013 copy.JPG", width: 650, height: 1000 },
-  // { src: "/photography/39220026.JPG", width: 1000, height: 650 },
-  { src: "/photography/39230014.JPG", width: 1000, height: 650 },
-  { src: "/photography/39230007.JPG", width: 1000, height: 650 },
-  { src: "/photography/39220035.JPG", width: 1000, height: 650 },
   
-  { src: "/photography/39220032.JPG", width: 1000, height: 650 },
-  { src: "/photography/39220024.JPG", width: 1000, height: 650 },
-  { src: "/photography/39220023.JPG", width: 1000, height: 650 },
-  { src: "/photography/39220011.JPG", width: 1000, height: 650 },
-  { src: "/photography/39210026.JPG", width: 1000, height: 650 },
-  { src: "/photography/39210014.JPG", width: 1000, height: 650 },
+  { src: "/photography/03540019 copy.JPG", width: 650, height: 1000 },
+
+
+  { src: "/photography/10950009.JPG", width: 1000, height: 650 },
+  { src: "/photography/09640026 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09630026 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09640013 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09620004 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09620018 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09630031 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/10970030 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09640030 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09640017.JPG", width: 1000, height: 650 },
+  { src: "/photography/10950018.JPG", width: 1000, height: 650 },
+  { src: "/photography/10950010 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/10970032.JPG", width: 1000, height: 650 },
+  { src: "/photography/09630002 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09620032.JPG", width: 1000, height: 650 },
+  { src: "/photography/10950006 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/10970035.JPG", width: 1000, height: 650 },
+  { src: "/photography/10960024.JPG", width: 1000, height: 650 },
+  { src: "/photography/09630021 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09630022.JPG", width: 1000, height: 650 },
+  { src: "/photography/10960009 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09620008 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09640015 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09630007 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09630004.JPG", width: 1000, height: 650 },
+  { src: "/photography/10970013.JPG", width: 1000, height: 650 },
+  { src: "/photography/09620028.JPG", width: 1000, height: 650 },
+  { src: "/photography/09630013.JPG", width: 1000, height: 650 },
+  { src: "/photography/09630006.JPG", width: 1000, height: 650 },
+  { src: "/photography/09640032 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09640011 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/10960011.JPG", width: 1000, height: 650 },
+  { src: "/photography/10970001.JPG", width: 1000, height: 650 },
+  { src: "/photography/09630029.JPG", width: 1000, height: 650 },
+  { src: "/photography/10950002 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/10960032 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09640025 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/09640024 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/10950028.JPG", width: 1000, height: 650 },
+  { src: "/photography/09640027.JPG", width: 1000, height: 650 },
+  { src: "/photography/10950014.JPG", width: 1000, height: 650 },
+  { src: "/photography/10950016.JPG", width: 1000, height: 650 },
+  { src: "/photography/10950027 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/10970034 copy.JPG", width: 650, height: 1000 },
+  
+  // { src: "/photography/74200025 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220034.JPG", width: 1000, height: 650 },
+  { src: "/photography/74200030 copy.JPG", width: 650, height: 1000 },
+    // { src: "/photography/74220038.JPG", width: 1000, height: 650 },
+  // { src: "/photography/74200031 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200034 copy.JPG", width: 650, height: 1000 },
+  // { src: "/photography/74220028.JPG", width: 1000, height: 650 },
+  { src: "/photography/74220003 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220008 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200035.JPG", width: 1000, height: 650 },
+  { src: "/photography/74220009 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74210003.JPG", width: 1000, height: 650 },
+  { src: "/photography/74220022 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74220031 copy.JPG", width: 650, height: 1000 },
+
+  // { src: "/photography/74220029.JPG", width: 1000, height: 650 },
+  // { src: "/photography/74200013.JPG", width: 1000, height: 650 },
+  // { src: "/photography/74200012.JPG", width: 1000, height: 650 },
+  { src: "/photography/74200001.JPG", width: 1000, height: 650 },
+  { src: "/photography/74210001.JPG", width: 1000, height: 650 },
+  { src: "/photography/74210013 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74210031.JPG", width: 1000, height: 650 },
+  { src: "/photography/74210015 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200009 copy.JPG", width: 650, height: 1000 },
+  { src: "/photography/74200014 copy.JPG", width: 650, height: 1000 },
+  
   
 ];
 

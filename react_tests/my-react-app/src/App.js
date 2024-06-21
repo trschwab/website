@@ -10,6 +10,7 @@ import ThreePhotographyPage from './pages/PhotographyThreePage';
 import FourPhotographyPage from './pages/PhotographyFourPage';
 import FivePhotographyPage from './pages/PhotographyFivePage';
 import SixPhotographyPage from './pages/PhotographySixPage';
+import SevenPhotographyPage from './pages/PhotographySevenPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import RYMCollectionPage from './pages/blog/rym_blog';
@@ -84,6 +85,7 @@ const PhotoNav = () => {
           <li><a href="/photography/4">4</a></li>
           <li><a href="/photography/5">5</a></li>
           <li><a href="/photography/6">6</a></li>
+          <li><a href="/photography/7">7</a></li>
         </ul>
         <br></br>
       </nav>
@@ -117,6 +119,7 @@ const App = () => {
           <Route path="/photography/4" element={<FourPhotographyPage />} />
           <Route path="/photography/5" element={<FivePhotographyPage />} />
           <Route path="/photography/6" element={<SixPhotographyPage />} />
+          <Route path="/photography/7" element={<SevenPhotographyPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog/rym_blog" element={<RYMCollectionPage />} />
