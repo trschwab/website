@@ -1,6 +1,5 @@
 // src/pages/PhotographyPage.js
 import React from 'react';
-import PhotoAlbum from 'react-photo-album';
 import BlurUpImage from '../components/BlurUpImage';
 
 const photos = [
@@ -40,29 +39,22 @@ const Gallery = () => {
   const galleryStyle = {
     maxWidth: '90%',
     margin: '50px auto',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '16px', // Adjust the gap between images as needed
   };
 
   return (
     <div style={galleryStyle}>
-      <PhotoAlbum
-        layout="masonry"
-        photos={photos.map(photo => ({
-          ...photo,
-          render: ({ photo }) => (
-            <BlurUpImage
-              src={photo.src}
-              alt={photo.alt || 'Photo'}
-              width={photo.width}
-              height={photo.height}
-            />
-          ),
-        }))}
-        columns={(containerWidth) => {
-          if (containerWidth < 500) return 1;
-          if (containerWidth < 800) return 2;
-          return 3;
-        }}
-      />
+      {photos.map(photo => (
+        <BlurUpImage
+          key={photo.src}
+          src={photo.src}
+          alt={photo.alt || 'Photo'}
+          width={photo.width}
+          height={photo.height}
+        />
+      ))}
     </div>
   );
 };
