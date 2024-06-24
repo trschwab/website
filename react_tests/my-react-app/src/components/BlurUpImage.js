@@ -1,9 +1,14 @@
 // src/components/BlurUpImage.js
 import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-const BlurUpImage = ({ src, alt, width, height, delay = 2000 }) => {
+const BlurUpImage = ({ src, alt, width, height, delay = 3000 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showHighRes, setShowHighRes] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const handleImageLoad = () => {
     setIsLoaded(true);
@@ -19,11 +24,18 @@ const BlurUpImage = ({ src, alt, width, height, delay = 2000 }) => {
     }
   }, [isLoaded, delay]);
 
+  useEffect(() => {
+    const img = new Image();
+    img.src = src.replace('/photography/', '/photography/lowres/');
+    img.onload = handleImageLoad;
+  }, [src]);
+
   const imageStyle = {
-    width: `${width}px`,
-    height: `${height}px`,
+    width: '100%',
+    height: 'auto',
     position: 'relative',
     overflow: 'hidden',
+    paddingBottom: `${(height / width) * 100}%`, // Maintain aspect ratio
   };
 
   const lowResStyle = {
@@ -34,6 +46,8 @@ const BlurUpImage = ({ src, alt, width, height, delay = 2000 }) => {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
+    top: 0,
+    left: 0,
   };
 
   const highResStyle = {
@@ -42,24 +56,33 @@ const BlurUpImage = ({ src, alt, width, height, delay = 2000 }) => {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
+    position: 'absolute',
+    top: 0,
+    left: 0,
   };
 
-  // Create low-res image path dynamically
   const lowResSrc = src.replace('/photography/', '/photography/lowres/');
 
   return (
-    <div style={imageStyle}>
-      <img
-        src={lowResSrc}
-        alt={alt}
-        style={lowResStyle}
-      />
-      <img
-        src={src}
-        alt={alt}
-        onLoad={handleImageLoad}
-        style={highResStyle}
-      />
+    <div ref={ref} style={imageStyle}>
+      {inView && (
+        <>
+          <img
+            src={lowResSrc}
+            alt={alt}
+            style={lowResStyle}
+            onLoad={handleImageLoad}
+          />
+          {isLoaded && (
+            <img
+              src={src}
+              alt={alt}
+              onLoad={handleImageLoad}
+              style={highResStyle}
+            />
+          )}
+        </>
+      )}
     </div>
   );
 };
