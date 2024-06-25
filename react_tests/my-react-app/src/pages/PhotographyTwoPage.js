@@ -66,36 +66,40 @@ const photos = [
 
 ];
 
+const sectionStyle = {
+  lineHeight: 0,
+  columnCount: 3,
+  columnGap: '0px',
+  '@media (max-width: 800px)': {
+    columnCount: 2,
+  },
+  '@media (max-width: 500px)': {
+    columnCount: 1,
+  },
+};
 
-const Gallery = () => {
-  const galleryStyle = {
-    maxWidth: '90%', // Set the maximum width as per your requirement
-    margin: '50px auto',  // Center the component by setting left and right margins to auto, and add top margin
-  };
+const photoWrapperStyle = {
+  padding: '10px', // Add padding on all sides (top, right, bottom, left)
+  display: 'inline-block',
+  width: '100%',
+  boxSizing: 'border-box',
+};
 
+const PhotoGallery = () => {
   return (
-    <div style={galleryStyle}>
-      <PhotoAlbum
-        layout="masonry"
-        photos={photos.map(photo => ({
-          ...photo,
-          render: ({ photo }) => (
-            <BlurUpImage
-              src={photo.src}
-              alt={photo.alt || 'Photo'}
-              width={photo.width}
-              height={photo.height}
-            />
-          ),
-        }))}
-        columns={(containerWidth) => {
-          if (containerWidth < 500) return 1;
-          if (containerWidth < 800) return 2;
-          return 3;
-        }}
-      />
-    </div>
+    <section id="photos" style={sectionStyle}>
+      {photos.map((photo, index) => (
+        <div key={index} style={photoWrapperStyle}>
+          <BlurUpImage
+            src={photo.src}
+            alt={photo.alt}
+            width={photo.width}
+            height={photo.height}
+          />
+        </div>
+      ))}
+    </section>
   );
 };
 
-export default Gallery;
+export default PhotoGallery;

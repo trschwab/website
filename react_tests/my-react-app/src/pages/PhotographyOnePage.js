@@ -1,5 +1,6 @@
 // src/pages/PhotographyPage.js
 import React from 'react';
+import PhotoAlbum from 'react-photo-album';
 import BlurUpImage from '../components/BlurUpImage';
 
 const photos = [
@@ -35,28 +36,38 @@ const photos = [
   { src: "/photography/14060018.JPG", width: 1000, height: 650 },
 ];
 
-const Gallery = () => {
-  const galleryStyle = {
-    maxWidth: '90%',
-    margin: '50px auto',
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '16px', // Adjust the gap between images as needed
-  };
+const sectionStyle = {
+  lineHeight: 0,
+  WebkitColumnGap: '0px',
+  columnGap: '0px',
+  MozColumnGap: '0px',
+  WebkitColumnCount: 3,
+  MozColumnCount: 3,
+  columnCount: 3,
+};
 
+const photoWrapperStyle = {
+  padding: '10px', // Add padding on all sides (top, right, bottom, left)
+  display: 'inline-block',
+  width: '100%',
+  boxSizing: 'border-box',
+};
+
+const PhotoGallery = () => {
   return (
-    <div style={galleryStyle}>
-      {photos.map(photo => (
-        <BlurUpImage
-          key={photo.src}
-          src={photo.src}
-          alt={photo.alt || 'Photo'}
-          width={photo.width}
-          height={photo.height}
-        />
+    <section id="photos" style={sectionStyle}>
+      {photos.map((photo, index) => (
+        <div key={index} style={photoWrapperStyle}>
+          <BlurUpImage
+            src={photo.src}
+            alt={photo.alt}
+            width={photo.width}
+            height={photo.height}
+          />
+        </div>
       ))}
-    </div>
+    </section>
   );
 };
 
-export default Gallery;
+export default PhotoGallery;
