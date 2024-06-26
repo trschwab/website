@@ -14,6 +14,7 @@ import OnceAndForeverPage from './pages/blog/once_and_forever_blog';
 import TestingBlog from './pages/blog/testing_blog';
 import Cocktail2BlogPage from './pages/blog/cocktail_2_blog';
 import ChessBlogPage from './pages/blog/chess_blog';
+import DJBlogPage from './pages/blog/dj_blog';
 import ShellPage from './pages/blog/shell_blog';
 import WebDeployPage from './pages/blog/website_deployment_blog';
 import './styles.css'; // Add cache buster here
@@ -83,6 +84,7 @@ const App = () => {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog/rym_blog" element={<RYMCollectionPage />} />
+          <Route path="/blog/dj_blog" element={<DJBlogPage />} />
           <Route path="/blog/cocktail_blog" element={<CocktailBlogPage />} />
           <Route path="/blog/cocktail_2_blog" element={<Cocktail2BlogPage />} />
           <Route path="/blog/once_and_forever_blog" element={<OnceAndForeverPage />} />

@@ -87,6 +87,13 @@ const blogPosts = [
   //   photoUrl: '/blog_media/chess_blog_media/chess-4.jpg'
   // },
   {
+    id: 4,
+    title: 'The DJ Blog',
+    page: 'dj_blog',
+    snippet: "todo",
+    photoUrl: '/blog_media/todo/.jpg'
+  },
+  {
     id: 3,
     title: 'Once and Forever',
     page: 'once_and_forever_blog',
@@ -119,12 +126,6 @@ const blogPosts = [
     photoUrl: '/blog_media/cocktail_blog_media/012.jpeg'
   },
 
-  // {
-  //   id: 1,
-  //   title: 'Shell Blog',
-  //   snippet: 'Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora.',
-  //   photoUrl: '/media/guitar_photo_recolored.jpeg'
-  // }
 ];
 
 const BlogPage = () => {
