@@ -394,13 +394,34 @@ const photos = [
 
 ];
 
+function reorganizePhotos(photos) {
+  const numPhotos = photos.length;
+  const numColumns = 3;
+  const columnHeight = Math.ceil(numPhotos / numColumns);
+  const newPhotos = new Array(numPhotos);
+
+  for (let i = 0; i < numPhotos; i++) {
+      // Calculate new position
+      const column = i % numColumns;
+      const row = Math.floor(i / numColumns);
+      const newIndex = column * columnHeight + row;
+
+      // Place photo in new position
+      newPhotos[newIndex] = photos[i];
+  }
+
+  return newPhotos;
+}
+
+const reorganizedPhotos = reorganizePhotos(photos);
+
 
 // Thanks to this guide
 // https://css-tricks.com/seamless-responsive-photo-grid/
 
 const sectionStyle = {
   lineHeight: 0,
-  WebkitColumnGap: '0px',
+  WebkitRowGap: '0px',
   columnGap: '0px',
   MozColumnGap: '0px',
   WebkitColumnCount: 3,
@@ -451,7 +472,7 @@ const PhotoGallery = () => {
 
   return (
     <section id="photos" style={sectionStyle}>
-      {photos.map((photo, index) => (
+      {reorganizedPhotos.map((photo, index) => (
         <div key={index} style={photoWrapperStyle}>
           <BlurUpImage
             src={photo.src}
