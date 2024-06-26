@@ -3,6 +3,7 @@ import React from 'react';
 import PhotoAlbum from 'react-photo-album';
 import BlurUpImage from '../components/BlurUpImage';
 
+
 const photos = [
   { src: "/photography/89900034.JPG", width: 650, height: 1000 },
   { src: "/photography/89940014.JPG", width: 1000, height: 650 },
@@ -14,8 +15,10 @@ const photos = [
   { src: "/photography/89900002.JPG", width: 1000, height: 650 },
   { src: "/photography/89950011.JPG", width: 1000, height: 650 }, 
   { src: "/photography/89950033.JPG", width: 1000, height: 650 },
+
   { src: "/photography/89930009.JPG", width: 650, height: 1000 },
   { src: "/photography/89930016.JPG", width: 1000, height: 650 },
+
   { src: "/photography/89890012.JPG", width: 1000, height: 650 },
   { src: "/photography/89890020.JPG", width: 650, height: 1000 },
   { src: "/photography/89890001.JPG", width: 1000, height: 650 },
@@ -28,12 +31,16 @@ const photos = [
   { src: "/photography/89890017.JPG", width: 650, height: 1000 },
   { src: "/photography/89890022.JPG", width: 650, height: 1000 },
   { src: "/photography/89890023.JPG", width: 650, height: 1000 },
+
+
+  
 ];
+
 
 const Gallery = () => {
   const galleryStyle = {
-    maxWidth: '90%',
-    margin: '50px auto',
+    maxWidth: '90%', // Set the maximum width as per your requirement
+    margin: '50px auto',  // Center the component by setting left and right margins to auto, and add top margin
   };
 
   return (
