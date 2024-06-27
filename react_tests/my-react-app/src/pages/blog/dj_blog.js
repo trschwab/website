@@ -47,7 +47,7 @@ const blogPosts = [
         set_desc: "Rex Club, Paris, 1995",
       },
     {
-        id: 3,
+        id: 4,
         title: 'DJ Sneak',
         snippet: 'DJ Sneak lays down some really amazing tunes, always. Puerto-Rican American DJ, raised in the Chicago \
         scene alongside Derrick Carter and Cajmere and Paul Johnson, he has a huge producation discography that any \
@@ -60,7 +60,7 @@ const blogPosts = [
         set_desc: "DJsounds Show, 2014",
       },
       {
-        id: 3,
+        id: 5,
         title: 'Natasha Diggs',
         snippet: 'I\'ve seen Diggs twice now in NY, and she\'s nonstop in the pocket. Playing amazing tunes that \
         keep everyone on the dance floor moving. A soulful and spiritual journey is what I would call her sets. \
@@ -73,7 +73,7 @@ const blogPosts = [
         set_desc: "The Lab, NYC, 2022",
       },
       {
-        id: 3,
+        id: 6,
         title: 'Breakbot',
         snippet: 'One thing that becomes clear reading this blog top down is I have a love of the French Touch scene. \
         I actually don\'t even think that this is anything particular to me, I really truly believe that that scene is \
@@ -87,7 +87,7 @@ const blogPosts = [
         set_desc: "Cercle @ Salle Wagram in Paris, 2018",
       },
     {
-        id: 3,
+        id: 7,
         title: 'Theo Parrish',
         snippet: 'What a Cat. Theo is one of The Detroit Guys. Core to the scene, and so firmly ingrained in the diversity \
         that is that Detroit Scene. The classic Detroit label Sound Signature was started by him. His productions are sparse \
@@ -99,7 +99,7 @@ const blogPosts = [
         set_desc: "Live @ Club 77, 2024",
       },
       {
-        id: 3,
+        id: 8,
         title: 'DJ Mihoko',
         snippet: 'There\'s not much out there about DJ Mihoko. She\'s a Japanese DJ that lays down mixes in the local NYC scene. \
         A lot of disco, reggae, and soul that you\'ve never heard is in the queue. I think another one of my favorite things \
@@ -112,7 +112,7 @@ const blogPosts = [
         set_desc: "Vinyl Factory Live #1, 2022",
       },
       {
-        id: 3,
+        id: 9,
         title: 'Jurek Jurkowski',
         snippet: 'I mentioned at the beginning of this blog post about how technology has really opened up the gates in terms \
         of what a person can listen to and who can get out there as a DJ. Jurek Jurkowski is an important figure, I feel, in \
@@ -132,7 +132,7 @@ const blogPosts = [
     //     set_desc: "",
     //   },
       {
-        id: 3,
+        id: 10,
         title: 'Madlib',
         snippet: 'Few others can boast about as successful of a career as Madlib. From his own personal catalog, to \
         radio shows, DJ sets, and his backlog of collaborations. MF DOOM, J Dilla, Freddie Gibbs, Snoop, Tribe, it\'s  \
@@ -147,7 +147,7 @@ const blogPosts = [
         set_desc: "Madlib Medicine Show 2: Flight to Brazil, 2010",
       },
       {
-        id: 3,
+        id: 11,
         title: 'Jeff Mills',
         snippet: 'Jeff Mills is a beast on the 909. He\'ll play it live, while mixing vinyl. I mean \
         who does that? He DJs with a fiery intensity and focus, deep intense Detroit Love. As if any of that isn\'t \
@@ -163,7 +163,7 @@ const blogPosts = [
         set_desc: "Exhibitionist Mix, 2004",
       },
       {
-        id: 3,
+        id: 12,
         title: 'Cassius',
         snippet: 'It\'s hard to say anything about Cassius without first mentioning the tragic death of one of the duo, \
         Philippe Zdar in 2019. They have an esteemed production history with hit after hit in the French scene. I first \
@@ -180,7 +180,7 @@ const blogPosts = [
         set_desc: "The BBC Radio Essential Mix, 1999",
       },
     {
-      id: 3,
+      id: 13,
       title: 'Avalanches',
       snippet: 'The Avalanches are maybe the most recognizable example of something called "plunderphonics". The idea of \
       sampling other sound sources turned up to 11. Their eclectic songs end up sounding like song collages that somehow \
@@ -192,6 +192,14 @@ const blogPosts = [
       set: "https://youtu.be/ycFxOhLZYFw?si=DnE08TGJ5mFFJi9c",
       set_desc: "The BBC Radio Essential Mix, 2016"
     },
+    // {
+    //     id: 14,
+    //     title: 'TheDaddyO44',
+    //     snippet: '',
+    //     photoUrl: '/blog_media/dj_blog_media/daddyo.jpg',
+    //     set: "https://youtu.be/KWCi_GhNCnY?si=a34TzYS7GgW7cGXI",
+    //     set_desc: "Mix 48, Prince Of Denmark, 2022"
+    //   },
   ];
 
 
@@ -226,6 +234,14 @@ const BlogOnePage = () => {
 
       {'\n'}{'\n'}
       <img src="/blog_media/dj_blog_media/how_to_dj.jpg" alt="Mr Scruff's comic, how to DJ" style={{ display: 'block', width: '100%' }} />
+      {'\n'}{'\n'}
+      {'\n'}{'\n'}
+      <video 
+        src="/blog_media/dj_blog_media/moodymann.mp4" 
+        alt="Moodymann Clip" 
+        style={{ display: 'block', width: '100%' }} 
+        controls 
+        />
       {'\n'}{'\n'}
       {'\n'}{'\n'}
       </p>
