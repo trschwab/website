@@ -90,8 +90,12 @@ const blogPosts = [
     id: 4,
     title: 'The DJ Blog',
     page: 'dj_blog',
-    snippet: "todo",
-    photoUrl: '/blog_media/todo/.jpg'
+    snippet: "DJing is sometimes hard to get into or hard to appreciate. As I\'ve been mixing more vinyl on my own \
+    time and listening to more and more sets, I feel more strongly than ever that the DJ is an essential in music and \
+    can have serious ripples on the larger scale music scene or in a single person\'s life. Anyways, what better way to find \
+    good new music than to pull up a DJ set and get to listening. I wrote up a little snippet for some of my favorite DJs and \
+    sets.",
+    photoUrl: '/blog_media/dj_blog_media/analog_boy.jpg'
   },
   {
     id: 3,
