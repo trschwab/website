@@ -203,6 +203,34 @@ const blogPosts = [
   ];
 
 
+//   const BlogPost = ({ post }) => (
+//     <div key={post.id} style={{ marginBottom: '20px' }}>
+//     <img 
+//     src={post.photoUrl} 
+//     alt={post.title} 
+//     style={{ width: '40%', display: 'block', margin: '0 auto' }} 
+//     />
+//       <h2>{post.title}</h2>
+//       <p>{post.snippet}</p>
+//       {'\n'}
+//       <p><a href={post.set} target="_blank" rel="noopener noreferrer">{post.set_desc}</a></p>
+//     </div>
+//   );
+
+// const BlogPost = ({ post }) => (
+//     <div key={post.id} style={{ marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+//       <div style={{ flex: '1', textAlign: 'center' }}>
+//         <img src={post.photoUrl} alt={post.title} style={{ width: '60%', display: 'block', margin: '0 auto' }} />
+//       </div>
+//       <div style={{ flex: '1', padding: '0 20px' }}>
+//         <h2>{post.title}</h2>
+//         <p>{post.snippet}</p>
+//         <p><a href={post.set} target="_blank" rel="noopener noreferrer">{post.set_desc}</a></p>
+//       </div>
+//     </div>
+//   );
+
+
 const BlogOnePage = () => {
   return (
     <div>
@@ -210,6 +238,12 @@ const BlogOnePage = () => {
         <div style={{ whiteSpace: 'pre-line' }}>
       <h1>The DJ Blog</h1>
       <p>
+
+      {/* <div>
+    {blogPosts.map(post => (
+      <BlogPost key={post.id} post={post} />
+    ))}
+  </div> */}
 
     <div className="blog-page">
       <div className="blog-page-center">
