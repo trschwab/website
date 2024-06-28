@@ -1,189 +1,247 @@
 // src/pages/CocktailBlogPage.js
 import React from 'react';
+import BlogPost from './BlogPost';
 
-const Cocktail2BlogPage = () => {
+const blogPosts = [
+  {
+    id: 1,
+    title: 'Technicolor Dreamcoat',
+    snippet: 'This is a cocktail I had had at famed NYC bar Attaboy, from Milk and Honey’s Sam Ross and Michael McIlroy. A variation on The Famous Blue Raincoat deriving from Zac Pease at now defunct My Friend Duke in 2018, this cocktail is a tailored version of a Negroni. It stands out by including LoFi’s Gentian Amaro, a flavorful purple delight that helps to round out any boxy edges.',
+    recipe: `
+      1.5 oz beefeater gin
+      .5 oz LoFi Gentian Amaro
+      .5 oz Bruto Americano
+      .5 oz Dolin Blanc
+
+      Ice stir, garnish with orange or grapefruit peel
+    `,
+    image: '/blog_media/cocktail_2_blog_media/black-rock-chiller.jpg'
+  },
+  {
+    id: 1,
+    title: 'The Thumbs Up!',
+    snippet: 'Snippet todo',
+    recipe: `
+	1 oz Gin
+	1/2 oz Green Chartreuse
+	3/4 oz Lime
+	1/2 oz Aperol
+	1/2 oz Maraschino
+
+	Shaken, garnish with lemon twist
+    `,
+    image: '/blog_media/cocktail_2_blog_media/thumbs-up.jpg'
+  },
+  {
+    id: 1,
+    title: 'Shogun',
+    snippet: 'Snippet todo',
+    recipe: `
+	3/2 oz mezcal
+	3/4 oz green chartreuse
+	3/4 oz habanero syrup
+	3/4 oz pineapple
+	3/4 oz lime juice
+
+	Shaken, strained into a Collins glass, over ice
+
+	Garnish with 2 sprigs of Coriander
+    `,
+    image: '/blog_media/cocktail_2_blog_media/todo.jpg'
+  },
+  {
+    id: 1,
+    title: 'Grappino',
+    snippet: 'Snippet todo',
+    recipe: `
+	2/3 ounce grappa
+	1/2 ounce amaretto
+	1 oz (or 1 shot) espresso
+
+	Shake all over ice
+
+	Top with soya cream OR whipped cream
+
+	Grated nutmeg over top
+
+    `,
+    image: '/blog_media/cocktail_2_blog_media/grappino.webp'
+  },
+  {
+    id: 1,
+    title: 'Rosina Ferrario No 203',
+    snippet: 'Snippet todo',
+    recipe: `
+	1 + 1/2 ounce Nonnino Vigneti Moscato (white grappa)
+	1/2 ounce maraschino
+	1/2 ounce violette
+	1/2 ounce lemon juice
+	Garnish with edible rose / violet
+
+	Shake all over ice
+    `,
+    image: '/blog_media/cocktail_2_blog_media/rosina-ferrario.jpg'
+  },
+  {
+    id: 1,
+    title: 'Brauliocano',
+    snippet: 'Snippet todo',
+    recipe: `
+
+	1 + 1/2 ounce Braulio
+	1 + 1/2 ounce Cocchio Americano
+	2 full zqueezes of Orange Citrate Bitters
+	Top with Topo Chico
+
+	Stir softly over ice
+    `,
+    image: '/blog_media/cocktail_2_blog_media/brauliocano.jpg'
+  },
+  {
+    id: 1,
+    title: 'Black Rock Chiller',
+    snippet: 'Snippet todo',
+    recipe: `
+
+	3/4 ounce Branca Mente
+	3/4 ounce Suze
+	3/4 Ounce Olmeca Altos Reposado
+
+	Stir with no ice, serve neat
+    `,
+    image: '/blog_media/cocktail_2_blog_media/black-rock-chiller.jpg'
+  },
+  {
+    id: 1,
+    title: 'Coffee & Italicus',
+    snippet: 'Snippet todo',
+    recipe: `
+	1 + 1/2 ounces Italicus
+	3 ounces Tonic
+	1/3 ounce coldbrew coffee
+
+	Mix Italicus and Tonic, stir softly over ice, add tonic as needed; top with coffee and serve with a lime wedge
+
+    `,
+    image: '/blog_media/cocktail_2_blog_media/.jpg'
+  },
+  {
+    id: 1,
+    title: 'Italicus Spritz',
+    snippet: 'Snippet todo',
+    recipe: `
+	2 ounces Italicus
+	4 ounces Prosecco
+
+	Stir softly over ice, garnish with olives
+    `,
+    image: '/blog_media/cocktail_2_blog_media/.jpg'
+  },
+  {
+    id: 1,
+    title: 'Pavan Seltzer',
+    snippet: 'Snippet todo',
+    recipe: `
+	1 ounce Pavan
+	4 ounces San Pellegrino
+	1/4 ounce Lemon Juice
+
+	Stir softly over ice, more generally this is a loose recipe subject to splash of this or dash of that
+
+    `,
+    image: '/blog_media/cocktail_2_blog_media/.jpg'
+  },
+  {
+    id: 1,
+    title: 'Black Pavan',
+    snippet: 'Snippet todo',
+    recipe: `
+	4 ounce black tea*
+	1 ounce Pavan
+	1/4 ounce / splash of Lemon Juice
+
+	Stir softly over ice
+
+    `,
+    image: '/blog_media/cocktail_2_blog_media/.jpg'
+  },
+
+
+
+
+];
+
+const CocktailBlogPage = () => {
   return (
     <div>
-      <div class="limit_width">
-        <div style={{ whiteSpace: 'pre-line' }}>
-      <p>
-      <h1>On Cocktails, Pt. 2</h1>
-		{'\n'}{'\n'}
-		Since 2022, my cocktail hobby has been seriously reduced. It has become much more rare for me to host with cocktails for friends or family, and with the significant deep dive I did documented in the initial blogpost, a sort of wall was reached; a lot of cocktails use what I term “primary ingredients”. These are ingredients you have just by purchasing them or make with little to no effort. Any spirit, while it may be more or less hard to find, is a primary ingredient, as are the citrus juices needed or basic simple syrups. Continued work with cocktails will yield more and more recipes that require “secondary ingredients”. These are ingredients that require foresight to make. Steeping tea for Apotheke’s Deal Closer is one example, while another example is a habanero syrup for a Shaolin recipe. Even brewing espresso ahead of time for espresso martinis is a secondary ingredient.
-		{'\n'}{'\n'}
-Innumerable cocktails exist with primary ingredients, but secondary ingredients are a natural step that dissuades me from spending more time and energy. Even with that consideration, the previous blog post for cocktails was more than sufficient for the whole year. Here, we continue more casually.
-{'\n'}{'\n'}
-18 cocktails on the first blog
-{'\n'}{'\n'}
-
-<h1 style={{ textAlign: 'center' }}>The Technicolor Dreamcoat</h1>
-{'\n'}{'\n'}
-This is a cocktail I had had at famed NYC bar Attaboy, from Milk and Honey’s Sam Ross and Michael McIlroy. A variation on The Famous Blue Raincoat deriving from Zac Pease at now defunct My Friend Duke in 2018, this cocktail is a tailored version of a Negroni. It stands out by including LoFi’s Gentian Amaro, a flavorful purple delight that helps to round out any boxy edges.
-{'\n'}{'\n'}&emsp;
-1.5 oz beefeater gin
-.5 oz LoFi Gentian Amaro{'\n'}&emsp;
-.5 oz Bruto Americano{'\n'}&emsp;
-.5 oz Dolin Blanc{'\n'}&emsp;
-
-{'\n'}{'\n'}
-Ice stir, garnish with orange or grapefruit peel
-{'\n'}{'\n'}
-
-
-<h1 style={{ textAlign: 'center' }}>The Thumbs Up!</h1>
-{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_2_blog_media/thumbs-up.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
-{'\n'}{'\n'}&emsp;
-1 oz Gin{'\n'}&emsp;
-1/2 oz Green Chartreuse{'\n'}&emsp;
-3/4 oz Lime{'\n'}&emsp;
-1/2 oz Aperol{'\n'}&emsp;
-1/2 oz Maraschino{'\n'}&emsp;
-{'\n'}{'\n'}
-Shaken, garnish with lemon twist
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Shogun</h1>
-{'\n'}{'\n'}&emsp;
-	3/2 oz mezcal{'\n'}&emsp;
-	3/4 oz green chartreuse{'\n'}&emsp;
-	3/4 oz habanero syrup{'\n'}&emsp;
-	3/4 oz pineapple{'\n'}&emsp;
-	3/4 oz lime juice{'\n'}&emsp;
-	{'\n'}{'\n'}
-	Shaken, strained into a Collins glass, over ice
-	{'\n'}{'\n'}
-	Garnish with 2 sprigs of Coriander
-
-
-	{'\n'}{'\n'}
-	<h1 style={{ textAlign: 'center' }}>El Yucateco</h1>
-{'\n'}{'\n'}&emsp;
-	1.5oz Mezcal{'\n'}&emsp;
-	1.5oz Pineapple{'\n'}&emsp;
-	1/2oz Habanero Syrup{'\n'}&emsp;
-	1/2oz Lime Juice{'\n'}&emsp;
-	Garnish w Limewheel{'\n'}&emsp;
-	{'\n'}{'\n'}
-	<h1 style={{ textAlign: 'center' }}>Naked and Famous</h1>
-{'\n'}{'\n'}&emsp;
-	3/4oz mezcal{'\n'}&emsp;
-	3/4oz yellow (or green) chartreuse{'\n'}&emsp;
-	3/4z aperol{'\n'}&emsp;
-	3/4oz lime{'\n'}&emsp;
-	Garnish with Lime Wedge{'\n'}&emsp;
-
-	{'\n'}{'\n'}
-	<h1 style={{ textAlign: 'center' }}>Campari over Rocks</h1>
-{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_2_blog_media/campari-rocks.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
-{'\n'}{'\n'}&emsp;
-	2oz Campari, poured over ice
-	{'\n'}{'\n'}
-
-	<h1 style={{ textAlign: 'center' }}>Grappino</h1>
-{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_2_blog_media/grappino.webp" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
-{'\n'}{'\n'}&emsp;
-2/3 ounce grappa{'\n'}&emsp;
-1/2 ounce amaretto{'\n'}&emsp;
-1 oz (or 1 shot) espresso{'\n'}&emsp;
-{'\n'}{'\n'}
-Shake all over ice
-{'\n'}{'\n'}
-Top with soya cream OR whipped cream
-{'\n'}
-Grated nutmeg over top
-{'\n'}
-
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Rosina Ferrario No 203</h1>
-{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_2_blog_media/rosina-ferrario.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
-{'\n'}{'\n'}&emsp;
-1 + 1/2 ounce Nonnino Vigneti Moscato (white grappa){'\n'}&emsp;
-1/2 ounce maraschino{'\n'}&emsp;
-1/2 ounce violette{'\n'}&emsp;
-1/2 ounce lemon juice{'\n'}&emsp;
-Garnish with edible rose / violet{'\n'}&emsp;
-{'\n'}{'\n'}
-Shake all over ice
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Brauliocano</h1>
-{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_2_blog_media/brauliocano.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
-{'\n'}{'\n'}&emsp;
-1 + 1/2 ounce Braulio{'\n'}&emsp;
-1 + 1/2 ounce Cocchio Americano{'\n'}&emsp;
-2 full zqueezes of Orange Citrate Bitters{'\n'}&emsp;
-Top with Topo Chico{'\n'}&emsp;
-{'\n'}{'\n'}
-Stir softly over ice
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Pavan Seltzer</h1>
-{'\n'}{'\n'}&emsp;
-1 ounce Pavan{'\n'}&emsp;
-4 ounces San Pellegrino{'\n'}&emsp;
-1/4 ounce Lemon Juice{'\n'}&emsp;
-{'\n'}{'\n'}
-Stir softly over ice, more generally this is a loose recipe subject to splash of this or dash of that
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Black Pavan</h1>
-{'\n'}{'\n'}&emsp;
-4 ounce black tea*{'\n'}&emsp;
-1 ounce Pavan{'\n'}&emsp;
-1/4 ounce / splash of Lemon Juice{'\n'}&emsp;
-{'\n'}{'\n'}
-Stir softly over ice
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Black Rock Chiller</h1>
-{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_2_blog_media/balck-rock-chiller.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
-{'\n'}{'\n'}&emsp;
-3/4 ounce Branca Mente{'\n'}&emsp;
-3/4 ounce Suze{'\n'}&emsp;
-3/4 Ounce Olmeca Altos Reposado{'\n'}&emsp;
-{'\n'}{'\n'}
-Stir with no ice, serve neat
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Coffee & Italicus</h1>
-{'\n'}{'\n'}&emsp;
-1 + 1/2 ounces Italicus{'\n'}&emsp;
-3 ounces Tonic{'\n'}&emsp;
-1/3 ounce coldbrew coffee{'\n'}&emsp;
-{'\n'}{'\n'}
-Mix Italicus and Tonic, stir softly over ice, add tonic as needed; top with coffee and serve with a lime wedge
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Italicus Spritz</h1>
-{'\n'}{'\n'}&emsp;
-2 ounces Italicus{'\n'}&emsp;
-4 ounces Prosecco{'\n'}&emsp;
-{'\n'}{'\n'}
-Stir softly over ice, garnish with olives
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Champs Elysees</h1>
-{'\n'}{'\n'}&emsp;
-2 ounces Cognac{'\n'}&emsp;
-3/4 ounces Lemon Juice{'\n'}&emsp;
-1/2 ounce Green Chartreuse{'\n'}&emsp;
-1/4 ounce Simple Syrup{'\n'}&emsp;
-{'\n'}{'\n'}
-Shake over ice
-{'\n'}{'\n'}
-<h1 style={{ textAlign: 'center' }}>Calvados 75</h1>
-{'\n'}{'\n'}
-    <img src="/blog_media/cocktail_2_blog_media/calvados.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
-{'\n'}{'\n'}&emsp;
-1 ounce Calvados{'\n'}&emsp;
-1/2 ounce Lemon Juice{'\n'}&emsp;
-1/2 ounce Simple Syrup{'\n'}&emsp;
-Champagne{'\n'}&emsp;
-{'\n'}{'\n'}
-Mix Calvados, Lemon, and Simple Syrup, shake over ice and top with Champagne
-      </p>
-    </div>
-    </div>
+      {blogPosts.map((post) => (
+        <BlogPost key={post.id} post={post} />
+      ))}
     </div>
   );
 };
 
-export default Cocktail2BlogPage;
+export default CocktailBlogPage;
+
+
+
+
+
+//  {'\n'}{'\n'}
+//  <h1 style={{ textAlign: 'center' }}>El Yucateco</h1>
+// {'\n'}{'\n'}&emsp;
+//  1.5oz Mezcal{'\n'}&emsp;
+//  1.5oz Pineapple{'\n'}&emsp;
+//  1/2oz Habanero Syrup{'\n'}&emsp;
+//  1/2oz Lime Juice{'\n'}&emsp;
+//  Garnish w Limewheel{'\n'}&emsp;
+//  {'\n'}{'\n'}
+//  <h1 style={{ textAlign: 'center' }}>Naked and Famous</h1>
+// {'\n'}{'\n'}&emsp;
+//  3/4oz mezcal{'\n'}&emsp;
+//  3/4oz yellow (or green) chartreuse{'\n'}&emsp;
+//  3/4z aperol{'\n'}&emsp;
+//  3/4oz lime{'\n'}&emsp;
+//  Garnish with Lime Wedge{'\n'}&emsp;
+
+//  {'\n'}{'\n'}
+//  <h1 style={{ textAlign: 'center' }}>Campari over Rocks</h1>
+// {'\n'}{'\n'}
+//     <img src="/blog_media/cocktail_2_blog_media/campari-rocks.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
+// {'\n'}{'\n'}&emsp;
+//  2oz Campari, poured over ice
+//  {'\n'}{'\n'}
+
+
+
+
+
+
+
+
+
+// <h1 style={{ textAlign: 'center' }}>Champs Elysees</h1>
+// {'\n'}{'\n'}&emsp;
+// 2 ounces Cognac{'\n'}&emsp;
+// 3/4 ounces Lemon Juice{'\n'}&emsp;
+// 1/2 ounce Green Chartreuse{'\n'}&emsp;
+// 1/4 ounce Simple Syrup{'\n'}&emsp;
+// {'\n'}{'\n'}
+// Shake over ice
+// {'\n'}{'\n'}
+// <h1 style={{ textAlign: 'center' }}>Calvados 75</h1>
+// {'\n'}{'\n'}
+//     <img src="/blog_media/cocktail_2_blog_media/calvados.jpg" alt="photo of a caipirinha" style={{ display: 'block', width: '50%', marginLeft: 'auto', marginRight: 'auto' }} />
+// {'\n'}{'\n'}&emsp;
+// 1 ounce Calvados{'\n'}&emsp;
+// 1/2 ounce Lemon Juice{'\n'}&emsp;
+// 1/2 ounce Simple Syrup{'\n'}&emsp;
+// Champagne{'\n'}&emsp;
+// {'\n'}{'\n'}
+// Mix Calvados, Lemon, and Simple Syrup, shake over ice and top with Champagne
+//       </p>
+//     </div>
+//     </div>
+//     </div>
+//   );
+// };

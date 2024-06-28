@@ -114,7 +114,7 @@ const blogPosts = [
       {
         id: 9,
         title: 'Jurek Jurkowski',
-        snippet: 'I mentioned at the beginning of this blog post about how technology has really opened up the gates in terms \
+        snippet: 'Technology has really opened up the gates in terms \
         of what a person can listen to and who can get out there as a DJ. Jurek Jurkowski is an important figure, I feel, in \
         the Youtube DJ scene. And famous for his son, Little Filip, who flips wax at 9 years old better than most adult DJs. \
         It\'s good, fun, no bs, classic house, it can\'t get much better than that. They haven\'t posted since 2020 so we\'re \
