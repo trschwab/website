@@ -39,8 +39,8 @@ const BlurUpImage = ({ src, alt, width, height, delay = 3000 }) => {
   };
 
   const lowResStyle = {
-    filter: 'blur(1px)',
-    transition: 'opacity 0.3s ease-out',
+    filter: 'blur(.5px)',
+    transition: 'opacity 2s ease-out',
     opacity: showHighRes ? 0 : 1,
     position: 'absolute',
     width: '100%',
