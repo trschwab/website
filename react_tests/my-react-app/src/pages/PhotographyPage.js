@@ -507,10 +507,11 @@ const PhotoGallery = () => {
   }, []);
 
   const sectionStyle = isMobile ? sectionStyleMobile : sectionStyleDesktop;
+  const photoDisplay = isMobile ? photos : reorganizedPhotos;
 
   return (
     <section id="photos" style={sectionStyle}>
-      {reorganizedPhotos.map((photo, index) => (
+      {photoDisplay.map((photo, index) => (
         <div key={index} style={photoWrapperStyle}>
           <BlurUpImage
             src={photo.src}
