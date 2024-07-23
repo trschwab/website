@@ -20,7 +20,7 @@ const photos = [
   { src: "/photography/16540035.JPG", width: 3583, height: 2376 },
   { src: "/photography/16510013.JPG", width: 3583, height: 2376 },
   { src: "/photography/16500033.JPG", width: 3583, height: 2376 },
-  { src: "/photography/16500027.JPG", width: 2376, height: 3583 },
+  { src: "/photography/16500027.JPG", width: 3583, height: 2376 },
   { src: "/photography/16490031.JPG", width: 3583, height: 2376 },
   { src: "/photography/16480022.JPG", width: 3583, height: 2376 },
   { src: "/photography/16540010.JPG", width: 2376, height: 3583 },
