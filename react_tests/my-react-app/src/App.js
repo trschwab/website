@@ -4,11 +4,13 @@ import HomePage from './pages/HomePage';
 import CodePage from './pages/CodePage';
 import MusicPage from './pages/MusicPage';
 import VinylPage from './pages/VinylPage';
+import TestPage from './pages/TestPage';
 import PhotographyPage from './pages/PhotographyPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
 import RYMCollectionPage from './pages/blog/rym_blog';
 import CocktailBlogPage from './pages/blog/cocktail_blog';
+import AnalogBlogPage from './pages/blog/analog_blog';
 import LetterboxdPage from './pages/blog/letterboxd_blog';
 import OnceAndForeverPage from './pages/blog/once_and_forever_blog';
 import TestingBlog from './pages/blog/testing_blog';
@@ -78,6 +80,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/code" element={<CodePage />} />
+          <Route path="/test" element={<TestPage />} />
           <Route path="/music" element={<MusicPage />} />
           <Route path="/vinyl" element={<VinylPage />} />
           <Route path="/photography" element={<PhotographyPage />} />
@@ -86,6 +89,7 @@ const App = () => {
           <Route path="/blog/rym_blog" element={<RYMCollectionPage />} />
           <Route path="/blog/dj_blog" element={<DJBlogPage />} />
           <Route path="/blog/cocktail_blog" element={<CocktailBlogPage />} />
+          <Route path="/blog/analog_blog" element={<AnalogBlogPage />} />
           <Route path="/blog/cocktail_2_blog" element={<Cocktail2BlogPage />} />
           <Route path="/blog/once_and_forever_blog" element={<OnceAndForeverPage />} />
           <Route path="/blog/testing_blog" element={<TestingBlog />} />
