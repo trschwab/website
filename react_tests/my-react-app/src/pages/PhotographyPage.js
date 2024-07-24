@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import PhotoAlbum from 'react-photo-album';
 import BlurUpImage from '../components/BlurUpImage';
+import BlurUpImageMobile from '../components/BlurUpImageMobile';
 
 const photos = [
   { src: "/photography/16530010.JPG", width: 3583, height: 2376 },
@@ -508,12 +509,13 @@ const PhotoGallery = () => {
 
   const sectionStyle = isMobile ? sectionStyleMobile : sectionStyleDesktop;
   const photoDisplay = isMobile ? photos : reorganizedPhotos;
+  const BlurUpImageSelector = isMobile ? BlurUpImageMobile : BlurUpImage
 
   return (
     <section id="photos" style={sectionStyle}>
       {photoDisplay.map((photo, index) => (
         <div key={index} style={photoWrapperStyle}>
-          <BlurUpImage
+          <BlurUpImageSelector
             src={photo.src}
             alt={photo.alt}
             width={photo.width}
