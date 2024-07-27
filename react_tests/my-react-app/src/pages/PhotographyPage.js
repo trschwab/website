@@ -5,6 +5,15 @@ import BlurUpImage from '../components/BlurUpImage';
 import LowResImage from '../components/LowResImage';
 
 const photos = [
+  { src: "/photography/midres/07410024.JPG", width: 2376, height: 3583 },
+  { src: "/photography/midres/07410019.JPG", width: 2376, height: 3583 },
+  { src: "/photography/midres/07410036.JPG", width: 3583, height: 2376 },
+  { src: "/photography/midres/07410023.JPG", width: 2376, height: 3583 },
+  { src: "/photography/midres/07410021.JPG", width: 2376, height: 3583 },
+  { src: "/photography/midres/07410008.JPG", width: 3583, height: 2376 },
+  { src: "/photography/midres/07410020.JPG", width: 2376, height: 3583 },
+  { src: "/photography/midres/07410007.JPG", width: 2376, height: 3583 },
+  { src: "/photography/midres/07410002.JPG", width: 2376, height: 3583 },
   { src: "/photography/midres/16530010.JPG", width: 3583, height: 2376 },
   { src: "/photography/midres/16520003.JPG", width: 3583, height: 2376 },
   { src: "/photography/midres/16520002.JPG", width: 2376, height: 3583 },
