@@ -61,7 +61,7 @@ const BlurUpImage = ({ src, alt, width, height, delay = 3000 }) => {
     left: 0,
   };
 
-  const lowResSrc = src.replace('/photography/', '/photography/lowres/');
+  const lowResSrc = src.replace('/midres/', '/lowres/');
 
   return (
     <div ref={ref} style={imageStyle}>
