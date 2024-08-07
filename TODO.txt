@@ -8,3 +8,5 @@
 7. Chess blog post? Low priority...
 8. Get more website inspo, the mobile version here kind of stinks. Good personal sites on desktop but what about mobile?**
 9. Implement a low res blur up for images. The load time is too long as is
+10. Add email server
+11. Add RSS
