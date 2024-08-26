@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import HomePageTest from './pages/HomePageTest';
 import CodePage from './pages/CodePage';
 import MusicPage from './pages/MusicPage';
 import VinylPage from './pages/VinylPage';
@@ -63,7 +64,9 @@ const BlogBanner = () => {
 
 const IsBlog = () => {
   const location = useLocation();
-
+  if (location.pathname.includes('test')) {
+    return <></>;
+  }
   if (location.pathname.includes('/blog/')) {
     return <BlogBanner />;
   } else {
@@ -79,6 +82,7 @@ const App = () => {
         <IsBlog />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/homepagetest" element={<HomePageTest />} />
           <Route path="/code" element={<CodePage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/music" element={<MusicPage />} />
