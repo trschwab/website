@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import HomePageTest from './pages/HomePageTest';
+import WorkPageTest from './pages/WorkPageTest';
+import Italy2024PageTest from './pages/italy2024';
 import CodePage from './pages/CodePage';
 import MusicPage from './pages/MusicPage';
 import VinylPage from './pages/VinylPage';
@@ -75,6 +77,7 @@ const IsBlog = () => {
   }
 };
 
+
 const App = () => {
   return (
     <Router>
@@ -85,6 +88,8 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/homepagetest" element={<HomePageTest />} />
           <Route path="/aboutpagetest" element={<AboutPageTest />} />
+          <Route path="/italy2024test" element={<Italy2024PageTest />} />
+          <Route path="/workpagetest" element={<WorkPageTest />} />
           <Route path="/code" element={<CodePage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/music" element={<MusicPage />} />

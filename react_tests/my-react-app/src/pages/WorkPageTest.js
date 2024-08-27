@@ -72,6 +72,14 @@ const AboutPageTest = () => {
     zIndex: 3, // Ensures the link appears above all content
   };
 
+  const postStyle = {
+    left: '8%',
+    color: 'white',
+    fontSize: '24px',
+    textDecoration: 'none',
+    zIndex: 3, // Ensures the link appears above all content
+  };
+
   const textContainerStyle = {
     color: 'white',
     width: '28%', // Take up the full width of the muted area
@@ -79,9 +87,9 @@ const AboutPageTest = () => {
   };
 
   const scrollable = {
-    height: '200px', // Set the height you want
+    height: '400px', // Set the height you want
     overflowY: 'auto', // Enable vertical scrolling
-    border: '1px solid #ccc', // Optional: for visual reference
+    border: '1px solid rgba(204, 204, 204, 1)',
   };
 
   return (
@@ -93,20 +101,74 @@ const AboutPageTest = () => {
         Troy Schwab
       </Link>
       <br /><br />
-      <Link to="/workpagetest" style={{ color: 'white' }}>
-        Work
+      <Link to="/aboutpagetest" style={{ color: 'white' }}>
+        About
       </Link>
       </p>
       <div style={contentStyle}>
         <div style={textContainerStyle}>
-          <div style={scrollable}>
-          <p>
-            I am a Data Engineer, a Composer, and a Photographer, based in New York City. This website serves to collect 
-            any various work I have as it might be related to computer science or music, series of photos I have, even blog posts.
-            {'\n'}{'\n'}
-            If you’d like to contact me, you can email me at trschwab7 @ gmail.com.
-          </p>
-          </div>
+        <div style={scrollable}>
+      <Link to="/italy2024test" style={postStyle}>
+        Italy, 2024 (Photography)
+      </Link>
+      <br />
+      Rome and Positano were the main cities who I had the opportunity to shoot
+      <br /><br />
+      <Link to="/link2" style={postStyle}>
+        New York, 2024 (Photography)
+      </Link>
+      <br />
+      An ongoing compilation of my year in photography at home
+      <br /><br />
+      <Link to="/link2" style={postStyle}>
+        Link 2
+      </Link>
+      <br />
+      Some small note
+      <br /><br />
+      <Link to="/link2" style={postStyle}>
+        On DJs (text)
+      </Link>
+      <br />
+      Some small note
+      <br /><br />
+      <Link to="/link2" style={postStyle}>
+        On Testing (Text)
+      </Link>
+      <br />
+      Some small note
+      <br /><br />
+      <Link to="/link2" style={postStyle}>
+        Cincinnati, 2024 (Photography)
+      </Link>
+      <br />
+      I grew up in Cincinnati and this is the first time I came back prepared to shoot film
+      <br /><br />
+      <Link to="/link2" style={postStyle}>
+        Once and Forever (Text)
+      </Link>
+      <br />
+      A collection of short stories and children's tales by Kenji Miyazawa
+      <br /><br />
+      <Link to="/link2" style={postStyle}>
+        Miami, 2024 (Photography)
+      </Link>
+      <br />
+      A small family vacation for Christmas in Miami
+      <br /><br />
+      <Link to="/cocktails" style={postStyle}>
+        On Cocktails (Text)
+      </Link>
+      <br />
+      Some of my favorite cocktails from the first few years of the hobby
+      <br /><br />
+      <Link to="/cocktails" style={postStyle}>
+        Early Shots (Photography)
+      </Link>
+      <br />
+      A compilation of photography as I began to learn more about what I like to shoot, and how to shoot it.
+      <br /><br />
+      </div>
         </div>
       </div>
     </div>
