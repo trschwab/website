@@ -2,9 +2,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import images from './images';
+import photos from './italyphotos';
 
 const AboutPageTest = () => {
   const [backgroundImage, setBackgroundImage] = useState('');
+  const [hovered, setHovered] = useState(null);
+  const [showAbout, setShowAbout] = useState(false); // State to toggle the About div
+  const [fadeIn, setFadeIn] = useState(false); // State to control fade-in effect
 
   useEffect(() => {
     // Randomly select an image from the array
@@ -92,6 +96,98 @@ const AboutPageTest = () => {
     border: '1px solid rgba(204, 204, 204, 1)',
   };
 
+  const aboutModalStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Dark semi-transparent background
+    color: 'white',
+    padding: '20px',
+    borderRadius: '8px',
+    textAlign: 'center',
+    zIndex: 10, // Ensure it appears above everything else
+    maxWidth: '600px',
+    width: '80%',
+
+  };
+
+  const parentContainerStyle = {
+    width: '70vw', // 70% of the viewport width
+    height: '100vh', // Full height of the viewport
+    position: 'absolute',
+    top: 0,
+    right: 0, // Position it on the right side
+    display: 'flex', // Use flexbox to align content
+    justifyContent: 'center', // Horizontally center the child div
+    alignItems: 'center', // Vertically center the child div
+    paddingTop: '5vh', // Add top padding
+    paddingBottom: '5vh', // Add bottom padding
+    boxSizing: 'border-box', // Ensures padding doesn't affect the total width/height
+    overflow: 'hidden',
+    zIndex: 0,
+  };
+
+  const mutedOverlayStyleTwo = {
+    background: 'rgba(0, 0, 0, 0.8)',
+    width: '60%',
+    height: '80%', // Adjust this height as needed
+    overflowY: 'auto', // Enables vertical scrolling within this div
+    padding: '20px',
+    boxSizing: 'border-box',
+    zIndex: 1,
+  };
+
+  const closeModalStyle = {
+    position: 'absolute',
+    top: '10px',
+    right: '10px',
+    fontSize: '24px',
+    cursor: 'pointer',
+  };
+
+  const aboutText = {
+    top: '100%',
+    width: '50%',
+    color: 'white'
+  };
+
+  const imageGalleryStyle = {
+    display: 'grid', // Switch to grid layout
+    gridTemplateColumns: 'repeat(2, 1fr)', // Create 2 equal-width columns
+    gap: '10px', // Space between images
+  };
+  
+  const imageStyle = {
+    width: '100%', // Image will take the full width of the grid cell
+    height: '150px', // Set a fixed height or adjust as needed
+    objectFit: 'cover', // Ensures images maintain their aspect ratio and cover the space
+    borderRadius: '5px',
+  };
+
+  const handleOpenAbout = () => {
+    setShowAbout(true);
+    setTimeout(() => {
+      setFadeIn(true); // Trigger fade-in after modal is shown
+    }, 10); // Small delay to ensure modal is visible before fade-in starts
+  };
+
+  const handleCloseAbout = () => {
+    setFadeIn(false); // Start fade-out effect
+    setTimeout(() => {
+      setShowAbout(false); // Hide modal after fade-out is complete
+    }, 300); // Match this duration with the transition time
+  };
+
+  const linkStyleHover = (isHovered) => ({
+    color: isHovered ? '#b6b6b6' : 'white', // Gray out on hover
+    fontSize: '30px',
+    textDecoration: 'none', // Removes underline from links
+    margin: '0 20px', // Space between links
+    transition: 'color 0.3s ease', // Smooth transition effect
+    cursor: 'pointer', // Make it look like a clickable item
+  });
+
   return (
     <div style={containerStyle}>
       <div style={backgroundStyle}></div> {/* Full background image */}
@@ -108,9 +204,19 @@ const AboutPageTest = () => {
       <div style={contentStyle}>
         <div style={textContainerStyle}>
         <div style={scrollable}>
-      <Link to="/italy2024test" style={postStyle}>
+      {/* <Link to="/italy2024test" style={postStyle}>
         Italy, 2024 (Photography)
-      </Link>
+      </Link> */}
+    
+    <div
+          onClick={handleOpenAbout} // Open the About modal
+          style={linkStyleHover(hovered === 'about')}
+          onMouseEnter={() => setHovered('about')}
+          onMouseLeave={() => setHovered(null)}
+        >
+          Italy Block
+        </div>
+
       <br />
       Rome and Positano were the main cities who I had the opportunity to shoot
       <br /><br />
@@ -171,6 +277,28 @@ const AboutPageTest = () => {
       </div>
         </div>
       </div>
+
+      {showAbout && (
+      <div style={parentContainerStyle}>
+        <div style={mutedOverlayStyleTwo}>
+          <div
+            style={closeModalStyle}
+            onClick={handleCloseAbout}
+          >
+            &times;
+          </div>
+          <div style={aboutText}>
+            <h2>Italy 2024</h2>
+          </div>
+          <div style={imageGalleryStyle}>
+            {photos.map((photo, index) => (
+              <img key={index} src={photo.src} alt={`Italy ${index}`} style={imageStyle} />
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
+
     </div>
   );
 };
