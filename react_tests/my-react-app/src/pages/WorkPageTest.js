@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import images from './images';
 import photos from './italyphotos';
+import BlurUpImage from '../components/BlurUpImage';
+import LowResImage from '../components/LowResImage';
 
 const AboutPageTest = () => {
   const [backgroundImage, setBackgroundImage] = useState('');
@@ -22,7 +24,6 @@ const AboutPageTest = () => {
     margin: 0,
     padding: 0,
     position: 'relative',
-    overflow: 'hidden',
   };
 
   const backgroundStyle = {
@@ -66,16 +67,6 @@ const AboutPageTest = () => {
     zIndex: 3, // Ensures the link appears above all content
   };
 
-  const linkTwoStyle = {
-    position: 'absolute',
-    top: '16%',
-    left: '8%',
-    color: 'white',
-    fontSize: '24px',
-    textDecoration: 'none',
-    zIndex: 3, // Ensures the link appears above all content
-  };
-
   const postStyle = {
     left: '8%',
     color: 'white',
@@ -96,22 +87,6 @@ const AboutPageTest = () => {
     border: '1px solid rgba(204, 204, 204, 1)',
   };
 
-  const aboutModalStyle = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Dark semi-transparent background
-    color: 'white',
-    padding: '20px',
-    borderRadius: '8px',
-    textAlign: 'center',
-    zIndex: 10, // Ensure it appears above everything else
-    maxWidth: '600px',
-    width: '80%',
-
-  };
-
   const parentContainerStyle = {
     width: '70vw', // 70% of the viewport width
     height: '100vh', // Full height of the viewport
@@ -124,8 +99,8 @@ const AboutPageTest = () => {
     paddingTop: '5vh', // Add top padding
     paddingBottom: '5vh', // Add bottom padding
     boxSizing: 'border-box', // Ensures padding doesn't affect the total width/height
-    overflow: 'hidden',
     zIndex: 0,
+    overflowY: 'auto', // Enable vertical scrolling
   };
 
   const mutedOverlayStyleTwo = {
@@ -152,18 +127,6 @@ const AboutPageTest = () => {
     color: 'white'
   };
 
-  const imageGalleryStyle = {
-    display: 'grid', // Switch to grid layout
-    gridTemplateColumns: 'repeat(2, 1fr)', // Create 2 equal-width columns
-    gap: '10px', // Space between images
-  };
-  
-  const imageStyle = {
-    width: '100%', // Image will take the full width of the grid cell
-    height: '150px', // Set a fixed height or adjust as needed
-    objectFit: 'cover', // Ensures images maintain their aspect ratio and cover the space
-    borderRadius: '5px',
-  };
 
   const handleOpenAbout = () => {
     setShowAbout(true);
@@ -188,7 +151,33 @@ const AboutPageTest = () => {
     cursor: 'pointer', // Make it look like a clickable item
   });
 
-  return (
+  
+  const sectionStyleMobile = {
+    lineHeight: 0,
+    WebkitColumnGap: '0px',
+    columnGap: '0px',
+    MozColumnGap: '0px',
+    WebkitColumnCount: 1,
+    MozColumnCount: 1,
+    columnCount: 1,
+    maxHeight: '80vh', // Set a maximum height to allow scrolling within the viewport
+    overflowY: 'auto', // Enable vertical scrolling
+    padding: '10px', // Optional: Add some padding if needed
+    boxSizing: 'border-box', // Ensure padding doesn’t affect the total size
+  };
+  
+  
+  const photoWrapperStyle = {
+    padding: '10px', // Add padding on all sides (top, right, bottom, left)
+    display: 'inline-block',
+    width: '100%',
+    boxSizing: 'border-box',
+  };
+
+const photoDisplay = photos;
+const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+
+return (
     <div style={containerStyle}>
       <div style={backgroundStyle}></div> {/* Full background image */}
       <div style={mutedOverlayStyle}></div> {/* Muted overlay on the left 30% */}
@@ -279,25 +268,45 @@ const AboutPageTest = () => {
       </div>
 
       {showAbout && (
-      <div style={parentContainerStyle}>
-        <div style={mutedOverlayStyleTwo}>
-          <div
-            style={closeModalStyle}
-            onClick={handleCloseAbout}
-          >
-            &times;
-          </div>
-          <div style={aboutText}>
-            <h2>Italy 2024</h2>
-          </div>
-          <div style={imageGalleryStyle}>
-            {photos.map((photo, index) => (
-              <img key={index} src={photo.src} alt={`Italy ${index}`} style={imageStyle} />
-            ))}
-          </div>
-        </div>
+  <div style={parentContainerStyle}>
+    <div style={mutedOverlayStyleTwo}>
+      <div
+        style={closeModalStyle}
+        onClick={handleCloseAbout}
+      >
+        &times;
       </div>
-    )}
+      <div style={aboutText}>
+        <h2>Italy 2024</h2>
+      </div>
+
+      <section id="photos" style={sectionStyleMobile}>
+        {photoDisplay.map((photo, index) => (
+          <div key={index} style={photoWrapperStyle}>
+            {isMobile ? (
+              <LowResImage
+                src={photo.src.replace('midres', 'lowres')}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+              />
+            ) : (
+              <BlurUpImage
+                src={photo.src}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
+              />
+            )}
+          </div>
+        ))}
+      </section>
+
+    </div>
+  </div>
+)}
+
+
 
     </div>
   );
