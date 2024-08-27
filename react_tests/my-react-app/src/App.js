@@ -9,6 +9,7 @@ import TestPage from './pages/TestPage';
 import PhotographyPage from './pages/PhotographyPage';
 import BlogPage from './pages/BlogPage';
 import AboutPage from './pages/AboutPage';
+import AboutPageTest from './pages/AboutPageTest';
 import RYMCollectionPage from './pages/blog/rym_blog';
 import CocktailBlogPage from './pages/blog/cocktail_blog';
 import AnalogBlogPage from './pages/blog/analog_blog';
@@ -83,6 +84,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/homepagetest" element={<HomePageTest />} />
+          <Route path="/aboutpagetest" element={<AboutPageTest />} />
           <Route path="/code" element={<CodePage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/music" element={<MusicPage />} />

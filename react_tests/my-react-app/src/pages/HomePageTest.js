@@ -99,7 +99,7 @@ const HomePage = () => {
       </header>
       <div style={linkContainerStyle}>
         <Link
-          to="/about"
+          to="/aboutpagetest"
           style={linkStyle(hovered === 'about')}
           onMouseEnter={() => setHovered('about')}
           onMouseLeave={() => setHovered(null)}
