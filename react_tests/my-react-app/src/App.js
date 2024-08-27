@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import HomePageTest from './pages/HomePageTest';
+import HomePageTestTwo from './pages/HomePageTestTwo';
 import WorkPageTest from './pages/WorkPageTest';
 import Italy2024PageTest from './pages/italy2024';
 import CodePage from './pages/CodePage';
@@ -87,6 +88,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/homepagetest" element={<HomePageTest />} />
+          <Route path="/homepagetesttwo" element={<HomePageTestTwo />} />
           <Route path="/aboutpagetest" element={<AboutPageTest />} />
           <Route path="/italy2024test" element={<Italy2024PageTest />} />
           <Route path="/workpagetest" element={<WorkPageTest />} />
