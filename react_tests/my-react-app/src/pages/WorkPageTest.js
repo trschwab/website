@@ -99,18 +99,18 @@ const AboutPageTest = () => {
     paddingTop: '5vh', // Add top padding
     paddingBottom: '5vh', // Add bottom padding
     boxSizing: 'border-box', // Ensures padding doesn't affect the total width/height
-    zIndex: 0,
+    zIndex: 3,
     overflowY: 'auto', // Enable vertical scrolling
   };
 
   const mutedOverlayStyleTwo = {
     background: 'rgba(0, 0, 0, 0.8)',
     width: '60%',
-    height: '80%', // Adjust this height as needed
+    height: '105%', // Adjust this height as needed
     overflowY: 'auto', // Enables vertical scrolling within this div
     padding: '20px',
     boxSizing: 'border-box',
-    zIndex: 1,
+    zIndex: 5,
   };
 
   const closeModalStyle = {
@@ -166,6 +166,21 @@ const AboutPageTest = () => {
     boxSizing: 'border-box', // Ensure padding doesn’t affect the total size
   };
   
+  const photoContainer = {
+    display: 'flex',
+    flexDirection: 'column', // Stack images vertically
+    alignItems: 'center', // Center images horizontally in the column
+    gap: '10px', // Space between images
+    width: '100%', // Ensure column takes full width of the container
+    maxWidth: '600px', // Optional: Set a maximum width for the column
+  }
+
+  const photoStyle = {
+    maxWidth: '100%', // Image will scale down to fit the width of its container
+    height: 'auto',   // Maintains the aspect ratio
+    objectFit: 'cover', // Ensure the image covers the space while maintaining aspect ratio
+  };
+
   
   const photoWrapperStyle = {
     padding: '10px', // Add padding on all sides (top, right, bottom, left)
@@ -279,29 +294,16 @@ return (
       <div style={aboutText}>
         <h2>Italy 2024</h2>
       </div>
-
-      <section id="photos" style={sectionStyleMobile}>
-        {photoDisplay.map((photo, index) => (
-          <div key={index} style={photoWrapperStyle}>
-            {isMobile ? (
-              <LowResImage
-                src={photo.src.replace('midres', 'lowres')}
-                alt={photo.alt}
-                width={photo.width}
-                height={photo.height}
-              />
-            ) : (
-              <BlurUpImage
-                src={photo.src}
-                alt={photo.alt}
-                width={photo.width}
-                height={photo.height}
-              />
-            )}
-          </div>
-        ))}
-      </section>
-
+      <div style={photoContainer}>
+      {photos.map((photo, index) => (
+        <img
+          key={index}
+          src={photo.src}
+          alt={photo.alt}
+          style={photoStyle}
+        />
+      ))}
+      </div>
     </div>
   </div>
 )}
