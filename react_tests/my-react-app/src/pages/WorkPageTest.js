@@ -1,4 +1,5 @@
 import React from "react";
+// import reducedPhotos from "./reducedPhotos"; // Assuming it's an array of photo objects
 import reducedPhotos from "./reducedPhotos"; // Assuming it's an array of photo objects
 
 const WorkPageTest = () => {
