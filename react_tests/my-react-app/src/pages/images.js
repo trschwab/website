@@ -11,11 +11,11 @@ const images = [
     "/photography/midres/09630022.JPG",
     "/photography/midres/07280013.JPG",
     "/photography/midres/06720010.JPG",
-    "/photography/midres/06650019.JPG",
+    // "/photography/midres/06650019.JPG",
     "/photography/midres/06580001.JPG",
     "/photography/midres/06570036.JPG",
     "/photography/midres/06570002.JPG",
-    "/photography/midres/06520020.JPG",
+    // "/photography/midres/06520020.JPG",
   
     "/photography/midres/09630021.JPG",
     "/photography/midres/16670007.JPG",

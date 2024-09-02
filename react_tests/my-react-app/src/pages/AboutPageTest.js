@@ -34,33 +34,40 @@ const AboutPageTest = () => {
   };
 
   const mutedOverlayStyle = {
-    background: 'rgba(0, 0, 0, 0.5)', // Dark overlay effect
+    background: 'rgba(0, 0, 0, 0.60)', // Dark overlay effect
     position: 'absolute',
     top: 0,
-    left: 0,
-    width: '40%', // Muting only the left 30%
+    left: 0, // Align to the left
+    right: 0, // Align to the right
+    width: '80%', // Set the width you need
     height: '100%',
+    margin: '0 auto', // Center the div horizontally
     zIndex: 1,
   };
+  
 
   const contentStyle = {
     position: 'relative',
     zIndex: 2, // Ensures the content appears above the muted overlay
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'center', // Centers the content vertically
+    justifyContent: 'center', // Centers the content horizontally
     height: '100vh',
-    paddingLeft: '40px', // Adds some padding to the content
+    paddingLeft: '40px', // Optional: Adjust/remove if not needed for centering
   };
+  
 
   const linkStyle = {
     position: 'absolute',
-    top: '8%',
-    left: '8%',
+    top: '10%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)', // This centers the element based on its own width and height
     color: 'white',
     fontSize: '24px',
     textDecoration: 'none',
     zIndex: 3, // Ensures the link appears above all content
   };
+  
 
   const linkTwoStyle = {
     position: 'absolute',
@@ -69,17 +76,19 @@ const AboutPageTest = () => {
     color: 'white',
     fontSize: '24px',
     textDecoration: 'none',
+    textAlign: 'center',
     zIndex: 3, // Ensures the link appears above all content
   };
 
   const textContainerStyle = {
     color: 'white',
-    width: '28%', // Take up the full width of the muted area
+    fontSize: '30px',
+    width: '40%', // Take up the full width of the muted area
     textAlign: 'left',
   };
 
   const scrollable = {
-    height: '200px', // Set the height you want
+    height: '50%', // Set the height you want
     overflowY: 'auto', // Enable vertical scrolling
     border: '1px solid #ccc', // Optional: for visual reference
   };
@@ -100,12 +109,12 @@ const AboutPageTest = () => {
       <div style={contentStyle}>
         <div style={textContainerStyle}>
           <div style={scrollable}>
-          <p>
+          {/* <p>
             I am a Data Engineer, a Composer, and a Photographer, based in New York City. This website serves to collect 
             any various work I have as it might be related to computer science or music, series of photos I have, even blog posts.
-            {'\n'}{'\n'}
+            <br /><br />
             If you’d like to contact me, you can email me at trschwab7 @ gmail.com.
-          </p>
+          </p> */}
           </div>
         </div>
       </div>
