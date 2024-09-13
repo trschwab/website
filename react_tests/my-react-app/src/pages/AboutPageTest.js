@@ -16,7 +16,7 @@ const HomePage = () => {
       overflowY: "auto",
     },
     header: {
-      position: "absolute",
+      position: "relative",
       top: 0,
       left: 0,
       width: "100%",
@@ -54,14 +54,14 @@ const HomePage = () => {
     },
     contentBox: {
       maxWidth: "800px",
-      textAlign: "center",
+      textAlign: "left",
       padding: "40px",
       backgroundColor: "rgba(255, 255, 255, 0.9)",
       boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
       borderRadius: "10px",
     },
     heading: {
-      fontSize: "32px",
+      fontSize: "24px",
       fontWeight: "bold",
       marginBottom: "20px",
       color: "#333",
@@ -110,19 +110,23 @@ const HomePage = () => {
       {/* Main Content */}
       <div style={styles.contentContainer}>
         <div style={styles.contentBox}>
-          <h1 style={styles.heading}>Hi, I’m Troy and this is my website.</h1>
+          {/* <h3 style={styles.heading}>Hi, I’m Troy and this is my website.</h3> */}
           <p style={styles.paragraph}>
-            I am a data engineer who enjoys composing as well. I am currently based in New York City, working at Pulse Analytics. This website serves to collect my public computer science work, compositions, and other miscellaneous items I may be working on.
-          </p>
-          <p style={styles.paragraph}>
-            If you’d like to contact me, you can email me at{" "}
-            <a href="mailto:trschwab7@gmail.com" style={styles.email}>
-              trschwab7@gmail.com
-            </a>.
-          </p>
-          <div style={styles.footer}>
-            Hope you have a lovely day.
-          </div>
+              Troy Schwab is a New York based programmer, photographer, and musician.
+              <br></br><br></br>
+              His work as a Data Engineer provides
+              a high degree of agency as it relates to dynamic work. His current role at Pulse Analytics innovates modern extraction 
+              pipelines with a contemporary data stack. Before this, he played an integral role at the 2020 Census with Accenture 
+              Federal Services -- building out the processing, storage, and analytics for all responses received between 2019 and 2022.
+              He is published as a co-author in American Society for Engineering Education's 2018 paper Bias in 
+              First-Year Engineering Student Peer Evaluations.
+              <br></br><br></br>
+              Since 2016, he's performed in varying capacities as a multi-instrumentalist, and composed for a number of short
+              films and documentaries, as well as DJing with both digital decks and vinyl turntables.
+              He's released several projects independently, notably the vinyl release of his EP Burnt in 2024.
+              <br></br><br></br>
+              In his spare time he takes photographs, a number of which are compiled on this website.
+            </p>
         </div>
       </div>
     </div>
