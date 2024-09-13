@@ -32,6 +32,7 @@ const MusicPage = () => {
       height: "100vh",
       width: "100vw",
       backgroundSize: "cover",
+      backgroundColor: "white",
       backgroundPosition: "center",
       display: "flex",
       flexDirection: "column",

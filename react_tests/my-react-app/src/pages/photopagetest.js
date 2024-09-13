@@ -69,6 +69,7 @@ const PhotoPage = () => {
     container: {
       height: "100vh",
       width: "100vw",
+      backgroundColor: "white",
       backgroundSize: "cover",
       backgroundPosition: "center",
       display: "flex",
