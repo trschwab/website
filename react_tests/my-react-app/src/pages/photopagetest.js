@@ -1,7 +1,69 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import BlurUpImage from '../components/BlurUpImage';
+import LowResImage from '../components/LowResImage';
+import photos from "./allPhotos";
 
-const HomePage = () => {
+const sectionStyle = {
+  lineHeight: 0,
+  WebkitRowGap: '0px',
+  columnGap: '0px',
+  MozColumnGap: '0px',
+  WebkitColumnCount: 3,
+  MozColumnCount: 3,
+  columnCount: 3,
+};
+
+const sectionStyleMobile = {
+  lineHeight: 0,
+  WebkitColumnGap: '0px',
+  columnGap: '0px',
+  MozColumnGap: '0px',
+  WebkitColumnCount: 1,
+  MozColumnCount: 1,
+  columnCount: 1,
+};
+
+const sectionStyleDesktop = {
+  lineHeight: 0,
+  WebkitColumnGap: '0px',
+  columnGap: '0px',
+  MozColumnGap: '0px',
+  WebkitColumnCount: 3,
+  MozColumnCount: 3,
+  columnCount: 3,
+};
+
+
+const photoWrapperStyle = {
+  padding: '10px', // Add padding on all sides (top, right, bottom, left)
+  display: 'inline-block',
+  width: '100%',
+  boxSizing: 'border-box',
+};
+
+function reorganizePhotos(photos) {
+  const numPhotos = photos.length;
+  const numColumns = 3;
+  const columnHeight = Math.ceil(numPhotos / numColumns);
+  const newPhotos = new Array(numPhotos);
+
+  for (let i = 0; i < numPhotos; i++) {
+      // Calculate new position
+      const column = i % numColumns;
+      const row = Math.floor(i / numColumns);
+      const newIndex = column * columnHeight + row;
+
+      // Place photo in new position
+      newPhotos[newIndex] = photos[i];
+  }
+
+  return newPhotos;
+}
+
+const reorganizedPhotos = reorganizePhotos(photos);
+
+const PhotoPage = () => {
 
   const styles = {
     container: {
@@ -16,7 +78,7 @@ const HomePage = () => {
       overflowY: "auto",
     },
     header: {
-      position: "absolute",
+      position: "relative",
       top: 0,
       left: 0,
       width: "100%",
@@ -84,6 +146,21 @@ const HomePage = () => {
     },
   };
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const sectionStyle = isMobile ? sectionStyleMobile : sectionStyleDesktop;
+  const photoDisplay = isMobile ? photos : reorganizedPhotos;
+
+
   return (
     <div style={styles.container}>
       {/* Navigation Header */}
@@ -106,27 +183,32 @@ const HomePage = () => {
           </ul>
         </nav>
       </header>
-
-      {/* Main Content */}
       <div style={styles.contentContainer}>
-        <div style={styles.contentBox}>
-          <h1 style={styles.heading}>Hi, I’m Troy and this is my website.</h1>
-          <p style={styles.paragraph}>
-            I am a data engineer who enjoys composing as well. I am currently based in New York City, working at Pulse Analytics. This website serves to collect my public computer science work, compositions, and other miscellaneous items I may be working on.
-          </p>
-          <p style={styles.paragraph}>
-            If you’d like to contact me, you can email me at{" "}
-            <a href="mailto:trschwab7@gmail.com" style={styles.email}>
-              trschwab7@gmail.com
-            </a>.
-          </p>
-          <div style={styles.footer}>
-            Hope you have a lovely day.
-          </div>
+      <section id="photos" style={sectionStyle}>
+      {photoDisplay.map((photo, index) => (
+        <div key={index} style={photoWrapperStyle}>
+          {isMobile ? (
+            <LowResImage
+              src={photo.src.replace('midres', 'lowres')}
+              alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+            />
+          ) : (
+            <BlurUpImage
+              src={photo.src}
+              alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+            />
+          )}
         </div>
-      </div>
+      ))}
+    </section>
+    </div>
+
     </div>
   );
 };
 
-export default HomePage;
+export default PhotoPage;

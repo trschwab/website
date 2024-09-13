@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-horizontal-slider": "^1.1.1",
@@ -16,6 +17,7 @@
     "react-photo-album": "^2.3.0",
     "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
     "serve": "^14.2.3",
     "web-vitals": "^2.1.4"
   },

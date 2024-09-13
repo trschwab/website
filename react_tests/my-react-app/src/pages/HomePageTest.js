@@ -89,7 +89,7 @@ const HomePage = () => {
           About
         </Link>
         <Link
-          to="/workpagetest"
+          to="/photopagetest"
           style={linkStyle(hovered === 'work')}
           onMouseEnter={() => setHovered('work')}
           onMouseLeave={() => setHovered(null)}
