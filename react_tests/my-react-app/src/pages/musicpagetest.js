@@ -74,7 +74,7 @@ const MusicPage = () => {
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
-      paddingTop: "100px",
+      paddingTop: "20px",
       backgroundColor: "#f9f9f9",
     },
     contentBox: {
@@ -162,8 +162,8 @@ const MusicPage = () => {
 
           <h4>NYU Steinhardt</h4>
           <p>2016 performance at NYU Steinhardt's Interactive Performance Art Concert Series.</p>
-
-
+          <br></br><br></br>
+          <br></br><br></br>
           <PhotoAlbum layout="masonry" photos={photos}
       columns={(containerWidth) => {
         if (containerWidth < 500) return 1;

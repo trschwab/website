@@ -50,7 +50,7 @@ const HomePage = () => {
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
-      paddingTop: "100px", // Leaves space for the header
+      paddingTop: "20px", // Leaves space for the header
       backgroundColor: "#f9f9f9",
     },
     contentBox: {
@@ -113,14 +113,19 @@ const HomePage = () => {
         <div style={styles.contentBox}>
           {/* <h3 style={styles.heading}>Hi, I’m Troy and this is my website.</h3> */}
           <p style={styles.paragraph}>
-              Troy Schwab is a New York based programmer, photographer, and musician.
+              Troy Schwab is a New York City based programmer, photographer, and musician.
               <br></br><br></br>
-              His work as a Data Engineer provides
-              a high degree of agency as it relates to dynamic work. His current role at Pulse Analytics innovates modern extraction 
-              pipelines with a contemporary data stack. Before this, he played an integral role at the 2020 Census with Accenture 
+              His work as a Data Engineer provides a high degree of agency as a result of his diversity as an engineer. 
+              His current role at Pulse Analytics innovates modern extraction pipelines with a contemporary data stack. 
+              Technologies include Python, SQL, and typical Data Engineer tools like Pandas or BeautifulSoup, AWS products like S3, 
+              Athena, Cloudwatch, or Airflow, infrastructure methodologies involving Poetry, Docker, Container Repositories, DAGS, 
+              with varying innovative technology, related to RPA work like UIPath, NLP, Apryse, among others.
+              Before this, he played an integral role at the 2020 Census with Accenture 
               Federal Services -- building out the processing, storage, and analytics for all responses received between 2019 and 2022.
+              Mainly Hadoop, Java, NiFi, Oozie, XML, and Hive comprised the tech stack.
               He is published as a co-author in American Society for Engineering Education's 2018 paper Bias in 
               First-Year Engineering Student Peer Evaluations.
+              Most of his personal work now revolves around React, Python, and Django.
               <br></br><br></br>
               Since 2016, he's performed in varying capacities as a multi-instrumentalist, and composed for a number of short
               films and documentaries, as well as DJing with both digital decks and vinyl turntables.

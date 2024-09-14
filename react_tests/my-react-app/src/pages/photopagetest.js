@@ -112,7 +112,7 @@ const PhotoPage = () => {
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
-      paddingTop: "100px", // Leaves space for the header
+      paddingTop: "20px",
       backgroundColor: "#f9f9f9",
     },
     contentBox: {
