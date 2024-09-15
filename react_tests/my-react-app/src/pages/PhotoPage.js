@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BlurUpImage from '../components/BlurUpImage';
 import LowResImage from '../components/LowResImage';
 import photos from "./reducedPhotos";
+import '../styles_v2.css';
 
 const sectionStyle = {
   lineHeight: 0,
@@ -166,20 +167,20 @@ const PhotoPage = () => {
     <div style={styles.container}>
       {/* Navigation Header */}
       <header style={styles.header}>
-        <Link to="/homepagetest" style={styles.logo}>Troy Schwab</Link>
+        <Link to="/" style={styles.logo}>Troy Schwab</Link>
         <nav>
           <ul style={styles.navLinks}>
             <li>
-              <Link to="/musicpagetest" style={styles.navLink}>Music</Link>
+              <Link to="/music" style={styles.navLink}>Music</Link>
             </li>
             <li>
-              <Link to="/photopagetest" style={styles.navLink}>Photography</Link>
+              <Link to="/photography" style={styles.navLink}>Photography</Link>
             </li>
             {/* <li>
               <Link to="/notespagetest" style={styles.navLink}>Notes</Link>
             </li> */}
             <li>
-              <Link to="/aboutpagetest" style={styles.navLink}>About</Link>
+              <Link to="/about" style={styles.navLink}>About</Link>
             </li>
           </ul>
         </nav>
