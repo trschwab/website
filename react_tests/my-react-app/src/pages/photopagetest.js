@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import BlurUpImage from '../components/BlurUpImage';
 import LowResImage from '../components/LowResImage';
-import photos from "./allPhotos";
+import photos from "./reducedPhotos";
 
 const sectionStyle = {
   lineHeight: 0,
