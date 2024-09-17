@@ -95,58 +95,57 @@ const allPhotos = [
   { src: "/photography/midres/10970013.JPG", width: 1000, height: 650 }, // Dimes sq Man with Dog
   { src: "/photography/midres/09640013 copy.JPG", width: 650, height: 1000 }, // Man reading and Beer Sign
   { src: "/photography/midres/09630004.JPG", width: 1000, height: 650 }, // Eclipse
-  { src: "/photography/midres/09640032 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/09640011 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/09640017.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/09620008 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/09640027.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/10950028.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/10950016.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/09630013.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/74220034.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/10970001.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/74220003 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/10950014.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/74210003.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/70310011.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/10970034 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/65330016.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/65340013.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/74200009 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/20330011.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/74220008 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/20330014 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/74210013 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/65340015.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/20330033 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/39220013 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/39220011.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/33320036 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/20330002.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/07280013.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/000017370025.jpg", width: 1000, height: 650 },
-  { src: "/photography/midres/000017370015.jpg", width: 1000, height: 650 },
-  // { src: "/photography/midres/39220035.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/39210026.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/94560011.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/62880026.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/62880024.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/33330033 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/62870034.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/94550013 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/33330008 copy.JPG", width: 650, height: 1000 },
-  { src: "/photography/midres/94540005.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/000019180024.jpg", width: 1000, height: 650 },
-  { src: "/photography/midres/06620016.JPG", width: 3583, height: 2376 },
-  { src: "/photography/midres/000079440027.jpg", width: 1000, height: 650 },
-  { src: "/photography/midres/000019160001.jpg", width: 1000, height: 650 },
-  { src: "/photography/midres/10270012.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/01680024.JPG", width: 1000, height: 650 },
-  { src: "/photography/midres/06630012.JPG", width: 3583, height: 2376 },
-  { src: "/photography/midres/06620005.JPG", width: 2376, height: 3583 },
-  { src: "/photography/midres/06770019.JPG", width: 3583, height: 2376 },
-  { src: "/photography/midres/06660009.JPG", width: 3583, height: 2376 },
-  { src: "/photography/midres/000019180025.jpg", width: 1000, height: 650 },
+  { src: "/photography/midres/09640032 copy.JPG", width: 650, height: 1000 }, // polska fish sign
+  { src: "/photography/midres/09640011 copy.JPG", width: 650, height: 1000 }, // plant and broken window
+  { src: "/photography/midres/09640017.JPG", width: 1000, height: 650 }, // chicken sign woman
+  { src: "/photography/midres/09620008 copy.JPG", width: 650, height: 1000 }, // grany smith apple
+  { src: "/photography/midres/09640027.JPG", width: 1000, height: 650 }, // tulip women
+  { src: "/photography/midres/10950028.JPG", width: 1000, height: 650 }, // old couple east river
+  { src: "/photography/midres/10950016.JPG", width: 1000, height: 650 }, // single fisherman east river
+  { src: "/photography/midres/09630013.JPG", width: 1000, height: 650 }, // three building top herald sq
+  { src: "/photography/midres/74220034.JPG", width: 1000, height: 650 }, // beer sign pasting
+  { src: "/photography/midres/10970001.JPG", width: 1000, height: 650 }, // pidgeons playing chess 
+  { src: "/photography/midres/74220003 copy.JPG", width: 650, height: 1000 }, // farmers market man smelling rosemary
+  { src: "/photography/midres/10950014.JPG", width: 1000, height: 650 }, // close up east river fishermen
+  { src: "/photography/midres/74210003.JPG", width: 1000, height: 650 }, // shoes downtown 
+  { src: "/photography/midres/70310011.JPG", width: 1000, height: 650 }, // couple hugging and skating 
+  { src: "/photography/midres/10970034 copy.JPG", width: 650, height: 1000 }, // codex
+  { src: "/photography/midres/65330016.JPG", width: 1000, height: 650 }, // rooftop and tree
+  { src: "/photography/midres/65340013.JPG", width: 1000, height: 650 }, // blurry bikes
+  { src: "/photography/midres/74200009 copy.JPG", width: 650, height: 1000 }, // window and tree 
+  { src: "/photography/midres/20330011.JPG", width: 1000, height: 650 }, // snowy bike
+  { src: "/photography/midres/74220008 copy.JPG", width: 650, height: 1000 }, // child and flowers farmers market
+  { src: "/photography/midres/20330014 copy.JPG", width: 650, height: 1000 }, // snowy church
+  { src: "/photography/midres/74210013 copy.JPG", width: 650, height: 1000 }, // pink rooftop 
+  { src: "/photography/midres/65340015.JPG", width: 1000, height: 650 }, // bikes middle finger
+  { src: "/photography/midres/20330033 copy.JPG", width: 650, height: 1000 }, // cup and sunlight
+  { src: "/photography/midres/39220013 copy.JPG", width: 650, height: 1000 }, // building scaling
+  { src: "/photography/midres/39220011.JPG", width: 1000, height: 650 }, // plane
+  { src: "/photography/midres/33320036 copy.JPG", width: 650, height: 1000 }, // miami in twos
+  { src: "/photography/midres/20330002.JPG", width: 1000, height: 650 }, // snowy building
+  { src: "/photography/midres/07280013.JPG", width: 1000, height: 650 }, // snowy bench
+  { src: "/photography/midres/000017370025.jpg", width: 1000, height: 650 }, // puddle reflection
+  { src: "/photography/midres/000017370015.jpg", width: 1000, height: 650 }, // blurry colored dots
+  { src: "/photography/midres/39210026.JPG", width: 1000, height: 650 }, // subway door
+  { src: "/photography/midres/94560011.JPG", width: 1000, height: 650 }, // IH blue building
+  { src: "/photography/midres/62880026.JPG", width: 1000, height: 650 }, // MET Windows
+  { src: "/photography/midres/62880024.JPG", width: 1000, height: 650 }, // MET Temple room
+  { src: "/photography/midres/33330033 copy.JPG", width: 650, height: 1000 }, // Miami moon
+  { src: "/photography/midres/62870034.JPG", width: 1000, height: 650 }, // Women and Peppers
+  { src: "/photography/midres/94550013 copy.JPG", width: 650, height: 1000 }, // Cinci River
+  { src: "/photography/midres/33330008 copy.JPG", width: 650, height: 1000 }, // Miami Buoy and Ocean
+  { src: "/photography/midres/94540005.JPG", width: 1000, height: 650 }, // Tree IH
+  { src: "/photography/midres/000019180024.jpg", width: 1000, height: 650 }, // MET Statue side
+  { src: "/photography/midres/06620016.JPG", width: 3583, height: 2376 }, // Infinity Path Man Ravello
+  { src: "/photography/midres/000079440027.jpg", width: 1000, height: 650 }, // Yellow NY Grafitti
+  { src: "/photography/midres/000019160001.jpg", width: 1000, height: 650 }, // Mexico Moon
+  { src: "/photography/midres/10270012.JPG", width: 1000, height: 650 }, // Mexico Sun
+  { src: "/photography/midres/01680024.JPG", width: 1000, height: 650 }, // Diner Beacon
+  { src: "/photography/midres/06630012.JPG", width: 3583, height: 2376 }, // Positano Beach girl
+  { src: "/photography/midres/06620005.JPG", width: 2376, height: 3583 }, // Uscita Boy Ravello
+  { src: "/photography/midres/06770019.JPG", width: 3583, height: 2376 }, // Airport Woman Friedlander
+  { src: "/photography/midres/06660009.JPG", width: 3583, height: 2376 }, // Madonna and Child 3
+  { src: "/photography/midres/000019180025.jpg", width: 1000, height: 650 }, // MET Statue Front
 ];
   
 export default allPhotos;
