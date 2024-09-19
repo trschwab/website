@@ -2,70 +2,44 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import BlurUpImage from '../components/BlurUpImage';
 import LowResImage from '../components/LowResImage';
-import photos from "./reducedPhotos";
 import '../styles_v2.css';
-
-const sectionStyle = {
-  lineHeight: 0,
-  WebkitRowGap: '0px',
-  columnGap: '0px',
-  MozColumnGap: '0px',
-  WebkitColumnCount: 3,
-  MozColumnCount: 3,
-  columnCount: 3,
-};
 
 const sectionStyleMobile = {
   lineHeight: 0,
-  WebkitColumnGap: '0px',
   columnGap: '0px',
-  MozColumnGap: '0px',
-  WebkitColumnCount: 1,
-  MozColumnCount: 1,
   columnCount: 1,
 };
 
 const sectionStyleDesktop = {
   lineHeight: 0,
-  WebkitColumnGap: '0px',
   columnGap: '0px',
-  MozColumnGap: '0px',
-  WebkitColumnCount: 3,
-  MozColumnCount: 3,
   columnCount: 3,
 };
 
-
 const photoWrapperStyle = {
-  padding: '10px', // Add padding on all sides (top, right, bottom, left)
+  padding: '10px',
   display: 'inline-block',
   width: '100%',
   boxSizing: 'border-box',
 };
 
-function reorganizePhotos(photos) {
+const reorganizePhotos = (photos) => {
   const numPhotos = photos.length;
   const numColumns = 3;
   const columnHeight = Math.ceil(numPhotos / numColumns);
   const newPhotos = new Array(numPhotos);
 
   for (let i = 0; i < numPhotos; i++) {
-      // Calculate new position
-      const column = i % numColumns;
-      const row = Math.floor(i / numColumns);
-      const newIndex = column * columnHeight + row;
-
-      // Place photo in new position
-      newPhotos[newIndex] = photos[i];
+    const column = i % numColumns;
+    const row = Math.floor(i / numColumns);
+    const newIndex = column * columnHeight + row;
+    newPhotos[newIndex] = photos[i];
   }
 
   return newPhotos;
-}
-
-const reorganizedPhotos = reorganizePhotos(photos);
+};
 
 const PhotoPage = () => {
-
   const styles = {
     container: {
       height: "100vh",
@@ -116,41 +90,25 @@ const PhotoPage = () => {
       paddingTop: "20px",
       backgroundColor: "#f9f9f9",
     },
-    contentBox: {
-      maxWidth: "800px",
-      textAlign: "center",
-      padding: "40px",
-      backgroundColor: "rgba(255, 255, 255, 0.9)",
-      boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
-      borderRadius: "10px",
-    },
-    heading: {
-      fontSize: "32px",
-      fontWeight: "bold",
-      marginBottom: "20px",
-      color: "#333",
-    },
-    paragraph: {
-      fontSize: "18px",
-      lineHeight: "1.6",
-      marginBottom: "20px",
-      color: "#555",
-    },
-    email: {
-      fontSize: "18px",
-      color: "#0073e6",
-      textDecoration: "none",
-    },
-    footer: {
-      marginTop: "30px",
-      fontSize: "16px",
-      color: "#666",
-    },
   };
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+  const [photos, setPhotos] = useState([]);
 
+  // Fetch signed URLs from the backend
   useEffect(() => {
+    const fetchPhotos = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/get-signed-urls-photos'); // Adjust the URL if necessary
+        const data = await response.json();
+        setPhotos(data);
+      } catch (error) {
+        console.error("Error fetching signed URLs:", error);
+      }
+    };
+
+    fetchPhotos();
+
     const handleResize = () => {
       setIsMobile(window.innerWidth < 600);
     };
@@ -160,8 +118,7 @@ const PhotoPage = () => {
   }, []);
 
   const sectionStyle = isMobile ? sectionStyleMobile : sectionStyleDesktop;
-  const photoDisplay = isMobile ? photos : reorganizedPhotos;
-
+  const reorganizedPhotos = reorganizePhotos(photos);
 
   return (
     <div style={styles.container}>
@@ -176,39 +133,36 @@ const PhotoPage = () => {
             <li>
               <Link to="/photography" style={styles.navLink}>Photography</Link>
             </li>
-            {/* <li>
-              <Link to="/notespagetest" style={styles.navLink}>Notes</Link>
-            </li> */}
             <li>
               <Link to="/about" style={styles.navLink}>About</Link>
             </li>
           </ul>
         </nav>
       </header>
-      <div style={styles.contentContainer}>
-      <section id="photos" style={sectionStyle}>
-      {photoDisplay.map((photo, index) => (
-        <div key={index} style={photoWrapperStyle}>
-          {isMobile ? (
-            <LowResImage
-              src={photo.src.replace('midres', 'lowres')}
-              alt={photo.alt}
-              width={photo.width}
-              height={photo.height}
-            />
-          ) : (
-            <BlurUpImage
-              src={photo.src}
-              alt={photo.alt}
-              width={photo.width}
-              height={photo.height}
-            />
-          )}
-        </div>
-      ))}
-    </section>
-    </div>
 
+      <div style={styles.contentContainer}>
+        <section id="photos" style={sectionStyle}>
+          {reorganizedPhotos.map((photo, index) => (
+            <div key={index} style={photoWrapperStyle}>
+              {isMobile ? (
+                <LowResImage
+                  src={photo.src.replace('midres', 'lowres')}
+                  alt={photo.alt}
+                  width={photo.width}
+                  height={photo.height}
+                />
+              ) : (
+                <BlurUpImage
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={photo.width}
+                  height={photo.height}
+                />
+              )}
+            </div>
+          ))}
+        </section>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom'; // Import Link for navigation
-import images from './homeimages';
 import '../styles_v2.css';
 
 const HomePage = () => {
@@ -10,24 +9,33 @@ const HomePage = () => {
   const [imageError, setImageError] = useState('');
 
   useEffect(() => {
-    const getRandomImage = () => {
-      const randomIndex = Math.floor(Math.random() * images.length);
-      return images[randomIndex];
+    // Fetch the signed URLs from the backend
+    const fetchSignedUrls = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/get-signed-urls');
+        const data = await response.json();
+
+        // Select a random image from the signed URLs
+        const randomIndex = Math.floor(Math.random() * data.length);
+        const selectedImage = data[randomIndex].src;
+        setBackgroundImage(selectedImage);
+
+        // Check if the image loads successfully
+        const img = new Image();
+        img.src = selectedImage;
+        img.onload = () => {
+          setImageError('');
+        };
+        img.onerror = () => {
+          setImageError('Image failed to load: ' + selectedImage);
+        };
+      } catch (error) {
+        console.error('Error fetching signed URLs:', error);
+        setImageError('Failed to load background image.');
+      }
     };
 
-    const selectedImage = getRandomImage();
-    setBackgroundImage(selectedImage);
-    
-    // Create an Image object to verify if the URL is valid
-    const img = new Image();
-    img.src = selectedImage;
-    img.onload = () => {
-      setImageError('');
-    };
-    img.onerror = () => {
-      setImageError('Image failed to load: ' + selectedImage);
-    };
-
+    fetchSignedUrls();
   }, []);
 
   const containerStyle = {
@@ -40,12 +48,12 @@ const HomePage = () => {
     margin: 0,
     padding: 0,
     overflow: 'hidden',
-    position: 'relative', /* Allows absolute positioning of header and links */
+    position: 'relative', // Allows absolute positioning of header and links
   };
 
   const headerStyle = {
     position: 'absolute',
-    top: '8%', /* Adjust this value to move the header further down */
+    top: '8%',
     left: '50%',
     transform: 'translateX(-50%)',
     color: 'white',
@@ -60,16 +68,16 @@ const HomePage = () => {
     top: '40%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    display: 'flex', /* Use flexbox for horizontal alignment */
-    justifyContent: 'center', /* Center links horizontally */
+    display: 'flex',
+    justifyContent: 'center',
   };
 
   const linkStyle = (isHovered) => ({
-    color: isHovered ? '#b6b6b6' : 'white', /* Gray out on hover */
+    color: isHovered ? '#b6b6b6' : 'white',
     fontSize: '30px',
-    textDecoration: 'none', /* Removes underline from links */
-    margin: '0 20px', /* Space between links */
-    transition: 'color 0.3s ease', /* Smooth transition effect */
+    textDecoration: 'none',
+    margin: '0 20px',
+    transition: 'color 0.3s ease',
   });
 
   return (
@@ -103,10 +111,6 @@ const HomePage = () => {
           {imageError}
         </div>
       )}
-      {/* <div style={{ position: 'absolute', bottom: '20px', left: '20px', color: 'white' }}>
-        <strong>Current Image URL:</strong>
-        <div>{backgroundImage}</div>
-      </div> */}
     </div>
   );
 };
