@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import MusicPage from './pages/MusicPage';
 import PhotoPage from './pages/PhotoPage';
 import AboutPage from './pages/AboutPage';
+import TestPage from './pages/testPage';
 import MetaTags from './components/MetaTags';
 import './fadeTransitions.css'; // Include the transition CSS
 
@@ -22,6 +23,7 @@ const AppContent = () => {
             <Route path="/music" element={<MusicPage />} />
             <Route path="/photography" element={<PhotoPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/test" element={<TestPage />} />
           </Routes>
         </CSSTransition>
       </TransitionGroup>
