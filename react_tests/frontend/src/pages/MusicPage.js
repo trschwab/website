@@ -131,7 +131,9 @@ const MusicPage = () => {
       <div style={styles.contentContainer}>
         <div style={styles.contentBox}>
           <h4>Burnt EP</h4>
-          <p>2024 EP titled Burnt<br />With Vinyl & Digital release</p>
+          <p>2024 EP titled Burnt
+          <br />
+          With <a href="https://www.discogs.com/release/31654388-Troy-Schwab-Burnt-Ep" target="_blank" rel="noopener noreferrer">Vinyl</a> & Digital release</p>
           <br></br>
           <h4>Live Guitar</h4>
           <p>2023 performance at The Tank for one-act plays written by Nicole Frances Goth and Pat D Robinson</p>
