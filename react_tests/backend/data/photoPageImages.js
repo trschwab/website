@@ -1,9 +1,13 @@
 const transformPhotoObjects = (photos) => {
-    return photos.flatMap(photo => [
-      `photography/midres/${photo.src}`,
-      `photography/lowres/${photo.src}`
-    ]);
-  };
+  return photos.flatMap(photo => [
+    {
+      midres: `photography/mires/${photo.src}`,
+      lowres: `photography/lowres/${photo.src}`,
+      width: photo.width,
+      height: photo.height
+    }
+  ]);
+};
 
   const files = [
     { src: "94890036.JPG", width: 2376, height: 3583 }, // close up motorcycle

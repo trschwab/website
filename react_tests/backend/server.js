@@ -67,7 +67,7 @@ app.get('/get-signed-urls-photos', async (req, res) => {
         Expires: 60 * 60,
       };
       const url = await s3.getSignedUrlPromise('getObject', params);
-      return { src: url, width: 2376, height: 3583 }; // Modify as needed
+      return { midres: url, width: 2376, height: 3583 }; // Modify as needed
     }));
     res.json(signedUrls);
   } catch (err) {

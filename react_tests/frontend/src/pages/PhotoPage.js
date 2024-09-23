@@ -141,26 +141,20 @@ const PhotoPage = () => {
       </header>
 
       <div style={styles.contentContainer}>
-        <section id="photos" style={sectionStyle}>
-          {reorganizedPhotos.map((photo, index) => (
-            <div key={index} style={photoWrapperStyle}>
-              {isMobile ? (
-                <LowResImage
-                  src={photo.src.replace('midres', 'lowres')}
-                  alt={photo.alt}
-                  width={photo.width}
-                  height={photo.height}
-                />
-              ) : (
-                <BlurUpImage
-                  src={photo.src}
-                  alt={photo.alt}
-                  width={photo.width}
-                  height={photo.height}
-                />
-              )}
-            </div>
-          ))}
+      <section>
+      {reorganizedPhotos.map((photo, index) => (
+        <div key={index} style={photoWrapperStyle}>
+          <p>{photo.midres}</p>
+          <p>{photo.width}</p>
+          <p>{photo.height}</p>
+          <p>{photo.lowres}</p>
+          {/* <img
+            src={photo.src}
+            width={photo.width}
+            height={photo.height}
+          /> */}
+          </div>
+        ))}
         </section>
       </div>
     </div>
