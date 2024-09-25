@@ -133,7 +133,8 @@ const MusicPage = () => {
           <h4>Burnt EP</h4>
           <p>2024 EP titled Burnt
           <br />
-          With <a href="https://www.discogs.com/release/31654388-Troy-Schwab-Burnt-Ep" target="_blank" rel="noopener noreferrer">Vinyl</a> & Digital release</p>
+          With <a href="https://www.discogs.com/release/31654388-Troy-Schwab-Burnt-Ep" target="_blank" rel="noopener noreferrer">Vinyl</a> & 
+          <a href="https://open.spotify.com/album/45aSwIWApQuRJsdOWSUouk?si=e5x3ZtGOSTyP2M-GeEPVjw" target="_blank" rel="noopener noreferrer">Digital</a> release</p>
           <br></br>
           <h4>Live Guitar</h4>
           <p>2023 performance at The Tank for one-act plays written by Nicole Frances Goth and Pat D Robinson</p>
