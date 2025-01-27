@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import PhotoAlbum from "react-photo-album";
+import config from "./config";
 
 const PhotoPage = () => {
   const galleryStyle = {
@@ -71,7 +72,7 @@ const PhotoPage = () => {
     // Fetch photos
     const fetchPhotos = async () => {
       try {
-        const response = await fetch('http://localhost:5000/get-signed-urls-photos');
+        const response = await fetch(`${config.API_BASE_URL}/get-signed-urls-photos`);
         const data = await response.json();
   
         // Map photos to the required structure
@@ -98,9 +99,9 @@ const PhotoPage = () => {
     };
   }, []);
 
-  if (photos.length === 0) {
-    return <div>Loading...</div>;
-  }
+  // if (photos.length === 0) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <div>

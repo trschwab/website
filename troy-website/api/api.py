@@ -12,7 +12,7 @@ load_dotenv()
 
 # Flask app setup
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://troyschwab.com"}})
 
 # AWS Configuration from environment variables
 S3_BUCKET = os.getenv("S3_BUCKET", "troyschwab-resources")  # Replace with your actual S3 bucket
@@ -30,7 +30,7 @@ def get_s3_client():
         aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
     )
 
-@app.route('/get-signed-urls-photos', methods=['GET'])
+@app.route('/api/get-signed-urls-photos', methods=['GET'])
 def get_signed_urls_photos():
     """Fetch filePaths from the photoPageImages.js file and generate presigned URLs."""
     try:
@@ -78,7 +78,7 @@ def get_signed_urls_photos():
         return jsonify({"error": str(e)}), 500
 
 
-@app.route('/get-signed-urls-photos-home', methods=['GET'])
+@app.route('/api/get-signed-urls-photos-home', methods=['GET'])
 def get_signed_urls_photos_home():
     """Fetch filePaths from the photoPageImages.js file and generate presigned URLs."""
     try:
@@ -126,7 +126,7 @@ def get_signed_urls_photos_home():
         return jsonify({"error": str(e)}), 500
     
 
-@app.route('/get-signed-urls-photos-music', methods=['GET'])
+@app.route('/api/get-signed-urls-photos-music', methods=['GET'])
 def get_signed_urls_photos_music():
     """Fetch filePaths from the photoPageImages.js file and generate presigned URLs."""
     try:

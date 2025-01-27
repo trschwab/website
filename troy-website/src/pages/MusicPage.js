@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PhotoAlbum from "react-photo-album";
 import "react-photo-album/styles.css";
 import '../styles_v2.css';
+import config from "./config";
 
 const MusicPage = () => {
   const [photos, setPhotos] = useState([]);
@@ -21,7 +22,7 @@ const MusicPage = () => {
     // Fetch photos
     const fetchPhotos = async () => {
       try {
-        const response = await fetch('http://localhost:5000/get-signed-urls-photos-music');
+        const response = await fetch(`${config.API_BASE_URL}/get-signed-urls-photos-music`);
         const data = await response.json();
   
         // Map photos to the required structure
@@ -172,7 +173,7 @@ const MusicPage = () => {
           <p>2024 EP titled Burnt
           <br />
           With <a href="https://www.discogs.com/release/31654388-Troy-Schwab-Burnt-Ep" target="_blank" rel="noopener noreferrer">Vinyl</a> & 
-          <a href="https://open.spotify.com/album/45aSwIWApQuRJsdOWSUouk?si=e5x3ZtGOSTyP2M-GeEPVjw" target="_blank" rel="noopener noreferrer">Digital</a> release</p>
+          <a href="https://open.spotify.com/album/45aSwIWApQuRJsdOWSUouk?si=e5x3ZtGOSTyP2M-GeEPVjw" target="_blank" rel="noopener noreferrer">  Digital</a> release</p>
           <br></br>
           <h4>Live Guitar</h4>
           <p>2023 performance at The Tank for one-act plays written by Nicole Frances Goth and Pat D Robinson</p>

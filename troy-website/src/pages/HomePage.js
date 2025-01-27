@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import '../styles_v2.css';
+import config from "./config";
 
 const HomePage = () => {
   const [hovered, setHovered] = useState(null);
@@ -12,7 +13,7 @@ const HomePage = () => {
     // Fetch the signed URLs from the backend
     const fetchSignedUrls = async () => {
       try {
-        const response = await fetch('http://localhost:5000/get-signed-urls-photos-home');
+        const response = await fetch(`${config.API_BASE_URL}/get-signed-urls-photos-home`);
         const data = await response.json();
 
         // Select a random image from the signed URLs

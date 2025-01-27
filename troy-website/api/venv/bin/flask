@@ -1,4 +1,4 @@
-#!/Users/troyschwab/Documents/github_website_2/troy-website/api/venv/bin/python3
+#!/Users/troyschwab/Documents/github_website/troy-website/api/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

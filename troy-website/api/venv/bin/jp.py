@@ -1,4 +1,4 @@
-#!/Users/troyschwab/Documents/github_website_2/troy-website/api/venv/bin/python3
+#!/Users/troyschwab/Documents/github_website/troy-website/api/venv/bin/python3
 
 import sys
 import json
