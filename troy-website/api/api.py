@@ -12,7 +12,8 @@ load_dotenv()
 
 # Flask app setup
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://troyschwab.com"}})
+CORS(app, resources={r"/api/*": {"origins": ["https://troyschwab.com", "http://localhost:3000"]}})
+
 
 # AWS Configuration from environment variables
 S3_BUCKET = os.getenv("S3_BUCKET", "troyschwab-resources")  # Replace with your actual S3 bucket

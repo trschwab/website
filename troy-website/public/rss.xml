@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Troy Schwab's Updates</title>
+    <link>https://troyschwab.com</link>
+    <description>Latest updates from Troy Schwab's website</description>
+    <item>
+      <title>Major Migration</title>
+      <link>https://troyschwab.com/photography</link>
+      <description>Major updates! We've finally built in a proper flask backend for the site.
+      This is going to severely limit the bloat for migrations that we experience from hosting images directly.
+      Hopefully this RSS is a step in the right direction too! Manual for now.</description>
+      <pubDate>Wed, 29 Jan 2025 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Vinyl DJ Set - First Public post</title>
+      <link>https://www.youtube.com/watch?v=h-qOLRzEhLE</link>
+      <description>First public post on youtube. Spinning some recent newbies to the collection.
+      Hoping we can get one or two mixes in a month now. Cheers!</description>
+      <pubDate>Thu, 23 Jan 2025 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
