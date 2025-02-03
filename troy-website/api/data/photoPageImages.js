@@ -174,47 +174,47 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
-    { src: "61650004.JPG", width: 3583, height: 2376 },
-    { src: "61600035.JPG", width: 3583, height: 2376 },
-    { src: "61600036.JPG", width: 3583, height: 2376 },
-    { src: "61690024.JPG", width: 3583, height: 2376 },
-    { src: "61680008.JPG", width: 3583, height: 2376 },
-    { src: "61650001.JPG", width: 3583, height: 2376 },
-    { src: "61590006.JPG", width: 2376, height: 3583 },
+    { src: "61650004.JPG", width: 3583, height: 2376 }, // NY Building w Covering
+    // { src: "61600035.JPG", width: 3583, height: 2376 }, // NOLA Flag
+    { src: "61590006.JPG", width: 2376, height: 3583 }, // NY Building Corner
+    { src: "61600036.JPG", width: 3583, height: 2376 }, // NOLA Christmas Ornaments
+    { src: "61690024.JPG", width: 3583, height: 2376 }, // Amazing Sunset on plane w Moon
+    // { src: "61680008.JPG", width: 3583, height: 2376 }, // NOLA Street Plaque
+    // { src: "61650001.JPG", width: 3583, height: 2376 }, // Crossword through Bench
     { src: "61670002.JPG", width: 2376, height: 3583 },
     { src: "61590007.JPG", width: 3583, height: 2376 },
     { src: "61590005.JPG", width: 2376, height: 3583 },
     { src: "61590011.JPG", width: 2376, height: 3583 },
     { src: "61580014.JPG", width: 3583, height: 2376 },
-    { src: "61620025.JPG", width: 3583, height: 2376 },
+    // { src: "61620025.JPG", width: 3583, height: 2376 }, // NOLA Street Multi Instrument
     { src: "61580005.JPG", width: 2376, height: 3583 },
     { src: "61670005.JPG", width: 3583, height: 2376 },
-    { src: "61620036.JPG", width: 3583, height: 2376 },
-    { src: "61630032.JPG", width: 3583, height: 2376 },
-    { src: "61630017.JPG", width: 3583, height: 2376 },
+    // { src: "61620036.JPG", width: 3583, height: 2376 }, // NOLA Cactus type Plants
+    // { src: "61630032.JPG", width: 3583, height: 2376 }, // NOLA Farmers Market Jars
+    // { src: "61630017.JPG", width: 3583, height: 2376 }, // NOLA Buzzers
     { src: "61630002.JPG", width: 2376, height: 3583 },
     { src: "61590018.JPG", width: 3583, height: 2376 },
-    { src: "61620011.JPG", width: 2376, height: 3583 },
+    // { src: "61620011.JPG", width: 2376, height: 3583 }, // NOLA Grated Seats
     { src: "61660025.JPG", width: 2376, height: 3583 },
     { src: "61660019.JPG", width: 2376, height: 3583 },
     { src: "61590019.JPG", width: 3583, height: 2376 },
     { src: "61670024.JPG", width: 3583, height: 2376 },
     { src: "61670018.JPG", width: 2376, height: 3583 },
-    { src: "61590022.JPG", width: 3583, height: 2376 },
+    // { src: "61590022.JPG", width: 3583, height: 2376 }, // NY Scarves
     { src: "61610005.JPG", width: 2376, height: 3583 },
-    { src: "61610010.JPG", width: 3583, height: 2376 },
+    // { src: "61610010.JPG", width: 3583, height: 2376 }, // NOLA Headphones
     { src: "61600029.JPG", width: 3583, height: 2376 },
     { src: "61680007.JPG", width: 3583, height: 2376 },
     { src: "61610013.JPG", width: 3583, height: 2376 },
     { src: "61600002.JPG", width: 3583, height: 2376 },
-    { src: "61680010.JPG", width: 2376, height: 3583 },
+    // { src: "61680010.JPG", width: 2376, height: 3583 }, // NOLA Rainbow Bike Closeup 
     { src: "61680014.JPG", width: 3583, height: 2376 },
     { src: "61680001.JPG", width: 2376, height: 3583 },
     { src: "61680003.JPG", width: 3583, height: 2376 },
-    { src: "61700005.JPG", width: 3583, height: 2376 },  
+    // { src: "61700005.JPG", width: 3583, height: 2376 }, // NOLA Ferrari 
     { src: "94890036.JPG", width: 2376, height: 3583 }, // close up motorcycle
     { src: "94930032.JPG", width: 2376, height: 3583 }, // moon and plane
-    { src: "94930003.JPG", width: 3583, height: 2376 }, // bike close up be kind
+    // { src: "94930003.JPG", width: 3583, height: 2376 }, // bike close up be kind
     { src: "94930012.JPG", width: 2376, height: 3583 }, // shadows on pipe
     { src: "94920018.JPG", width: 3583, height: 2376 }, // cherries at farmers market
     { src: "94900027.JPG", width: 2376, height: 3583 }, // sign and faded bird grafitti
