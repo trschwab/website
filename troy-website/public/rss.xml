@@ -5,6 +5,13 @@
     <link>https://troyschwab.com</link>
     <description>Latest updates from Troy Schwab's website</description>
     <item>
+      <title>Vinyl DJ Set - Kolter, DJ Steaw, Oliver Dollar, and more</title>
+      <link>https://www.youtube.com/watch?v=R6CDCLq6qBw</link>
+      <description>Second set, spinning some old favorites and new records too. A bit of a more modern 
+      sound, especially between the Kolter, Credit 00, and Tuccillo tracks. Cheers!</description>
+      <pubDate>Fri, 21 Feb 2025 12:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title>Major Migration</title>
       <link>https://troyschwab.com/photography</link>
       <description>Major updates! We've finally built in a proper flask backend for the site.
