@@ -8,6 +8,7 @@ const HomePage = () => {
   const [hovered, setHovered] = useState(null);
   const [backgroundImage, setBackgroundImage] = useState('');
   const [imageError, setImageError] = useState('');
+  const [imageFilename, setImageFilename] = useState('');
 
   useEffect(() => {
     // Fetch the signed URLs from the backend
@@ -21,6 +22,10 @@ const HomePage = () => {
         const selectedImage = data[randomIndex].midres_url;  // Use the presigned URL (midres_url)
         setBackgroundImage(selectedImage);
 
+        // Extract filename from URL
+        const filename = selectedImage.split('/').pop().split('?')[0]; // Removes query params if present
+        setImageFilename(filename);
+
         // Check if the image loads successfully
         const img = new Image();
         img.src = selectedImage;
@@ -28,7 +33,7 @@ const HomePage = () => {
           setImageError('');
         };
         img.onerror = () => {
-          setImageError('Image failed to load: ' + selectedImage);
+          setImageError('Image failed to load: ' + filename);
         };
       } catch (error) {
         console.error('Error fetching signed URLs:', error);
@@ -112,6 +117,15 @@ const HomePage = () => {
           {imageError}
         </div>
       )}
+
+      {/* This is useful for testing to see what filename is being used as the background image */}
+      
+      {/* {backgroundImage && !imageError && (
+        <div style={{ position: 'absolute', bottom: '20px', left: '20px', color: 'white' }}>
+          <p>Current Background Image:</p>
+          <p style={{ fontSize: '14px', fontWeight: 'bold' }}>{imageFilename}</p>
+        </div>
+      )} */}
     </div>
   );
 };

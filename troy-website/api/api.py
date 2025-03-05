@@ -12,6 +12,10 @@ load_dotenv()
 
 # Flask app setup
 app = Flask(__name__)
+#### FOR TESTING
+# CORS(app)
+
+#### FOR PRODUCTION
 CORS(app, resources={r"/api/*": {"origins": ["https://troyschwab.com", "http://localhost:3000"]}})
 
 

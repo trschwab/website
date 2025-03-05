@@ -1,4 +1,11 @@
 const homeImages = [
+    { src: "54210006.JPG", width: 3583, height: 2376 }, // woman red back
+    { src: "54220014.JPG", width: 3583, height: 2376 }, // car bridge
+    { src: "54180030.JPG", width: 3583, height: 2376 }, // ice
+    { src: "54160031.JPG", width: 3583, height: 2376 }, // snow bench
+    { src: "54220023.JPG", width: 2376, height: 3583 }, // record shop vinyl
+    { src: "54140018.JPG", width: 3583, height: 2376 }, // man walking with cab -- maybe
+    { src: "54220012.JPG", width: 3583, height: 2376 }, // A1 Records
     { src: "39220011.JPG", width: 1200, height: 800 },
     { src: "20330011.JPG", width: 1200, height: 800 },
     { src: "16680010.JPG", width: 1200, height: 800 },

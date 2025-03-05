@@ -174,6 +174,46 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  { src: "54210006.JPG", width: 3583, height: 2376 }, // woman red back
+  { src: "54220014.JPG", width: 3583, height: 2376 }, // car bridge
+  { src: "54180030.JPG", width: 3583, height: 2376 }, // ice
+  { src: "54160031.JPG", width: 3583, height: 2376 }, // snow bench
+  { src: "54220023.JPG", width: 2376, height: 3583 }, // record shop vinyl
+  { src: "54140018.JPG", width: 3583, height: 2376 }, // man walking with cab -- maybe
+  { src: "54220012.JPG", width: 3583, height: 2376 }, // A1 Records
+
+  { src: "54160001.JPG", width: 3583, height: 2376 }, // sled closeup
+  { src: "54210012.JPG", width: 3583, height: 2376 }, // bikes -- ok
+
+  { src: "54160017.JPG", width: 2376, height: 3583 }, // snowy bough
+  { src: "54200010.JPG", width: 3583, height: 2376 }, // red sled
+  { src: "54160007.JPG", width: 2376, height: 3583 }, // sledding girl standing
+  { src: "54210002.JPG", width: 2376, height: 3583 }, // corner of elizabeth st garden
+  { src: "54160011.JPG", width: 3583, height: 2376 }, // snow sled being pulled
+  { src: "54160010.JPG", width: 2376, height: 3583 }, // snow ivy
+  { src: "54160004.JPG", width: 3583, height: 2376 }, // sled being pulled
+  { src: "54150003.JPG", width: 3583, height: 2376 }, // birds over building corner
+  { src: "54180034.JPG", width: 3583, height: 2376 }, // duck and NY cap
+  { src: "54190025.JPG", width: 2376, height: 3583 }, // sledding under tree
+  { src: "54190024.JPG", width: 3583, height: 2376 }, // sledding hill
+  { src: "54190032.JPG", width: 3583, height: 2376 }, // snowy bench
+
+
+  { src: "54230020.JPG", width: 3583, height: 2376 }, // seafood counter
+  { src: "54180015.JPG", width: 3583, height: 2376 }, // wide ducks hanging -- ok
+  { src: "54220019.JPG", width: 3583, height: 2376 }, // record shop redhook
+  { src: "54180002.JPG", width: 2376, height: 3583 }, // building corner
+
+  { src: "54190007.JPG", width: 2376, height: 3583 }, // underpass in central park
+  { src: "54180003.JPG", width: 3583, height: 2376 }, // building 
+  { src: "54230036.JPG", width: 3583, height: 2376 }, // man in scaffolding
+  { src: "54230032.JPG", width: 2376, height: 3583 }, // WV arthur's window
+
+  // { src: "54190017.JPG", width: 3583, height: 2376 }, // squirrel
+  { src: "54220021.JPG", width: 3583, height: 2376 }, // record shop slip mat
+  // { src: "54160023.JPG", width: 2376, height: 3583 }, // snow lamp
+  // { src: "54170022.JPG", width: 2376, height: 3583 }, // snow water fountain
+  { src: "54160026.JPG", width: 3583, height: 2376 }, // snowy bench and tree
     { src: "61650004.JPG", width: 3583, height: 2376 }, // NY Building w Covering
     // { src: "61600035.JPG", width: 3583, height: 2376 }, // NOLA Flag
     { src: "61590006.JPG", width: 2376, height: 3583 }, // NY Building Corner
