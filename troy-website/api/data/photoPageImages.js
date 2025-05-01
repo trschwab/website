@@ -174,6 +174,29 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  { src: "000048420022.jpg", width: 2376, height: 3584 }, //
+  { src: "000048420037.jpg", width: 3584, height: 2376 }, //
+  { src: "000048430032.jpg", width: 3584, height: 2376 }, //
+  { src: "000048340017.jpg", width: 3584, height: 2376 }, //
+  { src: "000048390036.jpg", width: 2376, height: 3584 }, //
+  { src: "000048390033.jpg", width: 2376, height: 3584 }, //
+  { src: "000048390031.jpg", width: 2376, height: 3584 }, //
+  { src: "000048410022.jpg", width: 3584, height: 2376 }, //
+  { src: "000048370016.jpg", width: 2376, height: 3584 }, //
+  { src: "000048400022.jpg", width: 3584, height: 2376 }, //
+  { src: "000048370020.jpg", width: 3584, height: 2376 }, //
+  { src: "000048370036.jpg", width: 2376, height: 3584 }, //
+  { src: "000048370026.jpg", width: 3584, height: 2376 }, //
+  { src: "000048370027.jpg", width: 3584, height: 2376 }, //
+  { src: "000048370030.jpg", width: 3584, height: 2376 }, //
+  { src: "000048400015.jpg", width: 3584, height: 2376 }, //
+  { src: "000048430007.jpg", width: 3584, height: 2376 }, //
+  { src: "000048340022.jpg", width: 2376, height: 3584 }, //
+  { src: "000048380012.jpg", width: 3584, height: 2376 }, //
+  { src: "000048430029.jpg", width: 3584, height: 2376 }, //
+  { src: "000048430001.jpg", width: 3584, height: 2376 }, //
+  { src: "000048340024.jpg", width: 3584, height: 2376 }, //
+
   { src: "54210006.JPG", width: 3583, height: 2376 }, // woman red back
   { src: "54220014.JPG", width: 3583, height: 2376 }, // car bridge
   { src: "54180030.JPG", width: 3583, height: 2376 }, // ice
