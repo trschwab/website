@@ -174,6 +174,26 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  { src: "82540017.JPG", width: 3583, height: 2376 }, // Car window horizontal
+  { src: "82530014.JPG", width: 2376, height: 3583 }, //
+  { src: "82520011.JPG", width: 3583, height: 2376 }, //
+  { src: "82530004.JPG", width: 2376, height: 3583 }, //
+  { src: "82530012.JPG", width: 3583, height: 2376 }, //
+  // { src: "82530007.JPG", width: 3583, height: 2376 }, // CVG moose skeleton
+  { src: "82540023.JPG", width: 3583, height: 2376 }, //
+  { src: "82480001.JPG", width: 3583, height: 2376 }, //
+  { src: "82550034.JPG", width: 2376, height: 3583 }, //
+  { src: "82480003.JPG", width: 3583, height: 2376 }, //
+  { src: "82490022.JPG", width: 3583, height: 2376 }, //
+  { src: "82500020.JPG", width: 2376, height: 3583 }, //
+  // { src: "82540016.JPG", width: 2376, height: 3583 }, // car window vertical
+  { src: "82480031.JPG", width: 2376, height: 3583 }, //
+  { src: "82480009.JPG", width: 3583, height: 2376 }, //
+  { src: "82480022.JPG", width: 3583, height: 2376 }, //
+  { src: "82540004.JPG", width: 3583, height: 2376 }, //
+  { src: "82540005.JPG", width: 2376, height: 3583 }, //
+  { src: "82520020.JPG", width: 2376, height: 3583 }, //
+
   { src: "000048420022.jpg", width: 2376, height: 3584 }, //
   { src: "000048420037.jpg", width: 3584, height: 2376 }, //
   { src: "000048430032.jpg", width: 3584, height: 2376 }, //
