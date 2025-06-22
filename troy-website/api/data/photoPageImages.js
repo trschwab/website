@@ -174,6 +174,66 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  { src: "45380023.JPG", width: 3583, height: 2376 }, //
+  // { src: "45350028.JPG", width: 3583, height: 2376 }, // Dice on Coney Island
+  { src: "45390026.JPG", width: 3583, height: 2376 }, //
+  { src: "45340010.JPG", width: 2376, height: 3583 }, //
+  { src: "45350029.JPG", width: 3583, height: 2376 }, //
+  // { src: "45380022.JPG", width: 3583, height: 2376 }, // Happy Birthday Felon
+  { src: "45300024.JPG", width: 2376, height: 3583 }, //
+  { src: "45380021.JPG", width: 3583, height: 2376 }, //
+  { src: "45300027.JPG", width: 3583, height: 2376 }, //
+  // { src: "45380025.JPG", width: 2376, height: 3583 }, // Cops at protest
+  { src: "45380031.JPG", width: 2376, height: 3583 }, //
+  // { src: "45380024.JPG", width: 3583, height: 2376 }, // See no crimes, hear no truth
+  { src: "45310033.JPG", width: 2376, height: 3583 }, //
+  // { src: "45350011.JPG", width: 2376, height: 3583 }, // Ferris Wheel
+  { src: "45340001.JPG", width: 3583, height: 2376 }, //
+  { src: "45370012.JPG", width: 3583, height: 2376 }, //
+  // { src: "45360017.JPG", width: 3583, height: 2376 }, // Kid on Race Track 1
+  // { src: "45360003.JPG", width: 2376, height: 3583 }, // Underneath Nathans Sign
+  { src: "45330033.JPG", width: 2376, height: 3583 }, //
+  // { src: "45360002.JPG", width: 2376, height: 3583 }, // Daytime Nathan's Sign
+  // { src: "45330025.JPG", width: 2376, height: 3583 }, // Subway Ferris Wheel Shot
+  { src: "45400035.JPG", width: 3583, height: 2376 }, //
+  { src: "45400009.JPG", width: 2376, height: 3583 }, //
+  // { src: "45370004.JPG", width: 2376, height: 3583 }, // Blue Yellow Umbrella Street Crossing
+  { src: "45330021.JPG", width: 2376, height: 3583 }, //
+  { src: "45370029.JPG", width: 2376, height: 3583 }, //
+  // { src: "45370017.JPG", width: 2376, height: 3583 }, // Flowers in Soho
+  // { src: "45360012.JPG", width: 3583, height: 2376 }, // Playing Cards
+  { src: "45370027.JPG", width: 3583, height: 2376 }, //
+  // { src: "45360036.JPG", width: 3583, height: 2376 }, // Great Coney Island Shirt
+  // { src: "45320017.JPG", width: 2376, height: 3583 }, // Lions @ Elizabeth St Garden
+  // { src: "45330006.JPG", width: 3583, height: 2376 }, // Candy @ Coney Island
+  // { src: "45370032.JPG", width: 3583, height: 2376 }, // Rejecting Kings
+  { src: "45370030.JPG", width: 3583, height: 2376 }, //
+  { src: "45370024.JPG", width: 3583, height: 2376 }, //
+  { src: "45370018.JPG", width: 3583, height: 2376 }, //
+  { src: "45330010.JPG", width: 2376, height: 3583 }, //
+  { src: "45320015.JPG", width: 3583, height: 2376 }, //
+  { src: "45320014.JPG", width: 3583, height: 2376 }, //
+  { src: "45330005.JPG", width: 2376, height: 3583 }, //
+  { src: "45360008.JPG", width: 3583, height: 2376 }, //
+  { src: "45360020.JPG", width: 3583, height: 2376 }, // Kid on Race Track 2
+  { src: "45370021.JPG", width: 3583, height: 2376 }, //
+  { src: "45330015.JPG", width: 3583, height: 2376 }, //
+  // { src: "45370036.JPG", width: 3583, height: 2376 }, // Protest, King outfit
+  { src: "45330003.JPG", width: 2376, height: 3583 }, //
+  { src: "45400006.JPG", width: 3583, height: 2376 }, //
+  // { src: "45370037.JPG", width: 3583, height: 2376 }, // Protest Sign
+  { src: "45310001.JPG", width: 2376, height: 3583 }, // Jaws Arcade, Zoomed in
+  { src: "45300004.JPG", width: 3583, height: 2376 }, //
+  // { src: "45350009.JPG", width: 3583, height: 2376 }, // Coney Island hands Up
+  { src: "45380017.JPG", width: 2376, height: 3583 }, //
+  // { src: "45310002.JPG", width: 2376, height: 3583 }, // Jaws Arcade, Zoomed out
+  // { src: "45340027.JPG", width: 2376, height: 3583 }, // Coney Island, Street
+  // { src: "45300003.JPG", width: 2376, height: 3583 }, // Building through Scaffolding
+  { src: "45380007.JPG", width: 2376, height: 3583 }, //
+  { src: "45340021.JPG", width: 2376, height: 3583 }, //
+  { src: "45350019.JPG", width: 3583, height: 2376 }, //
+
+
   { src: "82540017.JPG", width: 3583, height: 2376 }, // Car window horizontal
   { src: "82530014.JPG", width: 2376, height: 3583 }, //
   { src: "82520011.JPG", width: 3583, height: 2376 }, //
