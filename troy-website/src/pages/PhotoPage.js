@@ -72,7 +72,8 @@ const PhotoPage = () => {
     // Fetch photos
     const fetchPhotos = async () => {
       try {
-        const response = await fetch(`${config.API_BASE_URL}/get-signed-urls-photos`);
+        // const response = await fetch(`${config.API_BASE_URL}/get-signed-urls-photos`);
+        const response = await fetch(`${config.API_BASE_URL}/photos`);
         const data = await response.json();
   
         // Map photos to the required structure

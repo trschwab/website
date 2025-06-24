@@ -20,8 +20,8 @@ CORS(app, resources={r"/api/*": {"origins": ["https://troyschwab.com", "http://l
 
 
 # AWS Configuration from environment variables
-S3_BUCKET = os.getenv("S3_BUCKET", "troyschwab-resources")  # Replace with your actual S3 bucket
-S3_REGION = os.getenv("S3_REGION", "us-east-2")  # Your actual region
+S3_BUCKET = os.getenv("S3_BUCKET", "troyschwab-resources")
+S3_REGION = os.getenv("S3_REGION", "us-east-2")
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 
@@ -164,6 +164,12 @@ def get_signed_urls_photos_music():
     
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/photos')
+def get_cached_photos():
+    with open('cached_photos.json') as f:
+        return jsonify(json.load(f))
 
 
 if __name__ == "__main__":
