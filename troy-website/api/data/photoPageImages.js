@@ -174,6 +174,52 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  { src: "77410021.JPG", width: 2376, height: 3583 }, //
+  { src: "77480034.JPG", width: 3583, height: 2376 }, //
+  { src: "77500032.JPG", width: 3583, height: 2376 }, //
+  { src: "77370017.JPG", width: 2376, height: 3583 }, // Abraco
+  // { src: "77500033.JPG", width: 3583, height: 2376 }, // MOA Clear Balloon Closeup
+  { src: "77540003.JPG", width: 2376, height: 3583 }, //
+  // { src: "77370006.JPG", width: 2376, height: 3583 }, // Abraco angled more
+  // { src: "77500036.JPG", width: 3583, height: 2376 }, // MOA Clear Baloons Masked couple
+  { src: "77490021.JPG", width: 3583, height: 2376 }, //
+  { src: "77540028.JPG", width: 2376, height: 3583 }, //
+  { src: "77410018.JPG", width: 2317, height: 1536 }, //
+  { src: "77490022.JPG", width: 3583, height: 2376 }, //
+  { src: "77520020.JPG", width: 1536, height: 2317 }, //
+  { src: "77340028.JPG", width: 2376, height: 3583 }, //
+  { src: "77470004.JPG", width: 3583, height: 2376 }, // Man at bar in window, Horizontal
+  { src: "77420025.JPG", width: 3583, height: 2376 }, //
+  { src: "77340004.JPG", width: 3583, height: 2376 }, //
+  { src: "77390027.JPG", width: 2376, height: 3583 }, //
+  { src: "77520024.JPG", width: 1536, height: 2317 }, //
+  // { src: "77470002.JPG", width: 2376, height: 3583 }, // Man at bar in window, Vertical
+  { src: "77460036.JPG", width: 2376, height: 3583 }, //
+  { src: "77460022.JPG", width: 2376, height: 3583 }, //
+  // { src: "77470033.JPG", width: 2376, height: 3583 }, // Abraco wide shot
+  // { src: "77470025.JPG", width: 2376, height: 3583 }, // Upsidown Chairs night shot
+  { src: "77520010.JPG", width: 2376, height: 3583 }, //
+  { src: "77470035.JPG", width: 3583, height: 2376 }, //
+  { src: "77470020.JPG", width: 3583, height: 2376 }, //
+  // { src: "77470034.JPG", width: 3583, height: 2376 }, // Subway mosaic wide shot
+  { src: "77460019.JPG", width: 3583, height: 2376 }, //
+  { src: "77340019.JPG", width: 2376, height: 3583 }, //
+  // { src: "77520011.JPG", width: 2376, height: 3583 }, // Angled electricity box on sidewalk
+  // { src: "77470036.JPG", width: 3583, height: 2376 }, // Subway mosaic closeup
+  // { src: "77470023.JPG", width: 3583, height: 2376 }, // Night parking graffiti
+  { src: "77420006.JPG", width: 2376, height: 3583 }, //
+  { src: "77330001.JPG", width: 2376, height: 3583 }, //
+  { src: "77330002.JPG", width: 3583, height: 2376 }, //
+  { src: "77330003.JPG", width: 2376, height: 3583 }, //
+  { src: "77540022.JPG", width: 3583, height: 2376 }, //
+  { src: "77510012.JPG", width: 2376, height: 3583 }, //
+  { src: "77490014.JPG", width: 3583, height: 2376 }, //
+  { src: "77540037.JPG", width: 2376, height: 3583 }, //
+  // { src: "77370018.JPG", width: 2376, height: 3583 }, // Abraco foreground in focus
+  { src: "77410011.JPG", width: 2376, height: 3583 }, //
+  { src: "77480006.JPG", width: 3583, height: 2376 }, //
+
+
   { src: "45380023.JPG", width: 3583, height: 2376 }, //
   // { src: "45350028.JPG", width: 3583, height: 2376 }, // Dice on Coney Island
   { src: "45390026.JPG", width: 3583, height: 2376 }, //
