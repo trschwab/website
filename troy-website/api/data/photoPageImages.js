@@ -174,6 +174,45 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  // { src: "24440009.JPG", width: 2376, height: 3583 }, // Mamie Eating @ Zips
+  // { src: "24450018.JPG", width: 3583, height: 2376 }, // Central Park Resevoir, fewer Leaves
+  // { src: "24400015.JPG", width: 3583, height: 2376 }, // Creamy Whip leftside angle
+  // { src: "24400017.JPG", width: 2376, height: 3583 }, // Creamy Whip, portrait not horizontal
+  { src: "24400016.JPG", width: 3583, height: 2376 }, // Creamy Whip, horizontal not portrait
+  { src: "24480003.JPG", width: 3583, height: 2376 }, //
+  { src: "24450020.JPG", width: 3583, height: 2376 }, //
+  // { src: "24400010.JPG", width: 2376, height: 3583 }, // Sunset and Blackness
+  { src: "24390005.JPG", width: 3583, height: 2376 }, //
+  // { src: "24390011.JPG", width: 3583, height: 2376 }, // Flash on Vines in front yard
+  { src: "24350022.JPG", width: 2376, height: 3583 }, //
+  { src: "24470036.JPG", width: 3583, height: 2376 }, //
+  // { src: "24390007.JPG", width: 3583, height: 2376 }, // Ginkgo side angle with drops
+  { src: "24470018.JPG", width: 3583, height: 2376 }, //
+  { src: "24470029.JPG", width: 3583, height: 2376 }, //
+  // { src: "24350029.JPG", width: 3583, height: 2376 }, // Walnut Husks
+  { src: "24380037.JPG", width: 3583, height: 2376 }, //
+  // { src: "24420031.JPG", width: 2376, height: 3583 }, // Man at Zips
+  { src: "24430030.JPG", width: 2376, height: 3583 }, //
+  { src: "24460002.JPG", width: 3583, height: 2376 }, //
+  { src: "24470012.JPG", width: 2376, height: 3583 }, //
+  { src: "24440001.JPG", width: 3583, height: 2376 }, //
+  // { src: "24440015.JPG", width: 2376, height: 3583 }, // Zips rainy Window Portrait
+  { src: "24440014.JPG", width: 3583, height: 2376 }, //
+  // { src: "24400034.JPG", width: 2376, height: 3583 }, // Turner Farm Scale
+  { src: "24400008.JPG", width: 2376, height: 3583 }, //
+  // { src: "24370005.JPG", width: 3583, height: 2376 }, // Creamy Whip Monkey Sunday (worse angle)
+  { src: "24450006.JPG", width: 3583, height: 2376 }, //
+  // { src: "24370006.JPG", width: 3583, height: 2376 }, // Creamy Whip Monkey Sunday (better angle)
+  // { src: "24400027.JPG", width: 2376, height: 3583 }, // Turner Farm Shack
+  // { src: "24450002.JPG", width: 2376, height: 3583 }, // NY Laundry
+  // { src: "24440006.JPG", width: 2376, height: 3583 }, // Zips w leftovers on table
+  { src: "24440010.JPG", width: 2376, height: 3583 }, //
+  { src: "24360011.JPG", width: 2376, height: 3583 }, //
+
+
+
+
+
   { src: "77410021.JPG", width: 2376, height: 3583 }, //
   { src: "77480034.JPG", width: 3583, height: 2376 }, //
   { src: "77500032.JPG", width: 3583, height: 2376 }, //
@@ -188,7 +227,7 @@ const files = [
   { src: "77490022.JPG", width: 3583, height: 2376 }, //
   { src: "77520020.JPG", width: 1536, height: 2317 }, //
   { src: "77340028.JPG", width: 2376, height: 3583 }, //
-  { src: "77470004.JPG", width: 3583, height: 2376 }, // Man at bar in window, Horizontal
+  // { src: "77470004.JPG", width: 3583, height: 2376 }, // Man at bar in window, Horizontal
   { src: "77420025.JPG", width: 3583, height: 2376 }, //
   { src: "77340004.JPG", width: 3583, height: 2376 }, //
   { src: "77390027.JPG", width: 2376, height: 3583 }, //
@@ -202,12 +241,12 @@ const files = [
   { src: "77470035.JPG", width: 3583, height: 2376 }, //
   { src: "77470020.JPG", width: 3583, height: 2376 }, //
   // { src: "77470034.JPG", width: 3583, height: 2376 }, // Subway mosaic wide shot
-  { src: "77460019.JPG", width: 3583, height: 2376 }, //
+  // { src: "77460019.JPG", width: 3583, height: 2376 }, // Snow Emergency Route Sign
   { src: "77340019.JPG", width: 2376, height: 3583 }, //
   // { src: "77520011.JPG", width: 2376, height: 3583 }, // Angled electricity box on sidewalk
   // { src: "77470036.JPG", width: 3583, height: 2376 }, // Subway mosaic closeup
   // { src: "77470023.JPG", width: 3583, height: 2376 }, // Night parking graffiti
-  { src: "77420006.JPG", width: 2376, height: 3583 }, //
+  // { src: "77420006.JPG", width: 2376, height: 3583 }, // Wires through sunroof
   { src: "77330001.JPG", width: 2376, height: 3583 }, //
   { src: "77330002.JPG", width: 3583, height: 2376 }, //
   { src: "77330003.JPG", width: 2376, height: 3583 }, //
@@ -217,7 +256,7 @@ const files = [
   { src: "77540037.JPG", width: 2376, height: 3583 }, //
   // { src: "77370018.JPG", width: 2376, height: 3583 }, // Abraco foreground in focus
   { src: "77410011.JPG", width: 2376, height: 3583 }, //
-  { src: "77480006.JPG", width: 3583, height: 2376 }, //
+  // { src: "77480006.JPG", width: 3583, height: 2376 }, // Chess on plane
 
 
   { src: "45380023.JPG", width: 3583, height: 2376 }, //
