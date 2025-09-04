@@ -174,6 +174,73 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  { src: "05580031.JPG", width: 3583, height: 2376 }, //
+  { src: "05650001.JPG", width: 2376, height: 3583 }, // NY Sunset through bike
+  { src: "05660003.JPG", width: 3583, height: 2376 }, //
+  // { src: "05540009.JPG", width: 3583, height: 2376 }, // MN Fair Boy at shop stand
+  { src: "05580012.JPG", width: 3583, height: 2376 }, // MN Fair Green ponytail horse
+  { src: "05620022.JPG", width: 3583, height: 2376 }, //
+  { src: "05670013.JPG", width: 2376, height: 3583 }, //
+  { src: "05670007.JPG", width: 3583, height: 2376 }, //
+  { src: "05550027.JPG", width: 3583, height: 2376 }, //
+  // { src: "05580011.JPG", width: 3583, height: 2376 }, // MN Fair Red Ponytail horse
+  { src: "05670010.JPG", width: 3583, height: 2376 }, //
+  // { src: "05670028.JPG", width: 3583, height: 2376 }, // MN Fair hand seed art
+  // { src: "05620025.JPG", width: 2376, height: 3583 }, // MN Trail sign
+  // { src: "05550022.JPG", width: 2376, height: 3583 }, // MN Fair Ride
+  // { src: "05550023.JPG", width: 3583, height: 2376 }, // MN Fair holding hands
+  // { src: "05540026.JPG", width: 3583, height: 2376 }, // MN Fair Mountees
+  // { src: "05620024.JPG", width: 3583, height: 2376 }, // MN Canoes
+  { src: "05550034.JPG", width: 3583, height: 2376 }, //
+  // { src: "05600031.JPG", width: 3583, height: 2376 }, // NY Blue bikes and crates
+  // { src: "05560018.JPG", width: 3583, height: 2376 }, // MN Fair Bench
+  // { src: "05570035.JPG", width: 2376, height: 3583 }, // MN Fair Light Leak people
+  // { src: "05640006.JPG", width: 3583, height: 2376 }, // Ohio Legos
+  { src: "05640012.JPG", width: 3583, height: 2376 }, //
+  { src: "05680009.JPG", width: 3583, height: 2376 }, //
+  { src: "05610036.JPG", width: 3583, height: 2376 }, //
+  { src: "05600033.JPG", width: 3583, height: 2376 }, //
+  { src: "05610026.JPG", width: 3583, height: 2376 }, //
+  // { src: "05640017.JPG", width: 3583, height: 2376 }, // Ohio Aglamesis
+  { src: "05690008.JPG", width: 3583, height: 2376 }, //
+  // { src: "05680031.JPG", width: 3583, height: 2376 }, // NY Nature Wall
+  { src: "05640016.JPG", width: 3583, height: 2376 }, //
+  { src: "05600034.JPG", width: 3583, height: 2376 }, //
+  // { src: "05560036.JPG", width: 2376, height: 3583 }, // MN Fair Cow
+  { src: "05610025.JPG", width: 2376, height: 3583 }, //
+  { src: "05680027.JPG", width: 3583, height: 2376 }, //
+  // { src: "05640015.JPG", width: 3583, height: 2376 }, // Ohio Aglamesis w Hands
+  // { src: "05570003.JPG", width: 3583, height: 2376 }, // MN Fair Cow
+  { src: "05610029.JPG", width: 3583, height: 2376 }, //
+  { src: "05650008.JPG", width: 2376, height: 3583 }, //
+  { src: "05640025.JPG", width: 3583, height: 2376 }, //
+  // { src: "05690005.JPG", width: 2376, height: 3583 }, // NY Man w Pigeon Feather
+  // { src: "05570029.JPG", width: 2376, height: 3583 }, // MN Fair Bread
+  { src: "05600012.JPG", width: 3583, height: 2376 }, //
+  // { src: "05560014.JPG", width: 2376, height: 3583 }, // MN Fair Ginkgo Bonsai
+  { src: "05600001.JPG", width: 2376, height: 3583 }, //
+  { src: "05600015.JPG", width: 2376, height: 3583 }, //
+  // { src: "05560017.JPG", width: 3583, height: 2376 }, // MN Fair Battered Potatoes
+  { src: "05650019.JPG", width: 2376, height: 3583 }, //
+  { src: "05620002.JPG", width: 2376, height: 3583 }, //
+  // { src: "05580026.JPG", width: 3583, height: 2376 }, // MN Fair Goat
+  { src: "05620017.JPG", width: 3583, height: 2376 }, //
+  { src: "05580025.JPG", width: 2376, height: 3583 }, //
+  // { src: "05580018.JPG", width: 3583, height: 2376 }, // MN Fair Goat Butts
+  { src: "05670009.JPG", width: 3583, height: 2376 }, //
+  { src: "05630001.JPG", width: 3583, height: 2376 }, //
+  { src: "05580008.JPG", width: 3583, height: 2376 }, //
+  { src: "05550017.JPG", width: 2376, height: 3583 }, //
+  // { src: "05580034.JPG", width: 2376, height: 3583 }, // MN Fair Super Dog
+  // { src: "05580009.JPG", width: 3583, height: 2376 }, // MN Fair girl with Horse
+  // { src: "05590024.JPG", width: 3583, height: 2376 }, // Ohio Elis BBQ
+  { src: "05670008.JPG", width: 2376, height: 3583 }, //
+  { src: "05590026.JPG", width: 2376, height: 3583 }, //
+  // { src: "05630002.JPG", width: 3583, height: 2376 }, // MN Fair Cookie spill
+  // { src: "05550015.JPG", width: 2376, height: 3583 }, // MN Fair Alien Toy Stand
+
+
+
   // { src: "24440009.JPG", width: 2376, height: 3583 }, // Mamie Eating @ Zips
   // { src: "24450018.JPG", width: 3583, height: 2376 }, // Central Park Resevoir, fewer Leaves
   // { src: "24400015.JPG", width: 3583, height: 2376 }, // Creamy Whip leftside angle
