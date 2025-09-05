@@ -109,7 +109,7 @@ const HomePage = () => {
           onMouseEnter={() => setHovered('work')}
           onMouseLeave={() => setHovered(null)}
         >
-          Work
+          Photos
         </Link>
       </div>
       {imageError && (

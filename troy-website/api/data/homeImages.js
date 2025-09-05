@@ -1,4 +1,19 @@
 const homeImages = [
+    { src: "05580031.JPG", width: 3583, height: 2376 }, // MN Fair Kids and bubbles
+    { src: "05660003.JPG", width: 3583, height: 2376 }, // Blocks through window
+    { src: "05600033.JPG", width: 3583, height: 2376 }, // Couple Clinging
+    { src: "05640016.JPG", width: 3583, height: 2376 }, // Aglamesis
+    // { src: "05640025.JPG", width: 3583, height: 2376 }, // Trout desk
+    { src: "05600012.JPG", width: 3583, height: 2376 }, // NYC Garbage mirror
+    { src: "05650019.JPG", width: 2376, height: 3583 }, // NYC Boys at the reservoir
+    { src: "24450020.JPG", width: 3583, height: 2376 }, // NYC Reservoir Sunset
+    { src: "45300004.JPG", width: 3583, height: 2376 }, // Man with Keys
+    { src: "77540003.JPG", width: 2376, height: 3583 }, // MN Roadway Pond / Lake
+    { src: "77490021.JPG", width: 3583, height: 2376 }, // MN Highway Barn
+    { src: "77490014.JPG", width: 3583, height: 2376 }, // MN Highway Towers
+    { src: "45390026.JPG", width: 3583, height: 2376 }, // Man with Upright Bass
+    { src: "45400035.JPG", width: 3583, height: 2376 }, // NYC Coney Island man on bike
+
     { src: "54210006.JPG", width: 3583, height: 2376 }, // woman red back
     { src: "54220014.JPG", width: 3583, height: 2376 }, // car bridge
     { src: "54180030.JPG", width: 3583, height: 2376 }, // ice
