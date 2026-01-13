@@ -43,7 +43,7 @@ const homeImages = [
     { src: "16570002.JPG", width: 1200, height: 800 }, // Woman reading Subway -- Fish
     // { src: "000019180025.jpg", width: 1200, height: 800 }, // MET Statue
     { src: "89950011.JPG", width: 1200, height: 800 }, // PA at Golden Hour
-    { src: "10950014.JPG", width: 1200, height: 800 }, // East River Fishermen Close Up
+    // { src: "10950014.JPG", width: 1200, height: 800 }, // East River Fishermen Close Up
     { src: "14070017.JPG", width: 1200, height: 800 }, // Bike on Side
     { src: "61690024.JPG", width: 1200, height: 800 }, // Plane red sky and moon
     // { src: "61700005.JPG", width: 1200, height: 800 }, // NOLA ferrari
