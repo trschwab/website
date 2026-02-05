@@ -174,6 +174,16 @@ const transformPhotoObjects = (photos) => {
 };
 
 const files = [
+  { src: "45750022.jpg", width: 2376, height: 3584 }, //
+  { src: "45700005.jpg", width: 3584, height: 2376 }, //
+  { src: "45740037.jpg", width: 3584, height: 2376 }, //
+  { src: "45730006.jpg", width: 3584, height: 2376 }, //
+  { src: "45720008.jpg", width: 3584, height: 2376 }, //
+  { src: "45730033.jpg", width: 2376, height: 3584 }, //
+  { src: "45790024.jpg", width: 2376, height: 3584 }, //
+  { src: "45740011.jpg", width: 3584, height: 2376 }, //
+
+
   { src: "05580031.JPG", width: 3583, height: 2376 }, //
   // { src: "05650001.JPG", width: 2376, height: 3583 }, // NY Sunset through bike
   // { src: "05660003.JPG", width: 3583, height: 2376 }, // NY window chair
